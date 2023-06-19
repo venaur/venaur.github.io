@@ -192,4 +192,23 @@ iframe{
   height: 10vh;
 }
 
+
+
+
+.looped-video{
+  display: none;
+}
+
+.project-video {
+  display: none;
+}
+
+.video-container {
+  display: none;
+}
+ 
+.project-title {
+  display: none;
+}
+
 }
