@@ -85,6 +85,42 @@
 .video-container:first-child {
   z-index: 1;
 }
+
+
+
+
+
+.top-bar{
+display: none;
+}
+.inst-titles{
+display: none;
+}
+.mobile-content{
+display: none;
+}
+img{
+ display: none;
+
+}
+#customDesc {/* description  container*/
+display: none;
+}
+
+.vimeo-container {          /* Echoes Vimeo  */
+display: none;
+}
+
+.youtube-container {  
+display: none;
+}
+
+iframe{
+display: none;
+}
+.separation{
+display: none;
+}
 }
 
 
