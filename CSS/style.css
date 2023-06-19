@@ -181,10 +181,10 @@ h1.small {
   .menu-items {
     display: none;
     position: absolute;
-    top: 100%; 
+    top: 130%; 
     left: 0;
-    right: 0%;
-    background-color: #430202a0;
+    right: 0;
+    background-color: #430202cc;
     list-style-type: none;
     margin: 0;
     padding: 0;

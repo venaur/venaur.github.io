@@ -307,6 +307,7 @@
     width: 100%;
     height: 100vh;
     pointer-events: auto;
+
   
   }
   .container-left {
@@ -315,6 +316,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+
   }
   .container-right {
     position: absolute;
@@ -323,6 +325,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+
   }
   
   .slide-in-left {
@@ -334,6 +337,7 @@
     height: 100%;
     animation: slideAnimationLeft 1.0s forwards;
     animation-delay: 1s; 
+    overflow-x:hidden;
   }
     
   .slide-in-right {
@@ -345,12 +349,15 @@
     height: 100%;
     animation: slideAnimationRight 1.0s forwards;
     animation-delay: 1s; 
+    overflow-x: hidden;
+
   }
     /* ------------Slide in animations------------------------ */
   
   @keyframes slideAnimationLeft {
     0% {
       left: -200%;
+
   
     }
     100% {
@@ -361,6 +368,7 @@
   @keyframes slideAnimationRight {
     0% {
       right: -200%;
+
   
     }
     100% {
