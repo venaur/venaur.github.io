@@ -141,7 +141,7 @@ display: none;
   height: 7vh;
   /* color: rgb(20,20,20); */
   background-color: rgb(20,20,20); 
-  top: 0vh;
+  top: -2vh;
   left:0;
   z-index: 0;
 }
