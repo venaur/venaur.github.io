@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="CSS/style.css">
+      <link rel="stylesheet" href="CSS/installation2.css">
+
+     
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <title>Installation</title>
+    <style>
+        @font-face {
+            font-family: myFont;
+            src: url('assets/Jura/static/Jura-Medium.ttf'); 
+        }
+        * {
+        font-family: myFont;
+        }
+    </style>
+
+  </head>
+
+<header class="fixed-background">
+    <h1>Installations</h1>
+      <div class="navbar">
+        <ul>
+        <li><a href="index.html"> Home</a></li>
+        <li><a href="installation2.html">Installations</a></li>
+        <li><a href="collaborations.html"> Collaborations </a></li>
+        <li><a href="sound.html">Sound</a></li>
+        <li><a href="About.html">About</a></li>
+        </ul>
+    </div>
+</header>
+
+
+<!----------- FOR mobile -->
+<script>
+  $(document).ready(function() {
+      $('.menu-toggle').click(function() {
+      $('.menu-items').slideToggle();
+      });
+  });
+  
+</script>
+
+  <nav class="mobile-menu">
+      <div class="menu-toggle">
+        <span> </span> 
+
+        <span></span>
+
+        <span></span>
+
+      </div>
+
+      <ul class="menu-items">
+        <li><a href="index.html"> Home</a></li>
+        <li><a href="installation2.html">Installations</a></li>
+        <li><a href="collaborations.html"> Collaboration </a></li>
+        <li><a href="sound.html">Sound</a></li>
+        <li><a href="About.html">About</a></li>
+      </ul>
+    </nav>
+<!----------- FOR mobile -->
+
+
+
+
+
+<body> 
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const projectVideos = document.querySelectorAll('.project-video');
+      const projectContainers = document.querySelectorAll('.video-container');
+  
+        video.addEventListener('mouseenter', () => {
+          const title = video.parentNode.querySelector('.project-title');
+          title.style.opacity = 1;
+        });
+  
+        video.addEventListener('mouseleave', () => {
+          const title = video.parentNode.querySelector('.project-title');
+          title.style.opacity = 0.5;
+        });
+      });
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+  const projectVideos = document.querySelectorAll('.project-video');
+
+  projectVideos.forEach((video) => {
+    video.addEventListener('click', () => {
+      // Retrieve the URL associated with the clicked video
+      const url = video.dataset.url;
+      
+      // Redirect to the specified URL
+      window.location.href = url;
+    });
+  });
+});
+
+
+  </script>
+
+  <div class="looped-video">
+    <div class="video-container">
+      <video class="project-video" data-url="echoes2.html" autoplay loop muted>
+        <source src="assets/echoesVideo.mp4" type="video/mp4">
+      </video>
+      <h3 class="project-title">Echoes of the Past, Present & Future</h3>
+    </div>
+  </div>
+  
+  <div class="looped-video">
+    <div class="video-container">
+      <video class="project-video" data-url="temperTrauma.html"autoplay loop muted>
+        <source src="assets/ttlooped.mp4" type="video/mp4">
+      </video>
+      <h3 class="project-title">Temper Trauma</h3>
+    </div>
+  </div>
+  
+
+
+
+</body>
+</html>

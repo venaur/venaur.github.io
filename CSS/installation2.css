@@ -1,0 +1,159 @@
+
+/* ----------DESKTOP---------------------------- */
+@media only screen and (min-width: 1080px) {
+.looped-video{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 10%;
+  width: 65%;
+  left: 20%;
+  justify-content: space-evenly;
+}
+
+.project-video {
+  object-fit: cover;
+  width: 75vw; 
+  height: 30vh; 
+  margin-bottom: 5vh; 
+  padding-top: 4vh;
+  transition: height 0.7s;
+}
+
+.video-container {
+  position: relative;
+  width: 75vw;
+  height: auto;
+  padding-top: 5vh;
+  overflow: hidden;
+  z-index: 0;
+
+}
+  
+.video-container.clicked {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75vw;
+  height: 35vh;
+  z-index: 1; 
+}
+ 
+.video-container.clicked video {
+  height: 100%;
+}
+
+.video-container.clicked .project-details {
+  display: block;
+}
+
+.project-title {
+  display: block;
+  position: absolute;
+  font-size: 24px;
+  bottom: 3vh;
+  left: 0;
+  opacity: 0.5;
+  color: rgba(255, 255, 255, 0.578); 
+  transition: opacity 0.7s;
+  width: 100%;
+  text-align: center;
+  background-color: none;
+
+}
+
+
+.video-container:hover .project-title {
+  color:rgb(255, 255, 255);
+  background-color: #ff0404;
+  z-index: 3;
+}
+.video-container:hover .project-video{
+  height: 34vh; 
+}
+
+.video-container.clicked .project-title {
+  display: none;
+}
+
+.video-container:first-child {
+  z-index: 1;
+}
+}
+
+
+
+
+/* ----------Mobile--------------------------------------- */
+
+/* ----------Mobile--------------------------------------- */
+
+/* ----------Mobile--------------------------------------- */
+@media only screen and (max-width: 1079px) {
+  .looped-video{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 10%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .project-video {
+    object-fit: cover;
+    width: 75vw; 
+    height: 30vh; 
+    margin-bottom: 5vh; 
+    padding-top: 4vh;
+    transition: height 0.7s;
+  }
+  
+  .video-container {
+    position: relative;
+    width: 75vw;
+    height: auto;
+    padding-top: 5vh;
+    overflow: hidden;
+    z-index: 0;
+  
+  }
+    
+  .video-container.clicked {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75vw;
+    height: 35vh;
+    z-index: 1; 
+  }
+   
+  .video-container.clicked video {
+    height: 100%;
+  }
+  
+  .video-container.clicked .project-details {
+    display: block;
+  }
+  
+  .project-title {
+    position: absolute;
+    font-size: 18px;
+    bottom: 0vh;
+    left: 0;
+    color:#ff0404;
+    transition: opacity 0.7s;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(20,20,20);
+  }
+  
+  
+  .video-container.clicked .project-title {
+    display: none;
+  }
+  
+  .video-container:first-child {
+    z-index: 1;
+  }
+  }

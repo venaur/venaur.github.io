@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="CSS/style.css">
+      <link rel="stylesheet" href="CSS/installation.css">
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <title>Installation</title>
+    <style>
+        @font-face {
+            font-family: myFont;
+            src: url('assets/Jura/static/Jura-Medium.ttf'); 
+        }
+        * {
+        font-family: myFont;
+        }
+    </style>
+    </head>
+<header class="fixed-background">
+    <h1>Installation</h1>
+    <div class="navbar">
+        <ul>
+          <li><a href="index.html"> Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="sound.html">Sound</a></li>
+          <li><a href="installation.html">Installation</a></li>
+          <li><a href="installation2.html">Installation</a></li>
+          <li><a href="digital.html">Digital</a></li>
+        </ul>
+      </div>
+</header>
+
+
+<body> 
+
+
+  <script>
+  window.addEventListener('scroll', function() {
+  var videoContainer = document.getElementById('videoContainer');
+  var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollPosition > 0) {
+    videoContainer.classList.add('small');
+  } else {
+    videoContainer.classList.remove('small');
+  }
+});
+
+window.addEventListener('scroll', function() {
+  var videoWrapper = document.querySelector('.video-wrapper');
+  var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollPosition > 0) {
+    videoWrapper.classList.add('scrolled');
+  } else {
+    videoWrapper.classList.remove('scrolled');
+  }
+});
+
+
+  </script>
+
+<div class="video-wrapper">
+  <div id="videoContainer" class="video-container">
+    <video autoplay loop muted>
+      <source src="assets/echoesVideo.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="h1-inst" id="customTitle">Echoes of the Past, Present & Future</div>
+  <style>
+    @font-face {
+        font-family: myFont;
+        src: url('assets/Jura/static/Jura-Light.ttf'); 
+    }
+    * {
+    font-family: myFont;
+    }
+</style>
+  <div class="description" id="customDesc">As someone who has experienced a difficult past, I turned to art initially as a means of therapy and self-expression. However, as I continue to grow and evolve, I question my motives and the role that creating art plays in my life. Is it merely a way to revisit and reconcile my past, or does it hold an alternative significance for my future? This piece is an exploration of that internal conflict. 
+    <br><br>Using Pure Data and two speakers accompanied by acoustic structures, I create an immersive sound experience that gives the illusion of echoing. In this piece, the echoes serve as a metaphor for my past and internal chaos. They continue to reverberate in the present, becoming increasingly distant as time passes. I question how this distance will shape and influence my future decisions. 
+    <br><br>The sound in this piece embodies a sense of ambiguity and uncertainty, much like my own personal journey. It also represents a willingness to embrace the unknown, the possibility of change, and forgiveness as I seek to transcend the limits of my personal experience.
+
+  <div class="vimeo-container"> 
+    <div style="padding:56.25% 0 0 0; position:relative;">
+     <iframe src="https://player.vimeo.com/video/825175528?h=8253207e6a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Echoes of the Past, Present &amp;amp; Future"></iframe></div>
+     <script src="https://player.vimeo.com/api/player.js"></script>
+   </div>
+   <!-- <div class="wip-container" id="customWip">documentation</div> -->
+  </div>
+</div>
+
+
+
+    <style>
+      @font-face {
+        font-family: myFont;
+        src: url('assets/Jura/static/Jura-Bold.ttf');
+      }
+      * {
+        font-family: myFont;
+      }
+    </style>
+  
+      <div class="bottom-bar">
+         <span> V E N A U R</span>
+      </div>
+</body>
+</html>

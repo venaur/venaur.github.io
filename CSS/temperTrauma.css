@@ -1,0 +1,269 @@
+/* ----------DESKTOP---------------------------- */
+@media only screen and (min-width: 1080px) {
+.youtube-container {  
+  position: absolute;        /* Echoes Vimeo  */
+
+  margin-top: 5vh; /*use this when I don't want it to overlap with text no matter the screen size*/
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 5vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe{
+  width: 80%;
+  height: 80%;
+}
+
+#customDesc {/* description  container*/
+  /* position: absolute; */
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: left;
+
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: #c1c1c1;
+  font-size: 18px;
+
+  
+  letter-spacing: 5px;
+  line-height: 30px;
+}
+
+.wtf{
+  position: absolute;
+  width: 100%;
+  height: 250vh;
+  /* background-color: pink; */
+  top: 100%;
+  left:0;
+  opacity: 0;
+  transition: all 1s ease;
+  z-index: -4;
+}
+
+
+.wtf.scrolled{
+  position: fixed;
+  width: 100%;
+  height: 150%;
+  /* background-color: pink; */
+  top: 20%;
+  /* z-index: -1; */
+  left:0;
+  opacity: 1;
+  max-height: 75vh;
+  overflow-y: scroll;
+
+
+  z-index: 1;
+}
+ 
+
+.video-container {
+  position: absolute;
+  margin-top: 50vh;
+  left: 20%;
+  width: 75vw;
+  height: 34vh; 
+
+  transition: all 2.0s ease;
+}
+
+video { 
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.video-container.expanded {
+  height: 75vh; 
+  width: 100%;
+  left: 0;
+  margin-left: 0;
+  margin-top: 12vh;
+  transition: all 1s ease;
+}
+
+.video-container.expanded.small {
+  position: fixed;
+  margin-top: 0px;
+  top:0;
+  width: 100%;
+  height: 15vh;
+  opacity: 0.3;
+}
+
+/* Arrow images */
+.arrow{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+  width: 5%; 
+  bottom: -90vh;
+}
+
+img{
+  width: 5vw;
+  height: auto;
+  margin-bottom: -5vh;
+  opacity: 0.7;
+}
+
+img.small{
+  opacity: 0.0;
+}
+
+
+h2{
+  text-align: center;
+  font-size: 34px;
+  margin-top: 100vh;
+  color:darkred;
+}
+
+
+}
+
+
+
+
+
+/* ----------Mobile---------------------------- */
+
+/* ----------Mobile---------------------------- */
+
+/* ----------Mobile---------------------------- */
+@media only screen and (max-width: 1079px) {
+  .youtube-container {  
+    position: absolute;        /* Echoes Vimeo  */
+  
+    margin-top: 5vh; /*use this when I don't want it to overlap with text no matter the screen size*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5vh;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  iframe{
+    width: 80%;
+    height: 80%;
+  }
+  
+  #customDesc {/* description  container*/
+        /* position: absolute; */
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: left;
+    
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: #c1c1c1;
+        font-size: 12px;
+    
+        letter-spacing: 1px;
+        line-height: 20px;
+  }
+  
+  .wtf{
+    position: absolute;
+    width: 100%;
+    height: 150%;
+    /* background-color: pink; */
+    top: 100%;
+    left:0;
+    opacity: 0;
+    transition: all 1s ease;
+    z-index: -4;
+  }
+  
+  
+  .wtf.scrolled{
+    position: fixed;
+    width: 100%;
+    height: 150%;
+    top: 13%;
+    left:0;
+    opacity: 1;
+    max-height: 80vh;
+    overflow-y: scroll;
+
+    z-index: 1;
+  }
+   
+  
+  .video-container {
+    position: absolute;
+    margin-top: 50vh;
+    left: 20%;
+    width: 75vw;
+    height: 34vh; 
+  
+    transition: all 2.0s ease;
+  }
+  
+  video { 
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .video-container.expanded {
+    height: 75vh; 
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+    margin-top: 12vh;
+    transition: all 1s ease;
+  }
+  
+  .video-container.expanded.small {
+    position: fixed;
+    margin-top: 0px;
+    top:0;
+    width: 100%;
+    height: 10vh;
+    opacity: 0.3;
+  }
+  
+  /* Arrow images */
+  .arrow{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+    width: 5%; 
+    bottom: -90vh;
+  }
+  
+  img{
+    width: 5vw;
+    height: auto;
+    margin-bottom: -5vh;
+    opacity: 0.7;
+  }
+  
+  img.small{
+    opacity: 0.0;
+  }
+  
+  
+  h2{
+    text-align: center;
+    font-size: 34px;
+    margin-top: 100vh;
+    color:darkred;
+  }
+  
+  
+  }

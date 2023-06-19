@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="CSS/style.css">
+      <link rel="stylesheet" href="CSS/temperTrauma.css">
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <title>Temper Trauma</title>
+    <style>
+        @font-face {
+            font-family: myFont;
+            src: url('assets/Jura/static/Jura-Medium.ttf'); 
+        }
+        * {
+        font-family: myFont;
+        }
+    </style>
+
+  </head>
+
+  <header class="fixed-background">
+    <h1>Temper Trauma</h1>
+    <div class="navbar">
+        <ul>
+          <li><a href="installation2.html">Back</a></li>
+        </ul>
+      </div>
+</header>
+<!----------- FOR mobile -->
+<script>
+  $(document).ready(function() {
+      $('.menu-toggle').click(function() {
+      $('.menu-items').slideToggle();
+      });
+  });
+  
+</script>
+
+  <nav class="mobile-menu">
+      <div class="menu-toggle">
+        <span> </span> 
+
+        <span></span>
+
+        <span></span>
+
+      </div>
+
+      <ul class="menu-items">
+        <li><a href="index.html"> Home</a></li>
+        <li><a href="installation2.html">Installations</a></li>
+        <li><a href="collaborations.html"> Collaborations </a></li>
+        <li><a href="sound.html">Sound</a></li>
+        <li><a href="About.html">About</a></li>
+      </ul>
+    </nav>
+
+<body> 
+  <script>
+    window.addEventListener('load', function() {
+    var videoContainer = document.querySelector('.video-container');
+    videoContainer.classList.add('expanded');
+    });
+
+
+    window.addEventListener('scroll', function() {
+    var videoContainer = document.querySelector('.video-container.expanded');
+    var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+    var img = document.querySelector('.arrow img'); // Update the selector to target the arrow image
+    var wtf = document.querySelector('.wtf');
+
+    if (scrollPosition > 0) {
+        videoContainer.classList.add('small');
+        img.classList.add('small');
+
+        wtf.classList.add('scrolled');
+
+    } else {
+        videoContainer.classList.remove('small');
+
+        img.classList.remove('small');
+        wtf.classList.remove('scrolled');
+    }  
+    });
+    
+</script>
+
+
+
+      <div class="video-container">
+        <video autoplay loop muted>
+          <source src="assets/ttlooped.mp4" type="video/mp4">
+        </video> 
+    </div>
+
+    <div class="arrow"> 
+        <img src="assets/arrow.png">
+    </div>
+
+
+    <h2> </h2>
+
+
+    <div class="wtf">
+        <div id="customDesc">
+          <i>Temper Trauma</i> (2022) was part of the Digital Arts Computing exhibition, Ephemerence. For this installation, I used capacitive sensors, Arduino, Processing, music platforms, and various objects. This work was an interactive piece where a set of objects are scattered out on the floor. The audience was invited to touch the objects, triggering a unique corresponding sound. 
+        <br><br>  While creating this piece, I was constantly reliving memories, which allowed me to become conscious of my past selves. Through achieving a better understanding of my past, it will allow for a process in the direction of healing.
+      </div>
+ 
+
+      <div class="youtube-container"> 
+      <iframe src="https://www.youtube.com/embed/AGjcAV-kQrs"frameborder="0" ></iframe>
+    </div>
+  </div>
+
+</body>
+
+</html>

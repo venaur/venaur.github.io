@@ -1,0 +1,47 @@
+@media only screen and (min-width: 1080px) {
+.photo{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 8vh;
+}
+
+img{
+    height:auto;
+    width: 30%;
+}
+.about-text{
+    margin-top: 5vh;
+    font-size: 20px;
+    width: 50%;
+    margin-left: 25%;
+    color: #7a7a7a;
+}
+
+}
+
+@media only screen and (max-width: 1079px) {
+
+
+.photo{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 8vh;
+}
+
+img{
+    height:auto;
+    width: 60%;
+
+}
+.about-text{
+    margin-top: 5vh;
+    font-size: 12px;
+    width: 80%;
+    margin-left: 10%;
+    color: #7a7a7a;
+}
+}
