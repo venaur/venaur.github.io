@@ -1,4 +1,1 @@
-Name: www
-Type: CNAME
-Value: venaur.github.io.
-TTL: Use default or set a reasonable value (e.g., 3600 seconds)
+venaur.com
