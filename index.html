@@ -4,37 +4,245 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="CSS/index.css">
-      <link rel="stylesheet" href="CSS/style.css">
+      <!-- <link rel="stylesheet" href="CSS/style.css"> -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>     
        <title>HOME</title>
     </head>
 
     <body>
-        <div class="venaur">
+        <!-- <div class="venaur">
             <h1>V E N A U R</h1>
-        </div>
+        </div> -->
+        <div class="top-bar"></div>
+        <div class="top-line"></div>
 
-        <div class = "background-img"></div>
 
-        <a href="pages/collaborations.html">
-            <div class="rectangle small top-left">
-                <p>COLLABORATIONS</p>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#soundInstallations">Sound Installations</a></li>
+                <li><a href="#sound">Sound</a></li>
+                <li><a href="#collaborations">Collaborations</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+
+        <section id="soundInstallations">
+            <div class="section-container">
+                <h2 class="fixed-title">Sound Installations</h2>
+                    <!-- <div class="title-placeholder"></div> -->
+
+            <div class="artwork">
+                <div class="art-containers">
+                <div class="individual-container">
+                 <a href="index1.html"> 
+                    <img src="assets/echoes/echoesphoto.png">
+                </a>
+                    <!-- <video autoplay loop muted><source src="assets/echoes/echoeslooped.mp4" type="video/mp4"></video> -->
+                    <div class="individual-container-title">Echoes of the Past, Present & Future</div>
+                </div> 
+
+                <div class="individual-container">
+                    <img src="assets/tempertrauma/ttphoto.png">
+                    <!-- <video autoplay loop muted><source src="assets/tempertrauma/ttvideo.mp4" type="video/mp4"></video> -->
+                        <div class="individual-container-title">Temper Trauma</div>
+                    </div>                    
+                </div>
             </div>
-        </a>
+        </div>
+        <!-- <div class="title-placeholder"></div> -->
 
-        <a href="pages/sound-installations.html"> 
-            <div class="rectangle medium top-right">
-                <p>SOUND INSTALLATIONS</p>
+        </section>
+        
+        <section id="collaborations">
+            <div class="section-container">
+                <h2 class="fixed-title">Collaborations</h2>
+                 <!-- <div class="title-placeholder"></div> -->
+                <div class="artwork">
+                    <div class="art-containers collaborations">
+                        <div class="individual-container collaborations">
+                            <img src="assets/echoes/echoesphoto.png">
+
+                            <div class="individual-container-title collaborations">Toad & the Golden Baguette</div>
+                        </div>    
+                        <div class="individual-container collaborations">
+                            <img src="assets/echoes/echoesphoto.png">
+
+                            <div class="individual-container-title collaborations ">Echoes & Actually Nowhere Existing</div>
+                        </div>   
+                    </div> 
+                    <!-- <div class="title-placeholder"></div> -->
+
+ 
+                        <div class="art-containers collaborations">
+
+                        <div class="individual-container collaborations">
+                            <img src="assets/echoes/echoesphoto.png">
+                            <div class="individual-container-title collaborations">Pitstop For Angels</div>
+                        </div>  
+                        <div class="individual-container collaborations">
+                            <img src="assets/echoes/echoesphoto.png">
+                            <div class="individual-container-title collaborations">Kika's Map</div>
+                        </div>   
+
+                    </div>
+                </div>
             </div>
-         </a>
+        </section>
 
-        <div class="rectangle large bottom-left">
-            <p>SOUND</p>
-        </div>
-        <div class="rectangle x-large bottom-right">
-            <p>ABOUT</p>
-        </div>
+
+
+        <section id="sound">
+            <div class="section-container">
+                <h2 class="fixed-title">Sound</h2>
+                   <!-- Add a placeholder for the fixed title -->
+                     <div class="title-placeholder"></div>
+
+                <div class="artwork">
+                    <div class="art-containers">
+                        <div class="individual-container">
+                            <img src="../assets/toad/toad-home.PNG">
+                        </div>  
+
+                        <div class="individual-container">
+                            <img src="../assets/toad/toad-home.PNG">
+                        </div>    
+
+                        <div class="individual-container">
+                            <img src="../assets/toad/toad-home.PNG">
+                        </div>    
+
+                        <div class="individual-container">                    
+                            <img src="../assets/toad/toad-home.PNG">
+                        </div>  
+
+                  
+                    </div>
+                    <!-- Content for Sound Installations -->
+                </div>
+            </div>
+        </section>
+
+ 
+    
+        <section id="about">
+            <div class="section-container">
+                <h2 class="fixed-title">About</h2>
+                 <!-- Add a placeholder for the fixed title -->
+                 <div class="title-placeholder"></div>
+                 <div class="title-placeholder"></div>
+                 <div class="title-placeholder"></div>
+
+                <div class="artwork">
+                    <img src="../assets/toad/toad-home.PNG">
+
+                    <!-- Content for Sound Installations -->
+                </div>
+                 <!-- Add a placeholder for the fixed title -->
+                 <div class="title-placeholder"></div>
+                 <div class="title-placeholder"></div>
+
+            </div>
+        </section>
+
+        <script>
+        window.addEventListener("scroll", function () {
+            const sections = document.querySelectorAll("section");
+            
+            // Initialize a variable to track the currently displayed title
+            let currentTitle = null;
+    
+            sections.forEach((section) => {
+                const rect = section.getBoundingClientRect();
+                const title = section.querySelector(".fixed-title");
+                
+                if (rect.top <= 10) {
+                    title.style.position = "fixed";
+                    title.style.top = "0";
+                    title.style.display = "block"; // Show the title
+                    
+                    // Set the currentTitle to this title if it's the first one encountered
+                    if (!currentTitle) {
+                        currentTitle = title;
+                    }
+                } else {
+                    title.style.position = "static";
+                    title.style.display = "block"; // Hide the title
+                }
+            });
+
+            // Show the currentTitle if there is one
+            if (currentTitle) {
+                currentTitle.style.display = "block";
+            }
+        });
+
+        window.addEventListener("scroll", function () {
+            const sections = document.querySelectorAll("section");
+            const topOffset = window.scrollY; // Get the current vertical scroll position
+            
+            sections.forEach((section) => {
+                const rect = section.getBoundingClientRect();
+                const title = section.querySelector(".fixed-title");
+                
+                if (rect.top <= 20) {
+                    title.style.position = "fixed";
+                    title.style.width = "100%"; // Adjust width as needed
+                    title.classList.add("active"); // Add the 'active' class to show the title
+
+            
+                    title.style.background = "#d1cabd"; // Adjust background color as needed
+                    title.style.top = topOffset >= 5 ? "0em" : "2em"; // Dynamic top value
+                } else {
+                    title.style.position = "static";
+                    title.classList.remove("active"); // Remove the 'active' class to hide the title
+                }
+            });
+
+            // Find the currently displayed title and show it
+            let currentTitle = null;
+            for (let i = sections.length - 1; i >= 0; i--) {
+                const title = sections[i].querySelector(".fixed-title");
+                if (title.style.position === "fixed") {
+                    currentTitle = title;
+                    break;
+                }
+            }
+            
+            if (currentTitle) {
+                currentTitle.style.display = "block"; // Show the currently displayed title
+            }
+        });
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll(".navbar a");
+
+    navLinks.forEach((link) => {
+        link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href").substring(1);
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                window.scrollTo({
+                    top: targetSection.offsetTop,
+                    behavior: "smooth",
+                });
+            }
+        });
+    });
+});
+
+
+
+
+
+        
+        </script>
+
+        <!-- <div class = "background-img"></div> -->
 
     </body>
 </html>

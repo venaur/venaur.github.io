@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="../CSS/echoes.css">
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>     
+       <title>Echoes of the Past, Present & Future</title>
+    </head>
+
+    <body>
+        <script>
+            window.addEventListener("scroll", function () {
+                const sections = document.querySelectorAll("section");
+                
+                // Initialize a variable to track the currently displayed title
+                let currentTitle = null;
+        
+                sections.forEach((section) => {
+                    const rect = section.getBoundingClientRect();
+                    const title = section.querySelector(".fixed-title-echoes");
+                    
+                    if (rect.top <= 10) {
+                        title.style.position = "fixed";
+                        title.style.top = "0";
+                        title.style.display = "block"; // Show the title
+                        
+                        // Set the currentTitle to this title if it's the first one encountered
+                        if (!currentTitle) {
+                            currentTitle = title;
+                        }
+                    } else {
+                        title.style.position = "static";
+                        title.style.display = "block"; // Hide the title
+                    }
+                });
+    
+                // Show the currentTitle if there is one
+                if (currentTitle) {
+                    currentTitle.style.display = "block";
+                }
+            });
+    
+            window.addEventListener("scroll", function () {
+                const sections = document.querySelectorAll("section");
+                const topOffset = window.scrollY; // Get the current vertical scroll position
+                
+                sections.forEach((section) => {
+                    const rect = section.getBoundingClientRect();
+                    const title = section.querySelector(".fixed-title-echoes");
+                    
+                    if (rect.top <= 50) {
+                        title.style.position = "fixed";
+                        title.style.width = "100%"; // Adjust width as needed
+                        title.classList.add("active"); // Add the 'active' class to show the title
+    
+                
+                        title.style.background = "#d1cabd"; // Adjust background color as needed
+                        title.style.top = topOffset >= 5 ? "5em" : "5em"; // Dynamic top value
+                    } else {
+                        title.style.position = "static";
+                        title.classList.remove("active"); // Remove the 'active' class to hide the title
+                    }
+                });
+    
+                // Find the currently displayed title and show it
+                let currentTitle = null;
+                for (let i = sections.length - 1; i >= 0; i--) {
+                    const title = sections[i].querySelector(".fixed-title-echoes");
+                    if (title.style.position === "fixed") {
+                        currentTitle = title;
+                        break;
+                    }
+                }
+                
+                if (currentTitle) {
+                    currentTitle.style.display = "block"; // Show the currently displayed title
+                }
+            });
+    
+    
+    
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll(".navbar a");
+        
+            navLinks.forEach((link) => {
+                link.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetSection = document.getElementById(targetId);
+        
+                    if (targetSection) {
+                        window.scrollTo({
+                            top: targetSection.offsetTop,
+                            behavior: "smooth",
+                        });
+                    }
+                });
+            });
+        });
+
+
+        //-------------For interaction below---------
+        const soundBoxes = document.querySelectorAll('.sound-box');
+        soundBoxes.forEach((box) => {
+            const audio = box.querySelector('audio');
+
+            box.addEventListener('click', () => {
+                if (audio.paused) {
+                    audio.play();
+                    box.classList.add('playing');
+                } else {
+                    audio.pause();
+                    audio.currentTime = 0; // Reset audio to start
+                    box.classList.remove('playing');
+                }
+            });
+        });
+
+        </script>
+
+
+
+        <div class="top-bar">
+            <a href="../index1.html"> 
+            <div class="echoes-title">Echoes of the Past, Present & Future </div>
+            </a>
+            <!-- <audio controls>
+                <source src="../assets/echoes/ECHOES.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio> -->  
+            <iframe width="100%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1510419262&color=%23cccccc&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family:Tahoma;font-weight: 100;"><a href="https://soundcloud.com/user-582450176" title="VenAur" target="_blank" style="color: #cccccc; text-decoration: none;">VenAur</a> · <a href="https://soundcloud.com/user-582450176/echoes" title="Echoes of the Past, Present &amp; Future" target="_blank" style="color: #cccccc; text-decoration: none;">Echoes of the Past, Present &amp; Future</a></div>
+        </div>
+        <div class="top-line"></div>
+
+    <section id="overview"> 
+        <h2 class="fixed-title-echoes">Overview</h2>
+        <div class="echoes-content">
+            <div class="container">
+                <div class="text-content">
+                    <p>As someone who has experienced a difficult past, I turned to art initially as a means of therapy and self-expression. However, as I continue to grow and evolve, I question my motives and the role that creating art plays in my life. Is it merely a way to revisit and reconcile my past, or does it hold an alternative significance for my future? This piece is an exploration of that internal conflict. 
+                    <br><br>Using Pure Data and two speakers accompanied by acoustic structures, I create an immersive sound experience that gives the illusion of echoing. In this piece, the echoes serve as a metaphor for my past and internal chaos. They continue to reverberate in the present, becoming increasingly distant as time passes. I question how this distance will shape and influence my future decisions. 
+                    <br><br>The sound in this piece embodies a sense of ambiguity and uncertainty, much like my own personal journey. It also represents a willingness to embrace the unknown, the possibility of change, and forgiveness as I seek to transcend the limits of my personal experience.
+                   </p>
+                </div>
+                <img src="../assets/echoes/echoesphoto2.jpg" alt="Image" class="left-image">
+            </div>
+            <div class="dividers"> </div> 
+
+        </div>
+    </section>
+    <div class="spacer"></div>
+
+    <section id="Sketches-Models"> 
+        <h2 class="fixed-title-echoes">Sketches & Models</h2>
+        <div class="large-containers"> 
+            <div class="sketches-container">
+                <div class="image-container">
+                    <img src="../assets/echoes/sketch1.png">
+                    <div class="sketches-text">Initially, the design of the structure was to be heavy and sturdy with enough strength to mount a speaker to the center. The plan was to use metal, but due to the expenses and feasibility, I decided it would be best to create it using a different material. This meant that I needed to create an illusion of echoing by using two speakers instead of one.</div>
+                </div>
+
+                <div class="image-container">
+                    <img src="../assets/echoes/sketch2.png">
+                    <div class="sketches-text"> I played around with multiple ideas for the curvature of the structure, including taking inspiration from how a football was sewn together and how I could scale it up. However, I found it considerably more difficult to create a curve on both the x and y axis. Instead, I began thinking of the possibilities of curving the structure in a single axis.
+                    </div>
+                </div>
+
+                <div class="image-container">
+                    <img src="../assets/echoes/sketch3.png">
+                    <div class="sketches-text">Planning more ideas on how the structure could be built and also thinking about the scale. I began with the idea of creating a spine for the structure that would be made out of mdf. <br><br><br><br></div>
+                </div>
+            </div>
+
+            
+            <div class="large-containers model">
+                <div class="sketches-container">
+                    <div class="image-container">
+                            <img src="../assets/echoes/model1.png" alt="Image 1" class="base-image">
+                            <img src="../assets/echoes/model1-hover.png" alt="Image 2" class="overlay-image">
+                            <div class="sketches-text"></div>
+                    </div>
+    
+                    <div class="image-container">
+                        <img src="../assets/echoes/model2.png">
+                        <div class="sketches-text"> 
+                        </div>
+                    </div>
+    
+                    <div class="image-container">
+                        <img src="../assets/echoes/model3.png">
+                        <div class="sketches-text">
+                        </div>
+                    </div>
+                </div>
+                <div class="dividers"></div>
+
+            </div>            
+    </section>
+    <div class="spacer"></div>
+
+    
+    <section id="structureAssembly"> 
+        <h2 class="fixed-title-echoes">Structure Assembling</h2>
+        <div class="large-containers assembly">
+            <div class="assembly-grid">
+                <div class="assembly-image">
+                  <img src="../assets/echoes/assembly1.png" alt="Image 1">
+                </div>
+                <div class="assembly-image">
+                    <img src="../assets/echoes/assembly2.png" alt="Image 2">
+                </div>
+                <div class="assembly-image">
+                  <img src="../assets/echoes/assembly3.png" alt="Image 3">
+                </div>
+                <div class="assembly-image">
+                  <img src="../assets/echoes/assembly4.png" alt="Image 4">
+                </div>
+              </div>
+              <div class="dividers"></div>
+
+        </div>
+     </section>
+     <div class="spacer"></div>
+
+    <section id="interaction"> 
+        <h2 class="fixed-title-echoes">Interaction</h2>
+        <div class="large-containers interaction">
+
+            <div class="sound-box" id="sound-box-1">
+                <h3>Title 1</h3>
+                <audio src="../assets/echoes/running.wav" loop></audio>
+            </div>
+            <!-- Repeat for sound-box-2 to sound-box-9 -->
+            
+
+
+        </div>
+
+    </section>
+
+
+
+    </body>
+
+</html>

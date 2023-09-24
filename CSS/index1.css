@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    font-family:'Franklin Gothic Light', 'Arial Narrow', Arial, sans-serif;
+
+}
+body{
+    background-color: #d1cabd;
+    /* overflow: scroll; */
+}
+
+/* ------------------------------T O P  B I T------------------------- */
+.top-line{
+    position: fixed;
+    width: 100%;
+    top: 5em;
+    height: 1px;
+    background-color: #4c4945;
+    z-index: 4;
+}
+.top-bar{
+    position: fixed;
+    width: 100%;
+    top: -1em;
+    height: 6em;
+    /* background-color: #d1cabd; */
+    z-index: 3;
+    display: flex; 
+    align-items: center; /* Center vertically */
+}
+.top-name{
+    position: fixed;
+    top: 1.75em;
+    width: 96%;
+    text-align: right;
+    color: #191714;
+    font-size: 26px;
+    letter-spacing: 3px;
+    z-index: 4;
+
+}
+.fixed-title {
+    position: fixed;
+    text-align: right;
+    max-width: 8em; /* Adjust width as needed */
+    height: 2.5em;
+    top:20%;
+    right: 3%;
+    background-color: #aba59a;
+    z-index: 0;
+
+    /* Add other styles like font size, text color, etc. */
+    font-size: 22px;
+    letter-spacing: 3px;
+    color: #682323;
+
+    /* Center the title horizontally and vertically */
+    display: flex;
+    justify-content: center;
+    align-items: right;
+
+    /* Use opacity to hide and show the titles */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.fixed-title.active {
+    opacity: 1;
+}
+/* ------------------------------N A V I G A T I O N------------------------- */
+.navbar {
+    position: fixed;
+    top: 3em;
+    left: 0;
+    width: 100%;
+    background-color: none; /* Adjust the background color */
+    color: #fff; /* Adjust the text color */
+    /* padding: 1em 0; */
+    z-index: 1000;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: left;
+}
+.navbar li {
+    margin: 0 1em;
+}
+.navbar a {
+    text-decoration: none;
+    color: #682323;
+    opacity: 0.6;/*link text color */
+    font-family: Tahoma;
+    font-size: 20px;
+    transition:all 0.3s;
+}
+
+.navbar a:hover {
+    opacity: 1;
+    font-size: 22px;
+}
+
+/* ------------------------------C O N T A I N E R S------------------------- */
+.container {
+    position: absolute;
+    display: flex;
+    flex-direction: row; 
+    /* gap: 1em; */
+    justify-content: center;
+}
+.container.below {
+    position: absolute;
+    display: flex;
+    margin: 35em 0 0;
+    flex-direction: row; 
+    /* gap: 1em; */
+}
+.image-container {
+    position: relative;
+    overflow: hidden;
+    width: 50%; /*container takes up 50% of the av width */
+    margin: 5em 5em 0;
+}
+.image-container.temper-trauma {
+    margin-top: 8em; /* Apply a different margin-top to the "Temper Trauma" images */
+}
+.image-container.map{
+    margin-top: 2em;
+    
+}
+.base-image,
+.overlay-image {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.4s ;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.image-container:hover .overlay-image {
+    opacity: 1;
+}
+.dividers {
+    position: absolute;
+    width: 100%;
+    bottom: 1em;
+    height: 1px;
+    background-color: #4c4945;
+    z-index: 0;
+}
+.art-titles {
+    position: absolute;
+    width: 100%;
+    font-size: 24px;
+    /* font-family:'Franklin Gothic Light', 'Arial Narrow', Arial, sans-serif; */
+    color: #191714;
+    /* Add positioning properties if needed */
+    text-align: center;
+    /* left: 10%; */
+    bottom: 0.75em;
+    /* Add a z-index if needed */
+    z-index: 1;
+}
+
+
+/* ------------------------------S E C T I O N S   F O R   C O N T A I N E R S------------------------- */
+
+/* Example CSS for your sections */
+section {
+    width: 100%;
+    height: fit-content;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+/* Style for the section container */
+.section-container {
+    align-items: center; /* Center the title horizontally */
+    text-align: center; /* Center the title text */
+}
+.section-container.collab {
+    /* margin: 40em 0 0em; */
+    align-items: center; /* Center the title horizontally */
+    text-align: center; /* Center the title text */
+}
+.section-container.sound {
+    align-items: center; 
+    text-align: center; 
+}
+
+.spacer{
+    width: 100%;
+    min-height: 15em;
+    margin: 70em 0 0;
+    /* background-color: #191714; */
+}

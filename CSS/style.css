@@ -4,7 +4,28 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    background-color: #d1cabd;
+    /* overflow: scroll; */
+}
+.top-line{
+    position: fixed;
+    width: 100%;
+    top: 5em;
+    height: 3px;
+    background-color: #4c4945;
+    z-index: 0;
+}
+.top-bar{
+    position: fixed;
+    width: 100%;
+    top: -1em;
+    height: 6em;
+    background-color: #d1cabd;
+    z-index: 3;
+    display: flex; /* Use Flexbox for alignment */
+    align-items: center; /* Center vertically */
+}
 /* Style for the black line */
 .black-line {
     background-color: black;
