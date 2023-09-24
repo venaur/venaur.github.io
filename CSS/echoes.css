@@ -158,7 +158,7 @@ iframe {
     width: 100%;
     height: 70%;
     top: 35em;
-    background-color: #4c4945;
+    /* background-color: #4c4945; */
 }
 .large-containers.assembly{
     position: absolute;
@@ -255,22 +255,63 @@ iframe {
     height: auto; /* Maintain image aspect ratio */
 }
 
+/* 
+  .main-audio{
+    position: fixed;
+    margin: 1em 30em 0;
+    background-color: #3498db;
+    width: 60%;
+  }
+  .main-audio audio{
+    width: 100%;
+    justify-content: center;
+  }
+  
+   */
 
-
-.sound-box {
-    width: 10em;
-    height: 10em;
-    background-color: #b36363;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    z-index: 4;
+/* Style the custom play button */
+audio::-webkit-media-controls-play-button {
+    width: 15em; /* Adjust the size */
+    height: 15em;
+    border-radius: 50%; /* Create a circular play button */
+    background-color: #d1cabd; /* Customize the button color */
+    color: #fff; /* Customize the button text color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none; /* Remove any border */
 }
 
-.sound-box.playing {
-    /* Add styling for when the sound is playing, like changing background color */
-    background-color: rgb(211, 0, 0);
+/* Remove the white background from the duration bar */
+audio::-webkit-media-controls-timeline {
+    background: transparent; /* Set the background to transparent */
 }
+
+/* Position elements */
+.main-audio {
+    position: fixed;
+    margin: 1em 30em 0;
+    display: flex;
+    z-index: 999;
+    width: 50%;
+    background-color: #d1cabd;
+    align-items: center; /* Center vertically */
+    justify-content: space-between; /* Separate play button and duration bar */
+}
+
+.main-audio audio {
+    width: 80%; /* Adjust the width of the audio player */
+}
+
+/* Position time/duration to the right */
+audio::after {
+    content: attr(data-duration); /* Display the duration */
+    margin-left: 10px; /* Adjust the spacing */
+}
+
+
+
+
 
   
 
