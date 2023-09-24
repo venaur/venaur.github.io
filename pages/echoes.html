@@ -101,29 +101,42 @@
                 });
             });
         });
+    //AUDIO======================================
+            const playButtons = document.querySelectorAll('.play-button');
 
-            //audioconst 
-            audio = document.getElementById('custom-audio');
-            const playPauseButton = document.getElementById('play-pause-button');
-            const progressBar = document.getElementById('progress-bar');
-            const progress = document.getElementById('progress');
+            playButtons.forEach((button) => {
+                button.addEventListener('click', handlePlayButtonClick);
+            });
 
-            playPauseButton.addEventListener('click', () => {
+            function handlePlayButtonClick(event) {
+                const button = event.target;
+                const audioId = button.dataset.audio;
+                const audio = document.getElementById(audioId);
+
                 if (audio.paused) {
                     audio.play();
-                    playPauseButton.textContent = 'Pause';
+                    button.textContent = 'Pause'; // Corrected from 'I>' to 'Pause'
                 } else {
                     audio.pause();
-                    playPauseButton.textContent = 'Play';
+                    button.textContent = 'Play';
                 }
+            }
+
+            const audios = document.querySelectorAll('audio');
+
+            audios.forEach((audio) => {
+                audio.addEventListener('timeupdate', handleTimeUpdate);
             });
 
-            audio.addEventListener('timeupdate', () => {
-                const currentTime = audio.currentTime;
-                const duration = audio.duration;
-                const progressPercentage = (currentTime / duration) * 100;
-                progress.style.width = `${progressPercentage}%`;
-            });
+            function handleTimeUpdate(event) {
+                const audio = event.target;
+                const progress = (audio.currentTime / audio.duration) * 100;
+                const audioControls = audio.parentNode.querySelector('.audio-controls');
+                const progressBar = audioControls.querySelector('.progress');
+                progressBar.style.width = `${progress}%`;
+            }
+
+//AUDIO======================================
 
 
         </script>
@@ -134,16 +147,19 @@
             <a href="../index1.html"> 
             <div class="echoes-title">Echoes of the Past, Present & Future </div>
             </a>
-            <div class="main-audio">
-                <audio id="custom-audio">
-                    <source src="../assets/echoes/echoes-comp.mp3" type="audio/mp3">
+            <div class="audio-item">
+                <audio id="audio1">
+                    <source src="../assets/echoes/echoes-comp.mp3" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
-                <button id="play-pause-button"></button>
-                <div id="progress-bar">
-                    <div id="progress"></div>
+                <div class="audio-controls">
+                    <button class="play-button" data-audio="audio1">Play</button>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
                 </div>
             </div>
+            
             
         </div>
 
