@@ -269,23 +269,7 @@ iframe {
   
    */
 
-/* Style the custom play button */
-audio::-webkit-media-controls-play-button {
-    width: 15em; /* Adjust the size */
-    height: 15em;
-    border-radius: 50%; /* Create a circular play button */
-    background-color: #d1cabd; /* Customize the button color */
-    color: #fff; /* Customize the button text color */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none; /* Remove any border */
-}
 
-/* Remove the white background from the duration bar */
-audio::-webkit-media-controls-timeline {
-    background: transparent; /* Set the background to transparent */
-}
 
 /* Position elements */
 .main-audio {
@@ -294,20 +278,39 @@ audio::-webkit-media-controls-timeline {
     display: flex;
     z-index: 999;
     width: 50%;
-    background-color: #d1cabd;
+    /* background-color: #d1cabd; */
     align-items: center; /* Center vertically */
     justify-content: space-between; /* Separate play button and duration bar */
 }
-
 .main-audio audio {
+
     width: 80%; /* Adjust the width of the audio player */
 }
-
-/* Position time/duration to the right */
-audio::after {
-    content: attr(data-duration); /* Display the duration */
-    margin-left: 10px; /* Adjust the spacing */
+/* Style the custom play button */
+#play-pause-button {
+    width: 40px;
+    height: 40px;
+    background-color: #848077;
+    border-radius: 50%;
 }
+
+/* Style the progress bar */
+#progress-bar {
+    width: 80%;
+    height: 10px;
+    background-color: #8d877d;
+    margin-left: 10px;
+    position: relative;
+}
+
+/* Style the progress indicator */
+#progress {
+    width: 0;
+    height: 100%;
+    background-color: #3498db; /* Adjust the color as needed */
+    position: absolute;
+}
+
 
 
 
