@@ -1,0 +1,84 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the black line */
+.black-line {
+    background-color: black;
+    height: 1px; /* Change this value to adjust the line thickness */
+    width: 100%;
+    position: fixed;
+    top: 5vw;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.navbar p{
+    position: fixed;
+    top: 1vw;
+    right: 5%;
+    font-size: 35px;
+    font-family: Tahoma;
+    color: #682323;
+    animation: glitch-effect 5s linear infinite;
+    transition: font-size 0.5s ease;
+    letter-spacing: 2px;
+}
+
+.fixed-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 8vh;
+    z-index: 1;
+    /* background-color: aqua; */
+}
+
+.fixed-background.navbar {
+    margin: 0;
+    padding: 10px;
+}
+
+.navbar {
+    width: fit-content; 
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-left: 3vw;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.navbar li {
+    margin: 4vh 2vw; 
+    position: relative; /* Enable relative positioning */
+    
+}
+
+.navbar a {
+    font-size: 22px;
+    display: block;
+    font-family: Tahoma;
+    top: 0vw;
+    text-decoration: none;
+    color:  #09142c;
+    position: relative; /* Enable relative positioning */
+    transition: all 0.3s ease; /* Animation transition */
+}
+
+.navbar a:hover::after {
+    transform: scaleX(1); /* Final state - line width expands to full */
+}
+
+.navbar a:hover{
+    color:#9e3737;
+    font-size: 23px;
+}
