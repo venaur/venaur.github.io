@@ -11,142 +11,9 @@
     </head>
 
     <body>
-        <!-- <div class="venaur">
-            <h1>V E N A U R</h1>
-        </div> -->
-        <div class="top-bar"></div>
-        <div class="top-line"></div>
-
-
-        <nav class="navbar">
-            <ul>
-                <li><a href="#soundInstallations">Sound Installations</a></li>
-                <li><a href="#sound">Sound</a></li>
-                <li><a href="#collaborations">Collaborations</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </nav>
-
-        <section id="soundInstallations">
-            <div class="section-container">
-                <h2 class="fixed-title">Sound Installations</h2>
-                    <!-- <div class="title-placeholder"></div> -->
-
-            <div class="artwork">
-                <div class="art-containers">
-                <div class="individual-container">
-                 <a href="index1.html"> 
-                    <img src="assets/echoes/echoesphoto.png">
-                </a>
-                    <!-- <video autoplay loop muted><source src="assets/echoes/echoeslooped.mp4" type="video/mp4"></video> -->
-                    <div class="individual-container-title">Echoes of the Past, Present & Future</div>
-                </div> 
-
-                <div class="individual-container">
-                    <img src="assets/tempertrauma/ttphoto.png">
-                    <!-- <video autoplay loop muted><source src="assets/tempertrauma/ttvideo.mp4" type="video/mp4"></video> -->
-                        <div class="individual-container-title">Temper Trauma</div>
-                    </div>                    
-                </div>
-            </div>
-        </div>
-        <!-- <div class="title-placeholder"></div> -->
-
-        </section>
-        
-        <section id="collaborations">
-            <div class="section-container">
-                <h2 class="fixed-title">Collaborations</h2>
-                 <!-- <div class="title-placeholder"></div> -->
-                <div class="artwork">
-                    <div class="art-containers collaborations">
-                        <div class="individual-container collaborations">
-                            <img src="assets/echoes/echoesphoto.png">
-
-                            <div class="individual-container-title collaborations">Toad & the Golden Baguette</div>
-                        </div>    
-                        <div class="individual-container collaborations">
-                            <img src="assets/echoes/echoesphoto.png">
-
-                            <div class="individual-container-title collaborations ">Echoes & Actually Nowhere Existing</div>
-                        </div>   
-                    </div> 
-                    <!-- <div class="title-placeholder"></div> -->
-
- 
-                        <div class="art-containers collaborations">
-
-                        <div class="individual-container collaborations">
-                            <img src="assets/echoes/echoesphoto.png">
-                            <div class="individual-container-title collaborations">Pitstop For Angels</div>
-                        </div>  
-                        <div class="individual-container collaborations">
-                            <img src="assets/echoes/echoesphoto.png">
-                            <div class="individual-container-title collaborations">Kika's Map</div>
-                        </div>   
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-        <section id="sound">
-            <div class="section-container">
-                <h2 class="fixed-title">Sound</h2>
-                   <!-- Add a placeholder for the fixed title -->
-                     <div class="title-placeholder"></div>
-
-                <div class="artwork">
-                    <div class="art-containers">
-                        <div class="individual-container">
-                            <img src="../assets/toad/toad-home.PNG">
-                        </div>  
-
-                        <div class="individual-container">
-                            <img src="../assets/toad/toad-home.PNG">
-                        </div>    
-
-                        <div class="individual-container">
-                            <img src="../assets/toad/toad-home.PNG">
-                        </div>    
-
-                        <div class="individual-container">                    
-                            <img src="../assets/toad/toad-home.PNG">
-                        </div>  
-
-                  
-                    </div>
-                    <!-- Content for Sound Installations -->
-                </div>
-            </div>
-        </section>
-
- 
-    
-        <section id="about">
-            <div class="section-container">
-                <h2 class="fixed-title">About</h2>
-                 <!-- Add a placeholder for the fixed title -->
-                 <div class="title-placeholder"></div>
-                 <div class="title-placeholder"></div>
-                 <div class="title-placeholder"></div>
-
-                <div class="artwork">
-                    <img src="../assets/toad/toad-home.PNG">
-
-                    <!-- Content for Sound Installations -->
-                </div>
-                 <!-- Add a placeholder for the fixed title -->
-                 <div class="title-placeholder"></div>
-                 <div class="title-placeholder"></div>
-
-            </div>
-        </section>
-
         <script>
-        window.addEventListener("scroll", function () {
+
+window.addEventListener("scroll", function () {
             const sections = document.querySelectorAll("section");
             
             // Initialize a variable to track the currently displayed title
@@ -185,14 +52,14 @@
                 const rect = section.getBoundingClientRect();
                 const title = section.querySelector(".fixed-title");
                 
-                if (rect.top <= 20) {
+                if (rect.top <= 120) {//change number to change when title appears
                     title.style.position = "fixed";
                     title.style.width = "100%"; // Adjust width as needed
                     title.classList.add("active"); // Add the 'active' class to show the title
 
             
                     title.style.background = "#d1cabd"; // Adjust background color as needed
-                    title.style.top = topOffset >= 5 ? "0em" : "2em"; // Dynamic top value
+                    title.style.top = topOffset >= 5 ? "5em" : "5em"; // Dynamic top value
                 } else {
                     title.style.position = "static";
                     title.classList.remove("active"); // Remove the 'active' class to hide the title
@@ -216,33 +83,125 @@
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const navLinks = document.querySelectorAll(".navbar a");
 
-    navLinks.forEach((link) => {
-        link.addEventListener("click", function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute("href").substring(1);
-            const targetSection = document.getElementById(targetId);
 
-            if (targetSection) {
-                window.scrollTo({
-                    top: targetSection.offsetTop,
-                    behavior: "smooth",
+
+            document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll(".navbar a");
+
+            navLinks.forEach((link) => {
+                link.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetSection = document.getElementById(targetId);
+
+                    if (targetSection) {
+                        window.scrollTo({
+                            top: targetSection.offsetTop,
+                            behavior: "smooth",
+                        });
+                    }
                 });
-            }
+            });
         });
-    });
-});
-
-
-
-
-
-        
         </script>
 
-        <!-- <div class = "background-img"></div> -->
+
+
+        <div class="top-bar"></div>
+        <div class="top-line"></div>
+        <div class="top-name">V e n A u r</div>
+
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#soundInstallations">Sound Installations</a></li>
+                <li><a href="#collaborations">Collaborations</a></li>
+                <li><a href="#sound">Sound</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+
+
+   <section id="soundInstallations">
+    <div class="section-container"> 
+        <h2 class="fixed-title">Sound Installations</h2>
+        <div class="container">
+            <div class="image-container">
+                <a href="pages/echoes.html">
+                    <img src="assets/echoes/echo.png" alt="Image 1" class="base-image">
+                    <img src="assets/echoes/echo-hover.png" alt="Image 2" class="overlay-image">
+                </a>
+                <div class="art-titles">Echoes of the Past, Present & Future</div>
+            </div>
+            <div class="image-container temper-trauma">
+                <img src="assets/tempertrauma/tempert.png" alt="Image 1" class="base-image">
+                <img src="assets/tempertrauma/tt-hover.png" alt="Image 2" class="overlay-image">
+                <div class="art-titles">Temper Trauma </div>
+            </div>
+            <div class="dividers"> </div>     
+        </div>
+    </div>
+    </section>
+
+   <section id="collaborations">
+    <div class="section-container colab"> 
+        <h2 class="fixed-title"> Collaborations</h2>
+        <div class="container">
+            <div class="image-container">
+                <img src="assets/toad/toad.png" alt="Image 1" class="base-image">
+                <img src="assets/toad/toad-hover.png" alt="Image 2" class="overlay-image">
+                <div class="art-titles">Toad and the Golden Baguette</div>
+            </div>
+
+            
+            <div class="image-container temper-trauma">
+                <img src="assets/nowhere/nowhere.png" alt="Image 1" class="base-image">
+                <img src="assets/nowhere/nowhere-hover.png" alt="Image 2" class="overlay-image">
+                <div class="art-titles">Nowhere Actually Existing & Echoes </div>
+            </div>
+            <div class="dividers"> </div>     
+        </div>
+        <div class="container below">
+            <div class="image-container">
+                <img src="assets/pfa/pt.png" alt="Image 1" class="base-image">
+                <img src="assets/pfa/ps-hover.png" alt="Image 2" class="overlay-image">
+                <div class="art-titles">Pitstop for Angels</div>
+            </div>
+            <div class="image-container map">
+                <img src="assets/kikamap/map.png" alt="Image 1" class="base-image" width="90%" height="auto">
+                <img src="assets/kikamap/map-hover.png" alt="Image 2" class="overlay-image">
+                <div class="art-titles">Kika's Map Project</div>
+            </div>
+            <div class="dividers"> </div>    
+        </div>
+    </div>
+    <div class="spacer"></div>
+
+    </section>
+
+
+    <section id="sound">
+        <div class="section-container sound"> 
+            <h2 class="fixed-title">Sound</h2>
+
+            <div class="container">
+                <div class="image-container">
+                    <img src="assets/echoes/echo.png" alt="Image 1" class="base-image">
+                    <img src="assets/echoes/echo-hover.png" alt="Image 2" class="overlay-image">
+                    <div class="art-titles">Echoes of the Past, Present & Future</div>
+                </div>
+                <div class="image-container temper-trauma">
+                    <img src="assets/tempertrauma/tempert.png" alt="Image 1" class="base-image">
+                    <img src="assets/tempertrauma/tt-hover.png" alt="Image 2" class="overlay-image">
+                    <div class="art-titles">Temper Trauma </div>
+                </div>
+                <div class="dividers"> </div>     
+            </div>
+        </div>
+        <div class="spacer"></div>
+
+        </section>
 
     </body>
 </html>
