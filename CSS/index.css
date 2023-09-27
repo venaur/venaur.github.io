@@ -108,13 +108,20 @@ body{
     justify-content: center;
 }
 
-.scrolling-container {
-    display: flex;
-    flex-direction: row;
-    width: 150%; /* Set the desired width for the scrolling container */
-    overflow-x: scroll; /* Enable horizontal scrolling */
-    white-space: nowrap; /* Prevent the contents from wrapping */
+
+.container.scrolled{
+    position: fixed;
+    width: 150%;
+    overflow-x: scroll;
+
+    background-color: pink;
+    top: 20%;
+    left:0;
+    opacity: 1;
+    max-height: 75vh;
+    z-index: 1;
 }
+
 
 .container.below {
     position: absolute;
