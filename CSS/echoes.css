@@ -140,7 +140,7 @@ iframe {
     right: 15%; /* Use percentage for positioning */
     top: 5%;
     width: 35%; /* Use percentage for width */
-    max-height: 80%; /* Use percentage for max-height */
+    max-height: 85%; /* Use percentage for max-height */
     box-sizing: border-box;
     font-size: 1em; /* Use relative units for font size */
     letter-spacing: 1px;
