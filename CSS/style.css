@@ -23,8 +23,7 @@ body{
     width: 100%;
     top: -1em;
     height: 6em;
-    background-color: #d1cabd;
-    z-index: 3;
+    z-index: 999;
     display: flex; /* Use Flexbox for alignment */
     align-items: center; /* Center vertically */
 }

@@ -105,9 +105,17 @@ body{
     position: absolute;
     display: flex;
     flex-direction: row; 
-    /* gap: 1em; */
     justify-content: center;
 }
+
+.scrolling-container {
+    display: flex;
+    flex-direction: row;
+    width: 150%; /* Set the desired width for the scrolling container */
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent the contents from wrapping */
+}
+
 .container.below {
     position: absolute;
     display: flex;
@@ -297,9 +305,9 @@ section {
         position: absolute;
         display: flex;
         flex-direction: row; 
-        /* gap: 1em; */
-        justify-content: center;
     }
+
+
     .container.below {
         position: absolute;
         display: flex;
@@ -310,7 +318,7 @@ section {
     .image-container {
         position: relative;
         overflow: hidden;
-        width: 40%; /*container takes up 50% of the av width */
+        width: 40%; 
         margin: 5em 5em 0;
     }
     .image-container.temper-trauma {
