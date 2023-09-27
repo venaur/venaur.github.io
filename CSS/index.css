@@ -125,8 +125,8 @@ body{
     margin-top: 8em; /* Apply a different margin-top to the "Temper Trauma" images */
 }
 .image-container.map{
-    margin-top: 2em;
-    
+    margin-top: 11em;
+    width:35%;    
 }
 .base-image,
 .overlay-image {
