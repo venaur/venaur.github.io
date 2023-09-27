@@ -331,12 +331,32 @@ iframe {
 
 /* Starts at 75%*/
 @media (min-width: 1900px) {
+    .dividers {
+        position: absolute;
+        width: 100%;
+        bottom: 0em;
+        height: 1px;
+        background-color: #4c4945;
+        z-index: 5;
+    }
+       
     /* Add styles for larger screens here */
     .container {
         position: relative;
         width: 100%; /* Adjust the width as needed */
         height: 45em; /* Adjust the height as needed */
+        min-height: 45em;
     }
+
+    .left-image {
+        position: absolute;
+        left: 17%;
+        top: 5%;
+        width: auto; /* Adjust the width of the image */
+        height: 80%; /* Maintain aspect ratio */
+        /* margin: 5% 10% 0; */
+    }
+
     .image-container {
         width: 80%; /* Adjust width for larger screens */
         margin: 0em 3%; /* Adjust margin for larger screens */
@@ -347,6 +367,17 @@ iframe {
         max-height: 70%; /* Adjust max-height for larger screens */
         font-size: 1em; /* Adjust font size for larger screens */
         line-height: 30px; /* Adjust line height for larger screens */
+    }
+    .sketches-container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row; /* Ensure images appear on the same line */
+        align-items: center;
+        text-align: center;
+        top: 20em;
+        /* margin: 5em 0 0; */
     }
 }
 
