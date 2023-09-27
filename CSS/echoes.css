@@ -115,8 +115,10 @@ iframe {
     position: absolute;
     left: 17%;
     top: 5%;
-    width: 30%; /* Adjust the width of the image */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 30%;
+    width: auto; /* Adjust the width of the image */
+    height: 80%; /* Maintain aspect ratio */
+    max-height: 80%;
     /* margin: 5% 10% 0; */
 }
 
