@@ -8,6 +8,8 @@ body{
     background-color: #d1cabd;
     /* overflow: scroll; */
 }
+@media only screen and (min-width: 1150px) {
+
 .top-line{
     position: fixed;
     width: 100%;
@@ -102,4 +104,22 @@ body{
 .navbar a:hover{
     color:#9e3737;
     font-size: 23px;
+}
+}
+
+
+
+/* --------------------Large: Starts at 75%------------*/
+@media (min-width: 1900px) {
+}
+
+
+
+
+
+
+/* Styles for mobile screens */
+@media only screen and (max-width: 1149px) {
+
+
 }

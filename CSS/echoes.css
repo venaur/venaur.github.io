@@ -5,8 +5,9 @@
 body{
     background-color: #d1cabd;
 }
-@media only screen and (min-width: 1150px) {
 
+/* ------------------------Normal desktop--------------- */
+@media only screen and (min-width: 1150px) {
 .echoes-title{
     position: absolute;
     font-size: 20px;
