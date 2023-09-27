@@ -317,50 +317,6 @@ iframe {
   } */
 
 
-  .audio-player {
-    display: flex;
-    align-items: center;
-    background-color: #d1cabd;
-    width: 100%;
-    padding: 10px;
-    margin-left: 40%;
-}
-
-.play-pause-button {
-    background-color: #f41414;
-    color: #9f2525;
-    border: none;
-    padding: 2em 5em;
-    width: 10%;
-    cursor: pointer;
-}
-
-.progress-container {
-    flex-grow: 1;
-    height: 5px;
-    background-color: #000000;
-    margin: 0 10px;
-    border-radius: 10px;
-    position: relative;
-}
-
-.progress {
-    height: 100%;
-    width: 0;
-    border-radius: 10px;
-    background-color: #ff9797;
-}
-
-.time-display {
-    font-size: 12px;
-    margin-left: 10px;
-}
-
-
-
-
-
-
 
   
 
