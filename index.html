@@ -10,57 +10,16 @@
 </head>
 
 <body>
-<script>
-function animateOut(element, url) {
-    // Disable click event during animation
-    element.style.pointerEvents = 'none';
 
-    element.classList.add('animate-out');
-    element.addEventListener('animationend', function() {
-        setTimeout(function() {
-            window.location.href = url;
-        }, 1);
-    });
-}
-</script>
-
-<div class="container">
-    <div class="container-left">
-        <div id="singleContainer" class="slide-in-left" onclick="animateOut(this, 'installation2.html')">
-            <div class="container-text">
-                Installations
-            </div>
-        </div>
-
-        <div id="singleContainer2" class="slide-in-left" onclick="animateOut(this, 'sound.html')">
-            <div class="container-text">
-                Sound
-            </div> 
-        </div>
+  <div class="logo"> 
+    <!-- <div class="left-slide">A u r </div>
+    <div class=" right-side"> V e n&nbsp</div> -->
+    <div class="logo-img"> 
+      <img src="assets/logo1.png">
+      <img src="assets/logo2.png">
     </div>
+  </div>
 
-    <div class="container-right">
-        <div id="singleContainerA" class="slide-in-right" onclick="animateOut(this, 'collaborations.html')">
-            <div class="container-text">
-                Collaborations
-            </div>   
-        </div>
-
-        <div id="singleContainerB" class="slide-in-right" onclick="animateOut(this, 'About.html')">
-            <div class="container-text">
-                About 
-            </div> 
-        </div>
-    </div>
-</div>
-
-
-<div id="heading" class="slide-in-left">
-   <span> V e n</span>
-</div>
-<div id="heading" class="slide-in-right">
-  <span>A u r</span>
-</div>
 
 </body>
 </html>
