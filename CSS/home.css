@@ -247,50 +247,7 @@
 
 
 /* ------H E A D I N G _________________ */
-#heading span{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  right: 0vw;
-  height: 50px;
-  color: #b7b5b5;
-  font-size: 50px;
-  font-weight: 400;
-  letter-spacing: 14px;
-  text-shadow: 5px 0px 0px #ff0404;
-}
-.heading-slide-top{
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  width: 100%;
-  top: 5vh;
-  animation: headingAnimation 1.5s ease forwards;
-  animation-delay: 0.5s; 
 
-}
-#heading{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Center the element horizontally and vertically */
-  text-align: center; /* Center the text within the element */
-  width: 100%;
-}
-@keyframes headingAnimation {
-  0% {
-    top: 50%;
-  }
-  100% {
-    top: 5vh;
-  }
-}
-
-#noise{ /* The p5 sketch*/
-  position: fixed;
-  z-index: -1;
-}
 
 }
 
