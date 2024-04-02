@@ -2,6 +2,7 @@
     text-decoration: none;
     font-family: 'HelveticaNeue-Light';
     letter-spacing: 0.1rem;
+    color: black;
 }
 html, body {
   margin: 0;
@@ -53,12 +54,17 @@ html, body {
     transition: opacity 1s ease;
   }
 
-  #top-logo{
-    position: absolute;
+  #top-logo {
+    position: fixed;
     top: 0vh;
+    left: 60%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for center alignment */
+    opacity: 0; /* Initially hidden */
+    pointer-events: none; 
   }
+
   #top-logo img{
-    width: 100%;
+    width: 50%;
     height: auto;
   }
 
@@ -66,7 +72,7 @@ html, body {
   .portfolio-content {
     position: absolute;
     white-space: nowrap;
-    font-size: 30px;
+    font-size: 25px;
     opacity: 0; /* Initially set to invisible */
     transition: opacity 1s ease; /* Smooth transition effect */
     display: flex;
@@ -79,12 +85,17 @@ html, body {
   .category {
     opacity: 0;
     transition: opacity 1s ease;
-    margin-bottom: 20px; /* Adjust spacing between categories */
+    margin-bottom: 5%; /* Adjust spacing between categories */
+    padding-left: 1vw;
+    padding-right: 1vw;
   }
   
+.category:hover{
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+  background-color: rgb(201, 226, 227);
 
-
-
+}
 
 }
 
@@ -158,5 +169,11 @@ html, body {
     opacity: 0;
     transition: opacity 1s ease;
     margin-bottom: 20px; /* Adjust spacing between categories */
+  }
+  .category:hover{
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+    background-color: rgb(201, 226, 227);
+  
   }
 }

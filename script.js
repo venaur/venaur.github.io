@@ -1,6 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
     const logoVideo = document.getElementById("logo-video");
     const portfolioContent = document.getElementById("portfolio");
+    const topLogo = document.getElementById("top-logo");
+
+    topLogo.style.opacity = "0";
+
   
     // Automatically fade out the logo after 3 seconds
     setTimeout(() => {
@@ -8,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
       setTimeout(() => {
         logoVideo.style.display = "none";
         portfolioContent.style.opacity = "1"; // Fade in portfolio content
+        topLogo.style.opacity = "1"; // Show top logo
       }, 5000); // Adjust the duration as needed
     }, logoVideo.duration * 2000); // Wait for the video to finish playing
   });
@@ -23,4 +28,9 @@ document.addEventListener("DOMContentLoaded", function() {
       }, 1000); // Adjust the delay as needed
     });
   });
+
+
+
+
+
   
