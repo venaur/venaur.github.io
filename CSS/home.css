@@ -56,7 +56,7 @@ html, body {
 
   #top-logo {
     position: fixed;
-    top: 0vh;
+    top: 8vh;
     left: 60%; /* Center horizontally */
     transform: translateX(-50%); /* Adjust for center alignment */
     opacity: 0; /* Initially hidden */
@@ -144,7 +144,7 @@ html, body {
 
   #top-logo{
     position: absolute;
-    top: 0vh;
+    top: 5vh;
   }
   #top-logo img{
     width: 100%;
