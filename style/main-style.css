@@ -17,7 +17,7 @@ html, body {
     background-color: black;
     display: flex;
     align-items: center; /* Vertically center elements */
-  }
+}
   
   .logo {
     flex: 0 0 auto; /* Prevent logo from growing */
@@ -30,6 +30,7 @@ html, body {
   .logo img {
     width: 100%; /* Adjust as needed */
     height: auto;
+    z-index: 999;
   }
   
   .title {

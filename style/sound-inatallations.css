@@ -3,3 +3,80 @@
     font-family: 'HelveticaNeue-Light';
     color: black;
 }
+
+/* Desktop */
+@media only screen and (min-width: 1080px) {
+    .container {
+        position: absolute;
+        display: flex;
+        flex-direction: row; 
+        overflow-x: scroll;
+        width: 140vw;
+    }
+
+    .container.below {
+        /* position: absolute; */
+        display: flex;
+        margin: 50em 0 0;
+        flex-direction: row; 
+    }
+    .image-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%; 
+        margin: 2em 2em 0;
+    }
+
+    .image-container.temper-trauma {
+        margin-top: 5em; 
+    }
+
+    .base-image,
+    .overlay-image {
+        width: 100%;
+        height: auto;
+        transition: opacity 0.4s ;
+    }
+    
+    .overlay-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+ 
+    .image-container:hover .overlay-image {
+        opacity: 1;
+    }
+    .dividers {
+        /* position: absolute;
+        width: 100%;
+        bottom: 0em;
+        height: 2px;
+        background-color: #4c4945;
+        z-index: 0; */
+    }
+    .art-titles {
+        position: absolute;
+        width: 100%;
+        font-size: 24px;
+        color: #191714;
+        text-align: center;
+        bottom: 0.75em;
+        z-index: 1;
+    }
+    
+
+
+
+}
+
+
+
+/* -----------------------------------------------------------------*/
+/* -----------------------------------------------------------------*/
+/* -----------------------------------------------------------------*/
+
+@media only screen and (max-width: 1079px) {
+
+}
