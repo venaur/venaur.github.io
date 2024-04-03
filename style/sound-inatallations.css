@@ -6,6 +6,28 @@
 
 /* Desktop */
 @media only screen and (min-width: 1080px) {
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #e2e2e2;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #c8c8c8;
+  }
+
+
     .container {
         position: absolute;
         display: flex;
@@ -15,7 +37,7 @@
     }
 
     .container.below {
-        /* position: absolute; */
+        position: absolute;
         display: flex;
         margin: 50em 0 0;
         flex-direction: row; 
@@ -48,14 +70,14 @@
     .image-container:hover .overlay-image {
         opacity: 1;
     }
-    .dividers {
-        /* position: absolute;
+    /* .dividers {
+        position: absolute;
         width: 100%;
         bottom: 0em;
         height: 2px;
         background-color: #4c4945;
-        z-index: 0; */
-    }
+        z-index: 0;
+    } */
     .art-titles {
         position: absolute;
         width: 100%;
@@ -67,7 +89,7 @@
     }
     
 
-
+   
 
 }
 
@@ -78,5 +100,65 @@
 /* -----------------------------------------------------------------*/
 
 @media only screen and (max-width: 1079px) {
+    .container {
+        position: absolute;
+        display: flex;
+        flex-direction: column; 
+        overflow-x: scroll;
+        width: 100%;
+    }
+
+    .container.below {
+        position: absolute;
+        display: flex;
+        margin: 0 0 0;
+        flex-direction: row; 
+    }
+    .image-container {
+        position: relative;
+        overflow: hidden;
+        width: 80%; 
+        margin: 2em 2em 0;
+    }
+
+    .image-container.temper-trauma {
+        margin-top: 3em; 
+    }
+
+    .base-image,
+    .overlay-image {
+        width: 100%;
+        height: auto;
+        transition: opacity 0.4s ;
+    }
+    
+    .overlay-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+ 
+    .image-container:hover .overlay-image {
+        opacity: 1;
+    }
+    /* .dividers {
+        position: absolute;
+        width: 100%;
+        bottom: 0em;
+        height: 2px;
+        background-color: #4c4945;
+        z-index: 0;
+    } */
+    .art-titles {
+        position: absolute;
+        width: 100%;
+        font-size: 14px;
+        color: #191714;
+        text-align: center;
+        bottom: 0.75em;
+        z-index: 1;
+    }
+    
 
 }
