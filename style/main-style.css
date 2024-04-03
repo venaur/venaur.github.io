@@ -10,29 +10,29 @@ html, body {
 @media only screen and (min-width: 1080px) {
 /* ------------Top bar------------ */
 .top-bar {
-    position: fixed;
-    top: 8vh;
-    width: 100%;
-    height: 2px;
-    background-color: black;
-    display: flex;
-    align-items: center; /* Vertically center elements */
+  z-index: 10;
+  position: fixed;
+  top: 8vh;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  display: flex;
+  align-items: center; 
 }
   
   .logo {
-    flex: 0 0 auto; /* Prevent logo from growing */
-    margin-right: auto; /* Push the title and spacer to the right */
+    z-index: 999 !important;
+    flex: 0 0 auto; 
+    margin-right: auto; 
     width: 15%;
     margin-bottom: 3%;
-    margin-left: 1%;
-    z-index: 999;
-
-}
+    margin-left: 1%;  
+  }
   
   .logo img {
     width: 100%; /* Adjust as needed */
     height: auto;
-    z-index: 999;
+    z-index:10;
   }
   
   .title {
