@@ -4,17 +4,15 @@
     color: black;
 }
 
+html,body{
+    /* background-color: rgba(177, 215, 110, 0.449); */
+}
 /* Desktop */
 @media only screen and (min-width: 1080px) {
 
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #ffffff;
   }
   
   /* Handle */
@@ -27,13 +25,13 @@
     background: #c8c8c8;
   }
   #top-logo {
+    z-index: 999 !important;
     position: fixed;
     top: 5vh;
     left: 60%; /* Center horizontally */
     transform: translateX(-50%); /* Adjust for center alignment */
-    opacity: 1; /* Initially hidden */
-    pointer-events: none; 
-  }
+    cursor: pointer;
+}
 
   #top-logo img{
     z-index: 999 !important;
@@ -41,49 +39,42 @@
     height: auto;
   }
 
-  .portfolio-content {
-    position: absolute;
-    white-space: nowrap;
-    font-size: 20px;
-    opacity: 0; /* Initially set to invisible */
-    transition: opacity 1s ease; /* Smooth transition effect */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
-    height: 100vh; /* Adjust as needed */
-  }
-
-
-
     .container {
         position: absolute;
         display: flex;
         flex-direction: row; 
         overflow-x: scroll;
+        overflow-y: hidden;
+        top: 20vh;
+        max-height: 70vh;
         width: 130vw;
     }
 
     .container.below {
         position: absolute;
         display: flex;
-        margin: 50em 0 0;
+        margin: 50em 0 0;  /* was 50 */
         flex-direction: row; 
     }
     .image-container {
         position: relative;
-        overflow: hidden;
+        /* overflow: hidden; */
         width: 100%; 
         margin: 0em 1em 0;
     }
     .image-container.where{
-        margin-top: 8em;
+        height: fit-content;
+        margin-top: 0em;
+        margin-bottom: 15em;
     }
     .image-container.echoes{
-        margin-top: 3em;
+        height: fit-content;
+        top: -12vh;
     }
     .image-container.temper-trauma {
-        margin-top: 8em; 
+        height: fit-content;
+        margin-bottom: 15em;
+        margin-top: 0em; 
         margin-left: 0;
     }
 
@@ -91,7 +82,7 @@
     .overlay-image {
         width: 100%;
         height: auto;
-        transition: opacity 0.4s ;
+        transition: opacity 0.6s ;
     }
     
     .overlay-image {
@@ -118,7 +109,7 @@
         font-size: 24px;
         color: #191714;
         text-align: center;
-        bottom: 0.75em;
+        bottom: 1em;
         z-index: 1;
     }
     

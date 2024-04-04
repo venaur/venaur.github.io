@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/sound.css">
+  <link rel="stylesheet" href="style/main-style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>     
+  <title>Sound</title>
+</head>
+
+
+<body>
+    <div id="top-logo">
+        <a href="index.html"> 
+          <img src="assets/full-logo.png" alt="Logo">
+        </a>
+    </div>
+
+    <div class="titles">
+        <div class="title" data-src="assets/toad/toad-main.wav">Toad Main</div>
+        <div class="title" data-src="assets/toad/toad-fight.wav">Toad Fight</div>
+        <!-- Add more titles as needed -->
+      </div>
+      
+      <!-- Play bar -->
+      <div class="play-bar">
+        <audio id="audio" src=""></audio>
+        <button id="play-pause">Play</button>
+        <div id="playback-bar"></div>
+        <!-- Play head -->
+        <div id="playhead"></div>
+      </div>
+
+  
+
+      <!-- Exit button -->
+      <button id="exit-btn">X</button>
+      
+      <script src="soundSketch.js"></script>
+      <canvas id="soundSketch"></canvas>
+
+      <!-- <canvas id="particleCanvas">HELLO</canvas>
+      <audio id="audio1" src="assets/toad/toad-main.wav"></audio> -->
+
+
+
+</body>
+</html>

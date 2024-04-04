@@ -86,7 +86,7 @@ html, body {
   position: relative;
   cursor: pointer;
   overflow: hidden;
-  margin-bottom: 5%; 
+  margin-bottom: 8%; 
 }
 
 .category::before {
