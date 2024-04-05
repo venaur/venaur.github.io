@@ -24,6 +24,7 @@ html,body{
   ::-webkit-scrollbar-thumb:hover {
     background: #c8c8c8;
   }
+  
   #top-logo {
     z-index: 999 !important;
     position: fixed;
