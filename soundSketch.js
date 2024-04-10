@@ -134,22 +134,4 @@ exitButton.addEventListener('click', () => {
 });
 
 
-//------------FOr the visuals-----------------------
-// var canvas;
-
-// function windowResized(){
-//     resizedCanvas(windowWidth, windowHeight);
-//     resizedCanvas.position(50,10);
-// }
-
-// function setup() {
-//   canvas = createCanvas(windowWidth/1.5, windowHeight/16);
-//   canvas.position(400,10);
-//   canvas.style('position', 'fixed');
-//   canvas.style('z-index', '1');
-//   noFill();
-// }
-// function draw() {
-//     background(255,0,0);
-// }
-
+// //------------FOr the visuals-----------------------

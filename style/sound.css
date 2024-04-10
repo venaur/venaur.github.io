@@ -102,6 +102,17 @@
     position: fixed;
     width: 100%;
   } */
+
+  canvas {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    display: none; /* Initially hide the canvas */
+
+  }
  }
 
 
