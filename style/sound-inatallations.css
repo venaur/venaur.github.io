@@ -78,14 +78,6 @@
     .image-container:hover .overlay-image {
         opacity: 1;
     }
-    /* .dividers {
-        position: absolute;
-        width: 100%;
-        bottom: 0em;
-        height: 2px;
-        background-color: #4c4945;
-        z-index: 0;
-    } */
     .art-titles {
         position: absolute;
         width: 100%;
@@ -137,7 +129,7 @@
     .overlay-image {
         width: 100%;
         height: auto;
-        transition: opacity 0.4s ;
+        transition: opacity 0.4s;
     }
     
     .overlay-image {
