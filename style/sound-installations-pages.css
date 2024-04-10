@@ -1,0 +1,211 @@
+
+
+
+/* Desktop */
+@media only screen and (min-width: 1080px) {
+    .content{
+        justify-content: center;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .content-img { 
+        top: 15vh;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        justify-content: center;
+    }
+    .content img{
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .description{
+        line-height: 3.5vh;
+        width: 100%;
+        margin-top: 18vh;
+        margin-bottom: 8vh;
+        text-align: left;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+    }
+    .indent{
+        padding-top: 0.4em;
+        padding-left: 2em;
+
+    }
+    
+    .description-nowhere{
+        line-height: 3.5vh;
+        width: 100%;
+        margin-top: 20vh;
+        margin-bottom: 5vh;
+        text-align: left;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+    }
+    .description-nowhere.venaur{
+        line-height: 3.5vh;
+        width: 100%;
+        margin-top: 2vh;
+        margin-bottom: 5vh;
+        text-align: left;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+    }
+    
+    
+    .block-titles{
+        font-size: 24px;
+    }
+    
+    .img-description{
+        position: relative;
+        font-size: 15px;
+        top:18vh;
+        color:#777777;
+    }
+    
+    .art-titles{
+        font-size: 24px;
+        position: relative;
+        top: 18vh;
+        margin-top: 3vh;
+        margin-bottom: 10vh;
+    }
+    
+    .gallery-wrap {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 50vh;
+        margin-bottom: 8vh;
+        margin-top: 2vh;
+    }
+    
+    .title {
+        z-index: 10;
+        opacity: 10vh;
+        position: absolute;
+        bottom: 1vh;
+        left: 1vh;
+        opacity: 0.8;
+    }
+    
+    .item {
+        position: relative;
+        flex: 1;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: flex 1.5s ease;
+    
+        &:hover{
+            flex: 10;
+          }
+    }
+    
+    .item-1 { 
+        margin-right:0.5vw;
+    }
+    
+    .item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 0.5s ease;
+    }
+    
+    .overlay {
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        opacity: 1;
+        transition: opacity 1s ease;
+    }
+    
+    .item:hover .overlay {
+        opacity: 0;
+    }
+    
+    /* ----------------Audio--------- */
+      
+    .audio-title {
+        color: #000000;
+        font-size: 18px;
+        margin-top: 0em;
+        margin-right: 2vw;
+    }
+    
+    .sound-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: fit-content;
+        margin-top: 5vh;
+        margin-bottom: 10vh;
+    }
+    
+    .audio-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2em;
+    }
+    
+    .audio-controls {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0.5em;
+    }
+    
+    .play-button {
+        background-color: #e12c2e;
+        color: #fff;
+        border: none;
+        padding: 0.5em 1em;
+        cursor: pointer;
+    }
+    
+    .progress-bar {
+        width: 30vw;
+        height: 2vh;
+        background-color: #d3d3d3;
+        margin-left: 1em;
+        border-radius: 10px;
+        cursor: pointer; /* Add cursor pointer to indicate it's clickable */
+    }
+    
+    .progress {
+        height: 100%;
+        width: 0;
+        border-radius: 10px;
+        background-color: #e12c2e;
+    }
+    
+    }
+    
+    /* -----------------------------------------------------------------*/
+    /* -----------------------------------------------------------------*/
+    /* -----------------------------------------------------------------*/
+    
+    @media only screen and (max-width: 1079px) {
+    
+    }
