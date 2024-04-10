@@ -4,9 +4,6 @@
     color: black;
 }
 
-html,body{
-    /* background-color: rgba(177, 215, 110, 0.449); */
-}
 /* Desktop */
 @media only screen and (min-width: 1080px) {
 
@@ -23,21 +20,6 @@ html,body{
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #c8c8c8;
-  }
-  
-  #top-logo {
-    z-index: 999 !important;
-    position: fixed;
-    top: 5vh;
-    left: 60%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust for center alignment */
-    cursor: pointer;
-}
-
-  #top-logo img{
-    z-index: 999 !important;
-    width: 50%;
-    height: auto;
   }
 
     .container {

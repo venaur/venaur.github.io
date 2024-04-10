@@ -1,0 +1,50 @@
+
+
+.content{
+    justify-content: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content-img { 
+    top: 15vh;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+}
+.content img{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.description{
+    line-height: 3vh;
+    width: 100%;
+    margin-top: 18vh;
+    margin-bottom: 5vh;
+    text-align: left;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+}
+
+
+.block-titles{
+    font-size: 24px;
+}
+
+.short-img{
+    margin-top: 0em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1vw; 
+}
+
+.short-img img{
+    margin-right: 3vw;
+    max-width: 100%;
+    height: auto;
+}

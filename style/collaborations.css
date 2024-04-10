@@ -22,22 +22,6 @@
     background: #c8c8c8;
   }
 
-  
-#top-logo {
-    z-index: 999 !important;
-    position: fixed;
-    top: 5vh;
-    left: 60%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust for center alignment */
-    cursor: pointer;
-}
-
-  #top-logo img{
-    z-index: 999 !important;
-    width: 50%;
-    height: auto;
-  }
-
   .container {
     position: absolute;
     display: flex;
@@ -48,7 +32,6 @@
     height: 75vh;
     width: 130vw;
 }
-
 
 .image-container {
     position: relative;
