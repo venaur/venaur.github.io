@@ -37,8 +37,47 @@
     font-size: 18px;
 }
 
+.description-nowhere{
+    line-height: 3.5vh;
+    width: 100%;
+    margin-top: 20vh;
+    margin-bottom: 5vh;
+    text-align: left;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+}
+.description-nowhere.venaur{
+    line-height: 3.5vh;
+    width: 100%;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    text-align: left;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+}
+
+
 .block-titles{
     font-size: 24px;
+}
+
+.img-description{
+    position: relative;
+    font-size: 15px;
+    top:18vh;
+    color:#777777;
+}
+
+.art-titles{
+    font-size: 24px;
+    position: relative;
+    top: 18vh;
+    margin-top: 3vh;
+    margin-bottom: 10vh;
 }
 
 .gallery-wrap {
