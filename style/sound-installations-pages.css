@@ -3,6 +3,28 @@
 
 /* Desktop */
 @media only screen and (min-width: 1080px) {
+/* Styling for audio container */
+.audio-container {
+    position: relative;
+    top: 18vh; 
+    background-color: #dbdbdb;
+    border-radius: 8px;
+    margin-bottom: 5vh;
+    transition: top 0.3s ease; /* Add smooth transition for top property */
+}
+
+/* Style the audio controls */
+audio {
+    width: 100%;
+}
+
+/* Customize audio controls */
+audio::-webkit-media-controls-panel {
+    background-color: #dbdbdb; /* Change background color of the controls panel (Chrome/Safari) */
+    color: white; /* Change text color of the controls panel */
+}
+
+
     .content{
         justify-content: center;
         width: 70%;
@@ -30,7 +52,7 @@
     .description{
         line-height: 3.5vh;
         width: 100%;
-        margin-top: 18vh;
+        margin-top: 20vh;
         margin-bottom: 5vh;
         text-align: left;
         justify-content: center;
@@ -38,6 +60,7 @@
         margin-right: auto;
         font-size: 18px;
     }
+
     .indent{
         padding-top: 0.4em;
         padding-left: 2em;
