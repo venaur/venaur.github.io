@@ -23,7 +23,18 @@ audio::-webkit-media-controls-panel {
     background-color: #dbdbdb; /* Change background color of the controls panel (Chrome/Safari) */
     color: white; /* Change text color of the controls panel */
 }
+/* Customize audio controls for Firefox */
+/* Use -moz-range-progress for Firefox */
+audio::-moz-range-progress {
+    background-color: #dbdbdb; /* Change progress bar color (Firefox) */
+}
 
+/* Customize audio controls for Edge */
+/* Use ::-ms-media-controls-panel for Edge */
+audio::-ms-media-controls-panel {
+    background-color: #dbdbdb; /* Change background color of the controls panel (Edge) */
+    color: white; /* Change text color of the controls panel (Edge) */
+}
 
     .content{
         justify-content: center;
@@ -94,67 +105,6 @@ audio::-webkit-media-controls-panel {
         margin-top: 3vh;
         margin-bottom: 10vh;
     }
-
-  
-    
-    /* ----------------Audio--------- */
-      
-    /* .audio-title {
-        color: #000000;
-        font-size: 18px;
-        margin-top: 0em;
-        margin-right: 2vw;
-    }
-    
-    .sound-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: fit-content;
-        margin-top: 5vh;
-        margin-bottom: 10vh;
-    } */
-/*     
-    .audio-item {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 2em;
-    } */
-/*     
-    .audio-controls {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 0.5em;
-    } */
-/*     
-    .play-button {
-        background-color: #e12c2e;
-        color: #fff;
-        border: none;
-        padding: 0.5em 1em;
-        cursor: pointer;
-    } */
-    
-    /* .progress-bar {
-        width: 30vw;
-        height: 2vh;
-        background-color: #d3d3d3;
-        margin-left: 1em;
-        border-radius: 10px;
-        cursor: pointer; 
-    } */
-/*     
-    .progress {
-        height: 100%;
-        width: 0;
-        border-radius: 10px;
-        background-color: #e12c2e;
-    } */
     
     /* ------------Gallery Wrap---------- */
     .gallery-wrap {
