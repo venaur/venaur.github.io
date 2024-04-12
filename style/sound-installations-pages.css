@@ -3,6 +3,24 @@
 
 /* Desktop */
 @media only screen and (min-width: 1080px) {
+
+    .portfolio-container {
+        width:150vw; /* Full width of viewport */
+        height: fit-content; /* Full height of viewport */
+        overflow-x: scroll; /* Enable horizontal scrolling */
+        overflow-y: hidden; /* Hide vertical scrollbar */
+        white-space: nowrap; /* Prevent content from wrapping */
+    }
+    
+    .portfolio-content {
+        width: auto; /* Allow content to expand horizontally */
+        padding: 20px; /* Optional padding for content */
+    }
+    
+
+
+
+
 /* Styling for audio container */
 .audio-container {
     position: relative;
@@ -134,7 +152,16 @@ audio::-ms-media-controls-panel {
         margin-bottom: 8vh;
         margin-top: 2vh;
     }
-
+    .gallery-wrap-tt {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: 80vh;
+        margin-bottom: 8vh;
+        margin-top: 2vh;
+    }
     .title {
         z-index: 1 !important;
         opacity: 10vh;
@@ -143,8 +170,6 @@ audio::-ms-media-controls-panel {
         left: 1vh;
         opacity: 0.8;
     }
-
-   
     .item {
         position: relative;
         flex: 1;
@@ -153,15 +178,26 @@ audio::-ms-media-controls-panel {
         cursor: pointer;
         transition: flex 1.5s ease; /* Transition flex property for smooth animation */
     }
-    
     .item:hover {
         flex: 4; /* Enlarge the item on hover */
     }
-
+    .item-tt {
+        position: relative;
+        flex: 1;
+        overflow: hidden;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: flex 1.5s ease; /* Transition flex property for smooth animation */
+    }
+    .item-tt:hover {
+        flex: 85%; /* Enlarge the item on hover */
+    }
+    .item-1-tt{
+        margin-bottom:0.5vw;
+    }
     .item-1 { 
         margin-right:0.5vw;
     }
-    
     .item img {
         position: absolute;
         top: 0;
@@ -185,6 +221,9 @@ audio::-ms-media-controls-panel {
     }
     
     .item:hover .overlay {
+        opacity: 0; /* Hide the overlay on hover */
+    }
+    .item-tt:hover .overlay {
         opacity: 0; /* Hide the overlay on hover */
     }
 

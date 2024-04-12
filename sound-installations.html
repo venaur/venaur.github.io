@@ -16,6 +16,9 @@
       <img src="assets/full-logo.png" alt="Logo">
     </a>
   </div>
+  <div class="portfolio-container">
+    <div class="portfolio-content">
+
 
     <div class="container">
       <div class="image-container where">
@@ -44,5 +47,33 @@
         <div class="dividers"> </div>     
     </div>
 
+</div>
+</div>
+
+
+<script>
+  const portfolioContainer = document.querySelector('.portfolio-container');
+
+// Function to handle automatic scrolling based on mouse position
+function handleAutoScroll(event) {
+    const viewportWidth = window.innerWidth;
+    const mouseX = event.clientX;
+
+    // Adjust the scroll amount based on mouse position
+    const scrollSpeed = 10; // Adjust as needed (higher values = faster scrolling)
+
+    if (mouseX < viewportWidth * 0.2) {
+        // Mouse is on the left 20% of the screen, scroll left
+        portfolioContainer.scrollLeft -= scrollSpeed;
+    } else if (mouseX > viewportWidth * 0.8) {
+        // Mouse is on the right 20% of the screen, scroll right
+        portfolioContainer.scrollLeft += scrollSpeed;
+    }
+}
+
+// Attach event listener to track mouse movement
+document.addEventListener('mousemove', handleAutoScroll);
+
+</script>
 </body>
 </html>
