@@ -4,21 +4,6 @@
 /* Desktop */
 @media only screen and (min-width: 1080px) {
 
-    .portfolio-container {
-        width:150vw; /* Full width of viewport */
-        height: fit-content; /* Full height of viewport */
-        overflow-x: scroll; /* Enable horizontal scrolling */
-        overflow-y: hidden; /* Hide vertical scrollbar */
-        white-space: nowrap; /* Prevent content from wrapping */
-    }
-    
-    .portfolio-content {
-        width: auto; /* Allow content to expand horizontally */
-        padding: 20px; /* Optional padding for content */
-    }
-    
-
-
 
 
 /* Styling for audio container */
