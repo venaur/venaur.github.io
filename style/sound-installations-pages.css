@@ -7,33 +7,56 @@
 .audio-container {
     position: relative;
     top: 18vh;
-    background-color: #dbdbdb;
+    /* background-color: #dbdbdb; */
     border-radius: 8px;
     margin-bottom: 5vh;
     transition: top 0.3s ease; /* Add smooth transition for top property */
 }
 
-/* Style the audio controls */
 audio {
     width: 100%;
+    height: auto; /* Ensure aspect ratio is maintained */
+    position: relative;
+    z-index: 1; /* Ensure audio player is above custom controls */
 }
 
-/* Customize audio controls */
 audio::-webkit-media-controls-panel {
-    background-color: #dbdbdb; /* Change background color of the controls panel (Chrome/Safari) */
-    color: white; /* Change text color of the controls panel */
+    background-color: #dbdbdb !important; 
+    color: white; 
 }
-/* Customize audio controls for Firefox */
-/* Use -moz-range-progress for Firefox */
 audio::-moz-range-progress {
-    background-color: #dbdbdb; /* Change progress bar color (Firefox) */
+    background-color: #dbdbdb; 
 }
 
-/* Customize audio controls for Edge */
-/* Use ::-ms-media-controls-panel for Edge */
 audio::-ms-media-controls-panel {
-    background-color: #dbdbdb; /* Change background color of the controls panel (Edge) */
-    color: white; /* Change text color of the controls panel (Edge) */
+    /* background-color: #dbdbdb;  */
+    color: white; 
+}
+/* Style the custom controls container */
+.audio-controls {
+    position: relative;
+    z-index: 2; /* Ensure custom controls are above default controls */
+    background-color: #dbdbdb;
+    border-radius: 8px;
+    padding: 10px; /* Adjust padding as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Customize play/pause button appearance */
+.audio-controls button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Adjust spacing and layout of controls */
+.audio-controls button:not(:first-child) {
+    margin-left: 10px; /* Add spacing between buttons */
 }
 
     .content{
