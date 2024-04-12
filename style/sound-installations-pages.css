@@ -6,19 +6,18 @@
 /* Styling for audio container */
 .audio-container {
     position: relative;
-    top: 18vh;
-    /* background-color: #dbdbdb; */
+    top: 18vh; 
+    background-color: #dbdbdb;
     border-radius: 8px;
     margin-bottom: 5vh;
     transition: top 0.3s ease; /* Add smooth transition for top property */
 }
 
+/* Style the audio controls */
 audio {
     width: 100%;
-    height: auto; /* Ensure aspect ratio is maintained */
-    position: relative;
-    z-index: 1; /* Ensure audio player is above custom controls */
 }
+
 
 audio::-webkit-media-controls-panel {
     background-color: #dbdbdb !important; 
@@ -29,7 +28,7 @@ audio::-moz-range-progress {
 }
 
 audio::-ms-media-controls-panel {
-    /* background-color: #dbdbdb;  */
+    background-color: #dbdbdb; 
     color: white; 
 }
 /* Style the custom controls container */
@@ -48,7 +47,7 @@ audio::-ms-media-controls-panel {
 .audio-controls button {
     background-color: transparent;
     border: none;
-    color: white;
+    color: rgb(2, 2, 2);
     font-size: 16px;
     cursor: pointer;
     outline: none;
