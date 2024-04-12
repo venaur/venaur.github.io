@@ -17,8 +17,6 @@
 audio {
     width: 100%;
 }
-
-
 audio::-webkit-media-controls-panel {
     background-color: #dbdbdb !important; 
     color: white; 
@@ -37,7 +35,6 @@ audio::-ms-media-controls-panel {
     z-index: 2; /* Ensure custom controls are above default controls */
     background-color: #dbdbdb;
     border-radius: 8px;
-    padding: 10px; /* Adjust padding as needed */
     display: flex;
     align-items: center;
     justify-content: center;
