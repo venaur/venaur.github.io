@@ -6,7 +6,7 @@
 /* Styling for audio container */
 .audio-container {
     position: relative;
-    top: 18vh; 
+    top: 18vh;
     background-color: #dbdbdb;
     border-radius: 8px;
     margin-bottom: 5vh;
@@ -99,7 +99,7 @@ audio::-webkit-media-controls-panel {
     
     /* ----------------Audio--------- */
       
-    .audio-title {
+    /* .audio-title {
         color: #000000;
         font-size: 18px;
         margin-top: 0em;
@@ -115,46 +115,46 @@ audio::-webkit-media-controls-panel {
         height: fit-content;
         margin-top: 5vh;
         margin-bottom: 10vh;
-    }
-    
+    } */
+/*     
     .audio-item {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         margin-bottom: 2em;
-    }
-    
+    } */
+/*     
     .audio-controls {
         display: flex;
         align-items: center;
         justify-content: center;
         margin-top: 0.5em;
-    }
-    
+    } */
+/*     
     .play-button {
         background-color: #e12c2e;
         color: #fff;
         border: none;
         padding: 0.5em 1em;
         cursor: pointer;
-    }
+    } */
     
-    .progress-bar {
+    /* .progress-bar {
         width: 30vw;
         height: 2vh;
         background-color: #d3d3d3;
         margin-left: 1em;
         border-radius: 10px;
-        cursor: pointer; /* Add cursor pointer to indicate it's clickable */
-    }
-    
+        cursor: pointer; 
+    } */
+/*     
     .progress {
         height: 100%;
         width: 0;
         border-radius: 10px;
         background-color: #e12c2e;
-    }
+    } */
     
     /* ------------Gallery Wrap---------- */
     .gallery-wrap {
