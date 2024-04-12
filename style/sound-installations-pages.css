@@ -69,6 +69,10 @@ audio::-webkit-media-controls-panel {
     .block-titles{
         font-size: 24px;
     }
+    .block-titles-smaller{
+        font-size: 20px;
+        margin-top: 1vh;
+    }
     .setup-description{
         line-height: 3.5vh;
         width: 100%;
@@ -90,11 +94,7 @@ audio::-webkit-media-controls-panel {
         margin-top: 3vh;
         margin-bottom: 10vh;
     }
-    
 
-    
- 
-    
   
     
     /* ----------------Audio--------- */
@@ -154,6 +154,89 @@ audio::-webkit-media-controls-panel {
         width: 0;
         border-radius: 10px;
         background-color: #e12c2e;
+    }
+    
+    /* ------------Gallery Wrap---------- */
+    .gallery-wrap {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 50vh;
+        margin-bottom: 8vh;
+        margin-top: 2vh;
+    }
+
+    .title {
+        z-index: 1 !important;
+        opacity: 10vh;
+        position: absolute;
+        bottom: 1vh;
+        left: 1vh;
+        opacity: 0.8;
+    }
+
+   
+    .item {
+        position: relative;
+        flex: 1;
+        overflow: hidden;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: flex 1.5s ease; /* Transition flex property for smooth animation */
+    }
+    
+    .item:hover {
+        flex: 4; /* Enlarge the item on hover */
+    }
+
+    .item-1 { 
+        margin-right:0.5vw;
+    }
+    
+    .item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%; /* Ensure the image covers the width of its container */
+        height: 100%; /* Ensure the image covers the height of its container */
+        object-fit: cover; /* Cover the entire container while maintaining aspect ratio */
+        transition: transform 0.5s ease; /* Transition for smooth enlargement effect */
+    }
+    
+    .overlay {
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        opacity: 1;
+        transition: opacity 0.5s ease; /* Transition opacity for smooth hover effect */
+    }
+    
+    .item:hover .overlay {
+        opacity: 0; /* Hide the overlay on hover */
+    }
+
+    .echoes-video{
+        position: relative;
+        width:100%;
+        top:2vh;
+    }
+
+    .description-link{
+        width: 100%;
+        margin-top: 2vh;
+        margin-bottom: 10vh;
+        text-align: left;
+        font-size: 18px;
+    }
+    a{
+        color: rgb(48, 106, 150);
+        &:hover{
+          color: rgb(92, 177, 242);
+        }
     }
     
     }

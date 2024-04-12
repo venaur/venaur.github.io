@@ -16,7 +16,7 @@ html, body {
 /* ------------Top bar------------ */
 
 #top-logo {
-  z-index: 999 !important;
+  z-index:999 !important;
   position: fixed;
   top: 5vh;
   left: 50%; /* Center horizontally */
