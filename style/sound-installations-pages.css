@@ -3,9 +3,6 @@
 
 /* Desktop */
 @media only screen and (min-width: 1080px) {
-
-
-
 /* Styling for audio container */
 .audio-container {
     position: relative;
@@ -235,9 +232,465 @@ audio::-ms-media-controls-panel {
     }
     
     /* -----------------------------------------------------------------*/
+    @media only screen and (max-width: 1079px) {
+     /* Styling for audio container */
+     .audio-container {
+        position: relative;
+        top: 15vh; 
+        background-color: #dbdbdb;
+        border-radius: 8px;
+        margin-bottom: 5vh;
+        transition: top 0.3s ease; /* Add smooth transition for top property */
+    }
+    
+    /* Style the audio controls */
+    audio {
+        width: 100%;
+    }
+    audio::-webkit-media-controls-panel {
+        background-color: #dbdbdb !important; 
+        color: white; 
+    }
+    audio::-moz-range-progress {
+        background-color: #dbdbdb; 
+    }
+    
+    audio::-ms-media-controls-panel {
+        background-color: #dbdbdb; 
+        color: white; 
+    }
+    /* Style the custom controls container */
+    .audio-controls {
+        position: relative;
+        z-index: 2; /* Ensure custom controls are above default controls */
+        background-color: #dbdbdb;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Customize play/pause button appearance */
+    .audio-controls button {
+        background-color: transparent;
+        border: none;
+        color: rgb(2, 2, 2);
+        font-size: 16px;
+        cursor: pointer;
+        outline: none;
+    }
+    
+    /* Adjust spacing and layout of controls */
+    .audio-controls button:not(:first-child) {
+        margin-left: 10px; /* Add spacing between buttons */
+    }
+    
+        .content{
+            justify-content: center;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .content-img { 
+            top: 12vh;
+            width: 100%;
+            position: relative;
+            justify-content: center;
+        }
+        .content img{
+            width: 100%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .supporting-img{
+            width: 30%;
+            position: relative;
+        
+        }
+    
+        .description{
+            line-height: 3vh;
+            width: 100%;
+            margin-top: 18vh;
+            margin-bottom: 5vh;
+            text-align: left;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 18px;
+        }
+    
+        .indent{
+            padding-top: 0.4em;
+            padding-left: 2em;
+    
+        }
+        .block-titles{
+            font-size: 24px;
+        }
+        .block-titles-smaller{
+            font-size: 20px;
+            margin-top: 1vh;
+        }
+        .setup-description{
+            line-height: 3.5vh;
+            width: 100%;
+            margin-top: 2vh;
+            margin-bottom: 5vh;
+            text-align: left;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 18px;
+        }
+        
+    
+        
+        .art-titles{
+            font-size: 24px;
+            position: relative;
+            top: 18vh;
+            margin-top: 3vh;
+            margin-bottom: 10vh;
+        }
+        
+        /* ------------Gallery Wrap---------- */
+        .gallery-wrap {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 80vh;
+            margin-bottom: 8vh;
+            margin-top: 2vh;
+        }
+        .gallery-wrap-tt {
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            height: 100vh;
+            margin-bottom: 8vh;
+            margin-top: 2vh;
+        }
+        .title {
+            z-index: 1 !important;
+            opacity: 10vh;
+            position: absolute;
+            bottom: 1vh;
+            left: 1vh;
+            opacity: 0.8;
+        }
+        .item {
+            position: relative;
+            flex: 1;
+            overflow: hidden;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: flex 1s ease; /* Transition flex property for smooth animation */
+        }
+        .item:hover {
+            flex: 4; /* Enlarge the item on hover */
+        }
+        .item-tt {
+            position: relative;
+            flex: 3;
+            overflow: hidden;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: flex 1s ease; /* Transition flex property for smooth animation */
+        }
+        .item-tt:hover {
+            flex: 13; /* Enlarge the item on hover */
+        }
+        .item-1-tt{
+            margin-bottom: 1vw;
+        }
+        .item-1 { 
+            margin-bottom: 1vw;
+        }
+        .item img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%; /* Ensure the image covers the width of its container */
+            height: 100%; /* Ensure the image covers the height of its container */
+            object-fit: cover; /* Cover the entire container while maintaining aspect ratio */
+            transition: transform 0.5s ease; /* Transition for smooth enlargement effect */
+        }
+        
+        .overlay {
+            z-index: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            opacity: 1;
+            transition: opacity 0.5s ease; /* Transition opacity for smooth hover effect */
+        }
+        
+        .item:hover .overlay {
+            opacity: 0; /* Hide the overlay on hover */
+        }
+        .item-tt:hover .overlay {
+            opacity: 0; /* Hide the overlay on hover */
+        }
+    
+        .echoes-video{
+            position: relative;
+            width:100%;
+            top:2vh;
+        }
+    
+        .description-link{
+            width: 100%;
+            margin-top: 2vh;
+            margin-bottom: 10vh;
+            text-align: left;
+            font-size: 18px;
+        }
+        a{
+            font-size: 14px;
+            color: rgb(48, 106, 150);
+            &:hover{
+              color: rgb(92, 177, 242);
+            }
+        }
+
+    }
     /* -----------------------------------------------------------------*/
     /* -----------------------------------------------------------------*/
     
-    @media only screen and (max-width: 1079px) {
+    @media only screen and (max-width: 779px) {
+        /* Styling for audio container */
+.audio-container {
+    position: relative;
+    top: 15vh; 
+    background-color: #dbdbdb;
+    border-radius: 8px;
+    margin-bottom: 5vh;
+    transition: top 0.3s ease; /* Add smooth transition for top property */
+}
+
+/* Style the audio controls */
+audio {
+    width: 100%;
+}
+audio::-webkit-media-controls-panel {
+    background-color: #dbdbdb !important; 
+    color: white; 
+}
+audio::-moz-range-progress {
+    background-color: #dbdbdb; 
+}
+
+audio::-ms-media-controls-panel {
+    background-color: #dbdbdb; 
+    color: white; 
+}
+/* Style the custom controls container */
+.audio-controls {
+    position: relative;
+    z-index: 2; /* Ensure custom controls are above default controls */
+    background-color: #dbdbdb;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Customize play/pause button appearance */
+.audio-controls button {
+    background-color: transparent;
+    border: none;
+    color: rgb(2, 2, 2);
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Adjust spacing and layout of controls */
+.audio-controls button:not(:first-child) {
+    margin-left: 10px; /* Add spacing between buttons */
+}
+
+    .content{
+        justify-content: center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .content-img { 
+        top: 12vh;
+        width: 100%;
+        position: relative;
+        justify-content: center;
+    }
+    .content img{
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .supporting-img{
+        width: 30%;
+        position: relative;
+    
+    }
+
+    .description{
+        line-height: 3vh;
+        width: 100%;
+        margin-top: 18vh;
+        margin-bottom: 5vh;
+        text-align: left;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+    }
+
+    .indent{
+        padding-top: 0.4em;
+        padding-left: 2em;
+
+    }
+    .block-titles{
+        font-size: 24px;
+    }
+    .block-titles-smaller{
+        font-size: 20px;
+        margin-top: 1vh;
+    }
+    .setup-description{
+        line-height: 3.5vh;
+        width: 100%;
+        margin-top: 2vh;
+        margin-bottom: 5vh;
+        text-align: left;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+    }
+    
+
+    
+    .art-titles{
+        font-size: 24px;
+        position: relative;
+        top: 18vh;
+        margin-top: 3vh;
+        margin-bottom: 10vh;
+    }
+    
+    /* ------------Gallery Wrap---------- */
+    .gallery-wrap {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 50vh;
+        margin-bottom: 8vh;
+        margin-top: 2vh;
+    }
+    .gallery-wrap-tt {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 90vh;
+        margin-bottom: 8vh;
+        margin-top: 2vh;
+    }
+    .title {
+        z-index: 1 !important;
+        opacity: 10vh;
+        position: absolute;
+        bottom: 1vh;
+        left: 1vh;
+        opacity: 0.8;
+    }
+    .item {
+        position: relative;
+        flex: 1;
+        overflow: hidden;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: flex 1s ease; /* Transition flex property for smooth animation */
+    }
+    .item:hover {
+        flex: 3; /* Enlarge the item on hover */
+    }
+    .item-tt {
+        position: relative;
+        flex: 1;
+        overflow: hidden;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: flex 1.5s ease; /* Transition flex property for smooth animation */
+    }
+    .item-tt:hover {
+        flex: 3.2; /* Enlarge the item on hover */
+    }
+    .item-1-tt{
+        margin-bottom: 1vw;
+    }
+    .item-1 { 
+        margin-bottom: 1vw;
+    }
+    .item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%; /* Ensure the image covers the width of its container */
+        height: 100%; /* Ensure the image covers the height of its container */
+        object-fit: cover; /* Cover the entire container while maintaining aspect ratio */
+        transition: transform 0.5s ease; /* Transition for smooth enlargement effect */
+    }
+    
+    .overlay {
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        opacity: 1;
+        transition: opacity 0.5s ease; /* Transition opacity for smooth hover effect */
+    }
+    
+    .item:hover .overlay {
+        opacity: 0; /* Hide the overlay on hover */
+    }
+    .item-tt:hover .overlay {
+        opacity: 0; /* Hide the overlay on hover */
+    }
+
+    .echoes-video{
+        position: relative;
+        width:100%;
+        top:2vh;
+    }
+
+    .description-link{
+        width: 100%;
+        margin-top: 2vh;
+        margin-bottom: 10vh;
+        text-align: left;
+        font-size: 18px;
+    }
+    a{
+        font-size: 14px;
+        color: rgb(48, 106, 150);
+        &:hover{
+          color: rgb(92, 177, 242);
+        }
+    }
+    
     
     }

@@ -1,9 +1,7 @@
 *{
   text-decoration: none;
   font-family: 'HelveticaNeue-Light';
-  /* color: black; */
 }
-
 
 html, body {
     margin: 0;
@@ -14,7 +12,6 @@ html, body {
 /* ----------DESKTOP---------------------------- */
 @media only screen and (min-width: 1080px) {
 /* ------------Top bar------------ */
-
 #top-logo {
   z-index:999 !important;
   position: fixed;
@@ -49,9 +46,71 @@ html, body {
   width: 100%;
   height: auto;
 }
-
-
   
+  .logo {
+    z-index: 999 !important;
+    flex: 0 0 auto; 
+    margin-right: auto; 
+    width: 15%;
+    margin-bottom: 3%;
+    margin-left: 1%;  
+  }
+  
+  .logo img {
+    width: 100%;
+    height: auto;
+    z-index:10;
+  }
+  
+  .title {
+    flex: 0 1 auto; 
+    text-align: center; 
+    margin: 0 2% 3%; 
+    color: black;
+    font-size: 30px;
+    font-family: 'HelveticaNeue-Light';
+    letter-spacing: 0.2rem;
+    z-index: 999;
+  }
+}
+
+/* -----------------------------------------------------------------*/
+/* -----------------------------------------------------------------*/
+/* -----------------------------------------------------------------*/
+
+@media only screen and (max-width: 1079px) {
+  #top-logo {
+    z-index:999 !important;
+    position: fixed;
+    top: 3vh;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for center alignment */
+    cursor: pointer;
+    width: 40%;
+  }
+  #top-logo img{
+    z-index: 999 !important;
+    width: 100%;
+    height: auto;
+  }
+  #back-button{
+    z-index: 999 !important;
+    position: fixed;
+    top: 4vh;
+    left: 5vw;
+    cursor: pointer;
+    width: 4%;
+    transition: all 0.4s ease;
+
+    &:hover{
+      width: 2.5%;
+    }
+  }
+  #back-button img{
+    z-index: 999 !important;
+    width: 100%;
+    height: auto;
+  }
   .logo {
     z-index: 999 !important;
     flex: 0 0 auto; 
@@ -68,7 +127,6 @@ html, body {
   }
   
   .title {
-    /* position: absolute; */
     flex: 0 1 auto; 
     text-align: center; /* Center align the title */
     margin: 0 2% 3%; 
@@ -77,75 +135,6 @@ html, body {
     font-family: 'HelveticaNeue-Light';
     letter-spacing: 0.2rem;
     z-index: 999;
-
-
   }
-  
 
-
-
-}
-
-
-
-
-
-
-
-/* -----------------------------------------------------------------*/
-/* -----------------------------------------------------------------*/
-/* -----------------------------------------------------------------*/
-
-@media only screen and (max-width: 1079px) {
-
-#top-logo {
-  z-index: 999 !important;
-  position: fixed;
-  top: 5vh;
-  left: 60%; /* Center horizontally */
-  transform: translateX(-50%); /* Adjust for center alignment */
-  cursor: pointer;
-}
-
-#top-logo img{
-  z-index: 999 !important;
-  width: 50%;
-  height: auto;
-}
-
-    /* ------------Top bar------------ */
-.top-bar {
-    position: fixed;
-    top: 5vh;
-    width: 100%;
-    height: 1px;
-    background-color: black;
-    display: flex;
-    align-items: center; /* Vertically center elements */
-  }
-  
-  .logo {
-    flex: 0 0 auto; /* Prevent logo from growing */
-    margin-right: auto; /* Push the title and spacer to the right */
-    width: 25%;
-    margin-bottom: 5%;
-    margin-left: 1%;
-}
-  
-  .logo img {
-    width: 100%; /* Adjust as needed */
-    height: auto;
-  }
-  
-  .title {
-    /* position: absolute; */
-    flex: 0 1 auto; 
-    text-align: center; /* Center align the title */
-    margin: 0 2% 6%; 
-    color: black;
-    font-size: 25px;
-    font-family: 'HelveticaNeue-Light';
-    letter-spacing: 0.1rem;
-
-  }
 }

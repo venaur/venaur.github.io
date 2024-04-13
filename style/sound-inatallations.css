@@ -6,20 +6,54 @@
 
 /* Desktop */
 @media only screen and (min-width: 1080px) {
-
+    body {
+        /* Set the width of the scrollbar to 0vw (hide it) */
+        scrollbar-width: none; /* For Firefox */
+      }
+      
+      body::-webkit-scrollbar {
+        width: 0; /* Hide the scrollbar for Chrome/Safari/Edge */
+      }
+      
+      body::-webkit-scrollbar-track {
+        background-color: #191714; /* Color of the scrollbar track */
+      }
+      
+      body::-webkit-scrollbar-thumb {
+        background-color: #bbbaba; /* Color of the scrollbar handle */
+      }
+      
+      body::-webkit-scrollbar-thumb:hover {
+        background-color: #54746c; /* Color of the scrollbar handle on hover */
+      }
+      .container {
+        /* Set the width of the scrollbar to 0vw (hide it) */
+        scrollbar-width: none; /* For Firefox */
+      }
+      
+      .container::-webkit-scrollbar {
+        width: 0; /* Hide the scrollbar for Chrome/Safari/Edge */
+      }
+      
+      
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 0vw;
+    border-radius: 10px;
+    background-color: #ffffff;
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #e2e2e2;
+    background: #9d9d9d;
+    border-radius: 10px;
+    height: 10px;
+    /* the actual bar */
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #c8c8c8;
+    background: #bd5050;
   }
 
     .container {
@@ -88,9 +122,6 @@
         bottom: 1em;
         z-index: 1;
     }
-    
-
-   
 
 }
 
@@ -101,36 +132,104 @@
 /* -----------------------------------------------------------------*/
 
 @media only screen and (max-width: 1079px) {
+    body {
+        /* Set the width of the scrollbar to 0vw (hide it) */
+        scrollbar-width: none; /* For Firefox */
+      }
+      
+      body::-webkit-scrollbar {
+        width: 0; /* Hide the scrollbar for Chrome/Safari/Edge */
+      }
+      
+      body::-webkit-scrollbar-track {
+        background-color: #191714; /* Color of the scrollbar track */
+      }
+      
+      body::-webkit-scrollbar-thumb {
+        background-color: #bbbaba; /* Color of the scrollbar handle */
+      }
+      
+      body::-webkit-scrollbar-thumb:hover {
+        background-color: #54746c; /* Color of the scrollbar handle on hover */
+      }
+      .container {
+        /* Set the width of the scrollbar to 0vw (hide it) */
+        scrollbar-width: none; /* For Firefox */
+      }
+      
+      .container::-webkit-scrollbar {
+        width: 0; /* Hide the scrollbar for Chrome/Safari/Edge */
+      }
+      
+      
+/* width */
+::-webkit-scrollbar {
+    width: 0vw;
+    border-radius: 10px;
+    background-color: #ffffff;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #9d9d9d;
+    border-radius: 10px;
+    height: 10px;
+    /* the actual bar */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #bd5050;
+  }
+
     .container {
         position: absolute;
-        display: flex;
-        flex-direction: column; 
-        overflow-x: scroll;
-        width: 100%;
+    display: flex;
+    flex-direction: column; 
+    overflow-x: hidden;
+    overflow-y: scroll; 
+    align-items: center;
+    top: 5vh;
+    height: fit-content;
+    width: fit-content;
+    margin-right: 1vw;
+    margin-left: 1vw;
     }
 
     .container.below {
         position: absolute;
         display: flex;
-        margin: 0 0 0;
+        margin: 0em 0 0; 
         flex-direction: row; 
     }
     .image-container {
         position: relative;
-        overflow: hidden;
-        width: 80%; 
-        margin: 2em 2em 0;
+        width: 98%; 
+        margin: 1em 1em 1em;
+        margin-right: 1em;
     }
-
+    .image-container.where{
+        height: fit-content;
+        margin-top: 0em;
+        margin-bottom: 2em;
+        margin-left: 3vw;
+    }
+    .image-container.echoes{
+        height: fit-content;
+        top: -12vh;
+    }
     .image-container.temper-trauma {
-        margin-top: 3em; 
+        height: fit-content;
+        margin-bottom: 2em;
+        margin-top: -12vh; 
+        margin-left: 0;
     }
 
     .base-image,
     .overlay-image {
         width: 100%;
         height: auto;
-        transition: opacity 0.4s;
+        transition: opacity 0.6s ;
     }
     
     .overlay-image {
@@ -143,21 +242,13 @@
     .image-container:hover .overlay-image {
         opacity: 1;
     }
-    /* .dividers {
-        position: absolute;
-        width: 100%;
-        bottom: 0em;
-        height: 2px;
-        background-color: #4c4945;
-        z-index: 0;
-    } */
     .art-titles {
         position: absolute;
         width: 100%;
-        font-size: 14px;
+        font-size: 24px;
         color: #191714;
         text-align: center;
-        bottom: 0.75em;
+        bottom: 1em;
         z-index: 1;
     }
     

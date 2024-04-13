@@ -17,6 +17,16 @@ html, body {
   /* ----------DESKTOP---------------------------- */
   @media only screen and (min-width: 1080px) {
 
+    .coming-soon{
+      position: absolute;
+      font-size: 32px;
+      align-items: center;
+      text-align: center;
+      top: 45%;
+      left:45%;
+
+    }
+
   /* ---------------Logo Heading---------------------- */
   .loading-screen{
     width: 100vw;
@@ -37,16 +47,13 @@ html, body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 60%;
+    height: auto;
+    object-fit: contain;
   }
   
   #logo-video::-webkit-media-controls {
     display: none;
-  }
-  
-  #logo-video {
-    width: 60%;
-    height: auto;
-    object-fit: contain;
   }
 
   .logo-fade-out {
@@ -55,31 +62,31 @@ html, body {
   }
 
   #top-logo {
+    z-index:999 !important;
     position: fixed;
     top: 5vh;
-    left: 60%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust for center alignment */
-    opacity: 0; /* Initially hidden */
-    pointer-events: none; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    cursor: pointer;
+    width: 20%;
   }
-
+  
   #top-logo img{
-    width: 50%;
+    z-index: 999 !important;
+    width: 100%;
     height: auto;
   }
-
-
   .portfolio-content {
     position: absolute;
     white-space: nowrap;
     font-size: 25px;
-    opacity: 0; /* Initially set to invisible */
-    transition: opacity 1s ease; /* Smooth transition effect */
+    opacity: 0; 
+    transition: opacity 1s ease; 
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
-    height: 100vh; /* Adjust as needed */
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
   }
   
 .category {
@@ -95,13 +102,13 @@ html, body {
   bottom: 0;
   left: 0;
   width: 0;
-  height: 1.5px; /* Adjust this value to control the thickness of the line */
-  background-color: black; /* Change this to the color you want for the line */
-  transition: width 0.3s ease-in-out; /* Adjust the transition timing as needed */
+  height: 1.5px; 
+  background-color: black; 
+  transition: width 0.3s ease-in-out; 
 }
 
 .category:hover::before {
-  width: 100%; /* Make the line span the width of the text */
+  width: 100%; 
 }
 }
 
@@ -112,6 +119,19 @@ html, body {
 /* -----------------------------------------------------------------*/
 
 @media only screen and (max-width: 1079px) {
+
+
+  .coming-soon{
+    position: relative;
+    font-size: 32px;
+    align-items: center;
+    text-align: center;
+    top: 45%;
+  
+  }
+
+
+
   /* ---------------Logo Heading---------------------- */
   .loading-screen{
     width: 100vw;
@@ -131,16 +151,13 @@ html, body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    object-fit: contain;
   }
   
   #logo-video::-webkit-media-controls {
     display: none;
-  }
-  
-  #logo-video {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
   }
 
   .logo-fade-out {
@@ -148,11 +165,17 @@ html, body {
     transition: opacity 1s ease;
   }
 
-  #top-logo{
-    position: absolute;
-    top: 5vh;
+  #top-logo {
+    z-index:999 !important;
+    position: fixed;
+    top: 3vh;
+    left: 50%; 
+    transform: translateX(-50%); 
+    cursor: pointer;
+    width: 40%;
   }
   #top-logo img{
+    z-index: 999 !important;
     width: 100%;
     height: auto;
   }
@@ -162,19 +185,19 @@ html, body {
     position: absolute;
     white-space: nowrap;
     font-size: 20px;
-    opacity: 0; /* Initially set to invisible */
-    transition: opacity 1s ease; /* Smooth transition effect */
+    opacity: 0; 
+    transition: opacity 1s ease;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
-    height: 100vh; /* Adjust as needed */
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
   }
   
   .category {
     opacity: 0;
     transition: opacity 1s ease;
-    margin-bottom: 20px; /* Adjust spacing between categories */
+    margin-bottom: 20px; 
   }
   .category:hover{
     cursor: pointer;

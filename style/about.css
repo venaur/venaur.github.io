@@ -1,0 +1,134 @@
+
+
+@media only screen and (min-width: 1080px) {
+    .content{
+        justify-content: center;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+    
+    }
+    .content-img { 
+        top: 20vh;
+        width: 100%;
+        position: relative;
+        justify-content: center;
+        margin-right: 3vw;
+    }
+    .content img{
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .description{
+        line-height: 3.5vh;
+        width: 100%;
+        margin-top: 20vh;
+        margin-bottom: 5vh;
+        text-align: left;
+        justify-content: left;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+    }
+    
+    .social {
+        width: 35%;
+        margin-top: 3vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        align-items: left;
+    }
+
+    .tags {
+        display: flex;
+        align-items: center;
+        margin-bottom: -1vh;
+    }
+
+    .social img {
+        width: 20%; 
+        height: auto; 
+        margin-right: 1vw;
+        margin-left: 0vw;
+    }
+
+    .tags p {
+        margin-left: 0.5vw; 
+        font-size: 16px; 
+    }
+}
+
+
+
+/* -----------------------------------------------------------------*/
+/* -----------------------------------------------------------------*/
+/* -----------------------------------------------------------------*/
+    
+@media only screen and (max-width: 1079px) {
+    .content{
+        justify-content: center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .content-img { 
+        top: 15vh;
+        width: 100%;
+        position: relative;
+        justify-content: center;
+        margin-right: 3vw;
+    }
+    .content img{
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .description{
+        line-height: 3.5vh;
+        width: 100%;
+        margin-top: 20vh;
+        margin-bottom: 5vh;
+        text-align: left;
+        justify-content: left;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+    }
+    
+    .social {
+        width: 35%;
+        margin-top: 3vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        align-items: left;
+    }
+
+    .tags {
+        display: flex;
+        align-items: center;
+        margin-bottom: -1vh;
+    }
+
+    .social img {
+        width: 20%; 
+        height: auto; 
+        margin-right: 1vw;
+        margin-left: 0vw;
+    }
+
+    .tags p {
+        margin-left: 0.5vw; 
+        font-size: 16px; 
+    }
+
+}
