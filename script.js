@@ -119,3 +119,25 @@ document.addEventListener("DOMContentLoaded", function() {
   // Add click event listener to initiate animation (for Safari)
   document.body.addEventListener("click", startAnimation);
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const logoVideo = document.getElementById("logo-video");
+
+  // Function to play the video
+  function playVideo() {
+    // Check if the video element is muted
+    if (logoVideo.muted) {
+      // Unmute the video temporarily to enable autoplay
+      logoVideo.muted = false;
+      logoVideo.play(); // Attempt to play the video
+      logoVideo.muted = true; // Mute the video again after attempting to play
+    } else {
+      // Video is not muted, simply play it
+      logoVideo.play();
+    }
+  }
+
+  // Call playVideo function when the page is clicked (user interaction)
+  document.addEventListener("click", playVideo);
+});
