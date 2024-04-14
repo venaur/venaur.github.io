@@ -184,6 +184,7 @@ html, body {
 
   .portfolio-content {
     position: absolute;
+    color: black;
     white-space: nowrap;
     font-size: 20px;
         /* change opacity back to 0 for animation! */
@@ -197,13 +198,24 @@ html, body {
   }
   
   .category {
-    opacity: 0;
-    transition: opacity 1s ease;
-    margin-bottom: 20px; 
-  }
-  .category:hover{
+    position: relative;
     cursor: pointer;
-    transition: 0.1s ease-in-out;
-    background-color: rgb(201, 226, 227);
+    overflow: hidden;
+    margin-bottom: 8%; 
+  }
+  
+  .category::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1.5px; 
+    background-color: black; 
+    transition: width 0.3s ease-in-out; 
+  }
+  
+  .category:hover::before {
+    width: 100%; 
   }
 }
