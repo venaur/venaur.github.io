@@ -79,7 +79,7 @@ html, body {
   .portfolio-content {
     position: absolute;
     white-space: nowrap;
-    font-size: 25px;
+    font-size: 32px;
     /* change opacity back to 0 for animation! */
     opacity: 1; 
     transition: opacity 1s ease; 
