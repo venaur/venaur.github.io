@@ -261,7 +261,7 @@
     }
     
     .description-nowhere{
-        line-height: 3.5vh;
+        line-height: 2.5vh;
         width: 100%;
         margin-top: 20vh;
         margin-bottom: 5vh;
@@ -269,10 +269,10 @@
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
-        font-size: 18px;
+        font-size: 24px;
     }
     .description-nowhere.venaur{
-        line-height: 3.5vh;
+        line-height: 2.5vh;
         width: 100%;
         margin-top: 2vh;
         margin-bottom: 5vh;
@@ -280,7 +280,7 @@
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
-        font-size: 18px;
+        font-size: 25px;
     }
     
     
@@ -290,13 +290,13 @@
     
     .img-description{
         position: relative;
-        font-size: 15px;
+        font-size: 22px;
         top:18vh;
         color:#777777;
     }
     
     .art-titles{
-        font-size: 24px;
+        font-size: 40px;
         position: relative;
         top: 18vh;
         margin-top: 3vh;
