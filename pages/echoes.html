@@ -44,43 +44,57 @@
 
         <div class="gallery-wrap">
             <div class="item item-1">
-                <div class="title" style="color: white; font-size:18px; ">Sketch 1</div>
-                <img src="../assets/echoes/sketch1.png" alt="Sketch 1">
-                <div class="overlay"></div>
+                <div class="clickable-item">
+                    <div class="title" style="color: white; font-size:18px; ">Sketch 1</div>
+                    <img src="../assets/echoes/sketch1.png" alt="Sketch 1">
+                    <div class="overlay"></div>
+                </div>
             </div>
             <div class="item item-1">
-                <img src="../assets/echoes/sketch2.png" alt="Sketch 2">
-                <div class="overlay"></div>
-                <div class="title" style="color: white;font-size:18px; ">Sketch 2</div>
+                <div class="clickable-item"> 
+                    <img src="../assets/echoes/sketch2.png" alt="Sketch 2">
+                    <div class="overlay"></div>
+                    <div class="title" style="color: white;font-size:18px; ">Sketch 2</div>
+                </div>
+                </div>
+            <div class="item item-1">
+                <div class="clickable-item">
+                    <img src="../assets/echoes/sketch3.png" alt="Sketch 3">
+                    <div class="overlay"></div>
+                    <div class="title" style="color: white; font-size:18px;">Sketch 3</div>
+                 </div>
             </div>
             <div class="item item-1">
-                <img src="../assets/echoes/sketch3.png" alt="Sketch 3">
-                <div class="overlay"></div>
-                <div class="title" style="color: white; font-size:18px;">Sketch 3</div>
-            </div>
-            <div class="item item-1">
+                <div class="clickable-item">
                 <img src="../assets/echoes/sketch4.png" alt="Sketch 4">
                 <div class="overlay"></div>
                 <div class="title" style="color: white;font-size:18px; ">Sketch 4</div>
+            </div>
             </div>
         </div>
 
         <div class="block-titles-smaller">Models</div>
         <div class="gallery-wrap">
             <div class="item item-1">
+                <div class="clickable-item">
                 <div class="title" style="color: white; font-size:18px; ">MDF</div>
                 <img src="../assets/echoes/fusion1.png" alt="MDF Model 1">
                 <div class="overlay"></div>
+                </div>
             </div>
             <div class="item item-1">
+                <div class="clickable-item">
                 <img src="../assets/echoes/fusion2.png" alt="MDF Model 1">
                 <div class="overlay"></div>
                 <div class="title" style="color: white;font-size:18px; ">MDF </div>
             </div>
+            </div>
             <div class="item item-1">
+                <div class="clickable-item">
                 <img src="../assets/echoes/fusion3.png" alt="Final Model">
                 <div class="overlay"></div>
                 <div class="title" style="color: white; font-size:18px;">Final </div>
+            </div>
             </div>
         </div>
 
@@ -92,6 +106,37 @@
             <a href=" https://vimeo.com/825175528?share=copy"><b>Click for full link to documentation video</b></a>
         </div>
     </div>
+
+
+
+    <script>
+
+            //CLICK GALLERY=======================
+            document.addEventListener("DOMContentLoaded", function() {
+            const clickableItems = document.querySelectorAll(".clickable-item");
+
+            clickableItems.forEach(item => {
+                item.addEventListener("click", function() {
+                    // Toggle flex value on click
+                    if (item.parentElement.classList.contains("active")) {
+                        item.parentElement.classList.remove("active");
+                    } else {
+                        item.parentElement.classList.add("active");
+                    }
+
+                    // Toggle opacity of overlay on click
+                    const overlay = item.querySelector(".overlay");
+                    if (overlay.style.opacity === "0") {
+                        overlay.style.opacity = "1";
+                    } else {
+                        overlay.style.opacity = "0";
+                    }
+                });
+            });
+        });
+    </script>
+
+
 
 </body>
 </html>

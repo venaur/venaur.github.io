@@ -330,7 +330,7 @@ audio::-ms-media-controls-panel {
             font-size: 40px;
         }
         .block-titles-smaller{
-            font-size: 20px;
+            font-size: 35px;
             margin-top: 1vh;
         }
         .setup-description{
@@ -385,14 +385,18 @@ audio::-ms-media-controls-panel {
         .item {
             position: relative;
             flex: 1;
+            height: 100%;
             overflow: hidden;
             border-radius: 10px;
             cursor: pointer;
-            transition: flex 1s ease; /* Transition flex property for smooth animation */
+            transition: flex 0.5s ease, opacity 0.5s ease;
         }
-        .item:hover {
-            flex: 4; /* Enlarge the item on hover */
+        
+        .item.active {
+            flex: 2;
         }
+
+
         .item-tt {
             position: relative;
             flex: 3;
@@ -429,12 +433,14 @@ audio::-ms-media-controls-panel {
             height: 100%;
             background-color: rgba(0, 0, 0, 0.4);
             opacity: 1;
-            transition: opacity 0.5s ease; /* Transition opacity for smooth hover effect */
+            transition: opacity 0.5s ease;
         }
         
-        .item:hover .overlay {
-            opacity: 0; /* Hide the overlay on hover */
+        .item.active .overlay {
+            opacity: 0;
         }
+
+
         .item-tt:hover .overlay {
             opacity: 0; /* Hide the overlay on hover */
         }
@@ -450,7 +456,7 @@ audio::-ms-media-controls-panel {
             margin-top: 2vh;
             margin-bottom: 10vh;
             text-align: left;
-            font-size: 18px;
+            font-size: 30px;
         }
         a{
             font-size: 14px;
@@ -562,7 +568,7 @@ audio::-ms-media-controls-panel {
         font-size: 40px;
     }
     .block-titles-smaller{
-        font-size: 20px;
+        font-size: 35px;
         margin-top: 1vh;
     }
     .setup-description{
@@ -614,17 +620,32 @@ audio::-ms-media-controls-panel {
         left: 1vh;
         opacity: 0.8;
     }
-    .item {
+    /* .item {
         position: relative;
         flex: 1;
         overflow: hidden;
         border-radius: 10px;
         cursor: pointer;
-        transition: flex 1s ease; /* Transition flex property for smooth animation */
+        transition: flex 1s ease;
+        height: 100%;
     }
-    .item:hover {
-        flex: 3; /* Enlarge the item on hover */
+    .item.active{
+        flex: 3; 
+    } */
+    .item {
+        position: relative;
+        flex: 1;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: flex 0.5s ease, opacity 0.5s ease;
     }
+    
+    .item.active {
+        flex: 3;
+    }
+
     .item-tt {
         position: relative;
         flex: 1;
@@ -646,10 +667,10 @@ audio::-ms-media-controls-panel {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%; /* Ensure the image covers the width of its container */
-        height: 100%; /* Ensure the image covers the height of its container */
-        object-fit: cover; /* Cover the entire container while maintaining aspect ratio */
-        transition: transform 0.5s ease; /* Transition for smooth enlargement effect */
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover;
+        transition: transform 0.5s ease;
     }
     
     .overlay {
@@ -659,14 +680,17 @@ audio::-ms-media-controls-panel {
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.4);
-        opacity: 1;
-        transition: opacity 0.5s ease; /* Transition opacity for smooth hover effect */
+        background-color:rgba(255, 255, 255, 0);
+        opacity: 0;
+        transition: opacity 0.5s ease;
     }
     
-    .item:hover .overlay {
-        opacity: 0; /* Hide the overlay on hover */
+    .item.active .overlay {
+        opacity: 0;
     }
+
+
+
     .item-tt:hover .overlay {
         opacity: 0; /* Hide the overlay on hover */
     }
@@ -682,7 +706,7 @@ audio::-ms-media-controls-panel {
         margin-top: 2vh;
         margin-bottom: 10vh;
         text-align: left;
-        font-size: 18px;
+        font-size: 30px;
     }
     a{
         font-size: 14px;
