@@ -285,7 +285,7 @@
     
     
     .block-titles{
-        font-size: 24px;
+        font-size: 40px;
     }
     
     .img-description{
@@ -331,7 +331,7 @@
         transition: flex 0.5s ease, opacity 0.5s ease;
     }
     .item.active {
-        flex: 3;
+        flex: 3.75;
     }
     .item-1 { 
         margin-bottom: 1vw;
@@ -364,7 +364,7 @@
       
     .audio-title {
         color: #000000;
-        font-size: 16px;
+        font-size: 28px;
         margin-top: 0em;
         margin-right: 2vw;
     }
@@ -372,7 +372,7 @@
     .sound-container {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: left;
         justify-content: center;
         width: 100%;
         height: fit-content;
@@ -382,16 +382,16 @@
     
     .audio-item {
         display: flex;
-        flex-direction: row;
-        align-items: center;
+        flex-direction: column;
+        align-items: left;
         justify-content: center;
         margin-bottom: 2em;
     }
     
     .audio-controls {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: left;
+        justify-content: left;
         margin-top: 0.5em;
     }
     
@@ -399,16 +399,17 @@
         background-color: #e12c2e;
         color: #fff;
         border: none;
-        padding: 0.5em 0.5em;
+        padding: 1em 2em;
         cursor: pointer;
+        font-size: 22px;
     }
     
     .progress-bar {
-        width: 30vw;
+        width: 80%;
         height: 2vh;
         background-color: #d3d3d3;
         margin-left: 1em;
-        border-radius: 10px;
+        border-radius: 20px;
         cursor: pointer; /* Add cursor pointer to indicate it's clickable */
     }
     
