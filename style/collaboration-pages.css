@@ -163,8 +163,8 @@
 .sound-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
     width: 100%;
     height: fit-content;
     margin-top: 5vh;
@@ -173,7 +173,7 @@
 
 .audio-item {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 2em;
@@ -182,7 +182,7 @@
 .audio-controls {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     margin-top: 0.5em;
 }
 
@@ -195,7 +195,7 @@
 }
 
 .progress-bar {
-    width: 30vw;
+    width: 50vw;
     height: 2vh;
     background-color: #d3d3d3;
     margin-left: 1em;
@@ -249,7 +249,7 @@
     }
     
     .description{
-        line-height: 2.5vh;
+        line-height: 3vh;
         width: 100%;
         margin-top: 15vh;
         margin-bottom: 8vh;
@@ -257,11 +257,11 @@
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
-        font-size: 24px;
+        font-size: 30px;
     }
     
     .description-nowhere{
-        line-height: 2.5vh;
+        line-height: 3vh;
         width: 100%;
         margin-top: 20vh;
         margin-bottom: 5vh;
@@ -269,10 +269,10 @@
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
-        font-size: 24px;
+        font-size: 30px;
     }
     .description-nowhere.venaur{
-        line-height: 2.5vh;
+        line-height: 3.0vh;
         width: 100%;
         margin-top: 2vh;
         margin-bottom: 5vh;
@@ -280,7 +280,7 @@
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
-        font-size: 25px;
+        font-size: 30px;
     }
     
     
@@ -290,7 +290,7 @@
     
     .img-description{
         position: relative;
-        font-size: 22px;
+        font-size: 24px;
         top:18vh;
         color:#777777;
     }

@@ -287,7 +287,7 @@ audio::-ms-media-controls-panel {
     
         .content{
             justify-content: center;
-            width: 80%;
+            width: 90%;
             margin-left: auto;
             margin-right: auto;
         }
@@ -318,7 +318,7 @@ audio::-ms-media-controls-panel {
             justify-content: center;
             margin-left: auto;
             margin-right: auto;
-            font-size: 18px;
+            font-size: 30px;
         }
     
         .indent{
@@ -327,14 +327,14 @@ audio::-ms-media-controls-panel {
     
         }
         .block-titles{
-            font-size: 24px;
+            font-size: 40px;
         }
         .block-titles-smaller{
             font-size: 20px;
             margin-top: 1vh;
         }
         .setup-description{
-            line-height: 3.5vh;
+            line-height: 3vh;
             width: 100%;
             margin-top: 2vh;
             margin-bottom: 5vh;
@@ -342,13 +342,13 @@ audio::-ms-media-controls-panel {
             justify-content: center;
             margin-left: auto;
             margin-right: auto;
-            font-size: 18px;
+            font-size: 30px;
         }
         
     
         
         .art-titles{
-            font-size: 24px;
+            font-size: 26px;
             position: relative;
             top: 18vh;
             margin-top: 3vh;
@@ -462,64 +462,64 @@ audio::-ms-media-controls-panel {
 
     }
     /* -----------------------------------------------------------------*/
-    /* -----------------------------------------------------------------*/
+    /* --MOVIbE---------------------------------------------------------------*/
     
-    @media only screen and (max-width: 779px) {
+@media only screen and (max-width: 779px) {
         /* Styling for audio container */
-.audio-container {
-    position: relative;
-    top: 15vh; 
-    background-color: #dbdbdb;
-    border-radius: 8px;
-    margin-bottom: 5vh;
-    transition: top 0.3s ease; /* Add smooth transition for top property */
-}
+    .audio-container {
+        position: relative;
+        top: 15vh; 
+        background-color: #dbdbdb;
+        border-radius: 8px;
+        margin-bottom: 5vh;
+        transition: top 0.3s ease; /* Add smooth transition for top property */
+    }
 
-/* Style the audio controls */
-audio {
-    width: 100%;
-}
-audio::-webkit-media-controls-panel {
-    background-color: #dbdbdb !important; 
-    color: white; 
-}
-audio::-moz-range-progress {
-    background-color: #dbdbdb; 
-}
+    /* Style the audio controls */
+    audio {
+        width: 100%;
+    }
+    audio::-webkit-media-controls-panel {
+        background-color: #dbdbdb !important; 
+        color: white; 
+    }
+    audio::-moz-range-progress {
+        background-color: #dbdbdb; 
+    }
 
-audio::-ms-media-controls-panel {
-    background-color: #dbdbdb; 
-    color: white; 
-}
-/* Style the custom controls container */
-.audio-controls {
-    position: relative;
-    z-index: 2; /* Ensure custom controls are above default controls */
-    background-color: #dbdbdb;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    audio::-ms-media-controls-panel {
+        background-color: #dbdbdb; 
+        color: white; 
+    }
+    /* Style the custom controls container */
+    .audio-controls {
+        position: relative;
+        z-index: 2; /* Ensure custom controls are above default controls */
+        background-color: #dbdbdb;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-/* Customize play/pause button appearance */
-.audio-controls button {
-    background-color: transparent;
-    border: none;
-    color: rgb(2, 2, 2);
-    font-size: 16px;
-    cursor: pointer;
-    outline: none;
-}
+    /* Customize play/pause button appearance */
+    .audio-controls button {
+        background-color: transparent;
+        border: none;
+        color: rgb(2, 2, 2);
+        font-size: 16px;
+        cursor: pointer;
+        outline: none;
+    }
 
-/* Adjust spacing and layout of controls */
-.audio-controls button:not(:first-child) {
-    margin-left: 10px; /* Add spacing between buttons */
-}
+    /* Adjust spacing and layout of controls */
+    .audio-controls button:not(:first-child) {
+        margin-left: 10px; /* Add spacing between buttons */
+    }
 
     .content{
         justify-content: center;
-        width: 80%;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -550,7 +550,7 @@ audio::-ms-media-controls-panel {
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
-        font-size: 18px;
+        font-size: 30px;
     }
 
     .indent{
@@ -559,14 +559,14 @@ audio::-ms-media-controls-panel {
 
     }
     .block-titles{
-        font-size: 24px;
+        font-size: 40px;
     }
     .block-titles-smaller{
         font-size: 20px;
         margin-top: 1vh;
     }
     .setup-description{
-        line-height: 3.5vh;
+        line-height: 3vh;
         width: 100%;
         margin-top: 2vh;
         margin-bottom: 5vh;
@@ -574,13 +574,13 @@ audio::-ms-media-controls-panel {
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
-        font-size: 18px;
+        font-size: 30px;
     }
     
 
     
     .art-titles{
-        font-size: 24px;
+        font-size: 26px;
         position: relative;
         top: 18vh;
         margin-top: 3vh;
