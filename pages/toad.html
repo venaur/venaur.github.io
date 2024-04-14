@@ -36,25 +36,41 @@
 
         <div class="gallery-wrap">
             <div class="item item-1">
-                <div class="title" style="color: white; font-size:18px; ">Bakery</div>
-                <img src="../assets/toad/toad-outdoor.png" alt="Toad Outdoor">
-                <div class="overlay"></div>
+              <div class="clickable-item">
+
+                  <div class="title" style="color: white; font-size:18px; ">Bakery</div>
+                  <img src="../assets/toad/toad-outdoor.png" alt="Toad Outdoor">
+                  <div class="overlay"></div>
+              </div>
+
             </div>
             <div class="item item-1">
-                <img src="../assets/toad/toad-talk.PNG" alt="Toad Talk">
-                <div class="overlay"></div>
-                <div class="title" style="color: white;font-size:18px; ">Chat</div>
+              <div class="clickable-item">
+
+                  <img src="../assets/toad/toad-talk.PNG" alt="Toad Talk">
+                  <div class="overlay"></div>
+                  <div class="title" style="color: white;font-size:18px; ">Chat</div>
+              </div>
             </div>
+
+
             <div class="item item-1">
+              <div class="clickable-item">
+
                 <img src="../assets/toad/toad-fight.PNG" alt="Toad Fight">
                 <div class="overlay"></div>
                 <div class="title" style="color: white; font-size:18px;">Fight</div>
-            </div>
+           </div>
+           
+              </div>
             <div class="item item-1">
+              <div class="clickable-item">
+
                 <img src="../assets/toad/toad-el.PNG" alt="Toad Elevator">
                 <div class="overlay"></div>
                 <div class="title" style="color: white;font-size:18px; ">Elevator</div>
-            </div>
+           </div>
+              </div>
         </div>
         
 
@@ -180,6 +196,33 @@
     }
 
     //AUDIO======================================
+
+
+
+    //CLICK GALLERY=======================
+    document.addEventListener("DOMContentLoaded", function() {
+    const clickableItems = document.querySelectorAll(".clickable-item");
+
+    clickableItems.forEach(item => {
+        item.addEventListener("click", function() {
+            // Toggle flex value on click
+            if (item.parentElement.classList.contains("active")) {
+                item.parentElement.classList.remove("active");
+            } else {
+                item.parentElement.classList.add("active");
+            }
+
+            // Toggle opacity of overlay on click
+            const overlay = item.querySelector(".overlay");
+            if (overlay.style.opacity === "0") {
+                overlay.style.opacity = "1";
+            } else {
+                overlay.style.opacity = "0";
+            }
+        });
+    });
+});
+
 
     </script>
     

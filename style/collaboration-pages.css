@@ -325,13 +325,11 @@
         overflow: hidden;
         border-radius: 10px;
         cursor: pointer;
-        transition: flex 1s ease;
-    
-        &:hover{
-            flex:2.5;
-          }
+        transition: flex 0.5s ease, opacity 0.5s ease;
     }
-    
+    .item.active {
+        flex: 2.5;
+    }
     .item-1 { 
         margin-bottom: 1vw;
     }
@@ -352,10 +350,10 @@
         height: 100%;
         background-color: rgba(0, 0, 0, 0.4);
         opacity: 1;
-        transition: opacity 1s ease;
+        transition: opacity 0.5s ease;
     }
     
-    .item:hover .overlay {
+    .item.active .overlay {
         opacity: 0;
     }
     
