@@ -195,7 +195,7 @@ html, body {
     flex-direction: column;
     align-items: center; 
     justify-content: center; 
-    overflow-y: none;
+    overflow-y: hidden;
     height: fit-content;
     top: 35%; 
     transform: translateY(50%); 
