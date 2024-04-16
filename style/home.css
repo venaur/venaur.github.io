@@ -195,7 +195,7 @@ html, body {
     align-items: center; 
     justify-content: center; 
     overflow-y: hidden;
-    height: 100%; 
+    top: 35%; 
     transform: translateY(50%); 
   }
   
