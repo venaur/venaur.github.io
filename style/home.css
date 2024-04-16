@@ -90,7 +90,7 @@ html, body {
     justify-content: center; 
     overflow-y: hidden;
     height: 100%; 
-    transform: translateY(50%); 
+    /* transform: translateY(50%);  */
   }
   
 .category {
