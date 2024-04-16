@@ -185,7 +185,7 @@ html, body {
   .portfolio-content {
     position: absolute;
     color: black;
-    background-color: rgb(127, 138, 255);
+    background-color: rgb(96, 28, 28);
     white-space: nowrap;
     font-size: 32px;
         /* change opacity back to 0 for animation! */
