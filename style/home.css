@@ -9,6 +9,7 @@ html, body {
   padding: 0;
   overflow: hidden; 
   height: 100%;
+  /* height: auto; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,7 +186,7 @@ html, body {
   .portfolio-content {
     position: absolute;
     color: black;
-    background-color: rgb(167, 220, 155);
+    background-color: rgb(14, 48, 117);
     white-space: nowrap;
     font-size: 32px;
         /* change opacity back to 0 for animation! */
