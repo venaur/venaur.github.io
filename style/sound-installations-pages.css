@@ -360,7 +360,7 @@ audio::-ms-media-controls-panel {
             display: flex;
             flex-direction: column;
             width: 100%;
-            height: 80vh;
+            height: 50vh;
             margin-bottom: 8vh;
             margin-top: 2vh;
         }
@@ -369,8 +369,8 @@ audio::-ms-media-controls-panel {
             flex-direction: column;
             margin-left: auto;
             margin-right: auto;
-            width: 80%;
-            height: 100vh;
+            width: 100%;
+            height: 70vh;
             margin-bottom: 8vh;
             margin-top: 2vh;
         }
@@ -393,10 +393,8 @@ audio::-ms-media-controls-panel {
         }
         
         .item.active {
-            flex: 2;
+            flex: 50%;
         }
-
-
         .item-tt {
             position: relative;
             flex: 3;
@@ -405,8 +403,8 @@ audio::-ms-media-controls-panel {
             cursor: pointer;
             transition: flex 1s ease; /* Transition flex property for smooth animation */
         }
-        .item-tt:hover {
-            flex: 13; /* Enlarge the item on hover */
+        .item-tt.active{
+            flex: 80%; /* Enlarge the item on hover */
         }
         .item-1-tt{
             margin-bottom: 1vw;
@@ -440,9 +438,8 @@ audio::-ms-media-controls-panel {
             opacity: 0;
         }
 
-
-        .item-tt:hover .overlay {
-            opacity: 0; /* Hide the overlay on hover */
+        .item-tt.active .overlay {
+            opacity: 0;
         }
     
         .echoes-video{
