@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // Check if the browser is Safari (user-agent detection)
   const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
   if (isSafari) {
-    // For Safari, attempt to play the video on page load without user interaction
+    // For Safari, 
     startAnimation();
   }
 });
