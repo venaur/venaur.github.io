@@ -185,6 +185,7 @@ html, body {
   .portfolio-content {
     position: absolute;
     color: black;
+    background-color: aquamarine;
     white-space: nowrap;
     font-size: 32px;
         /* change opacity back to 0 for animation! */
@@ -195,6 +196,7 @@ html, body {
     align-items: center; 
     justify-content: center; 
     overflow-y: hidden;
+    /* height:100%; */
     top: 35%; 
     transform: translateY(50%); 
   }
