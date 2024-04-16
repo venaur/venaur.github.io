@@ -87,7 +87,9 @@ html, body {
     flex-direction: column;
     align-items: center; 
     justify-content: center; 
-    height: 100vh; 
+    overflow-y: hidden;
+    height: 100%; 
+    transform: translateY(50%); 
   }
   
 .category {
@@ -130,8 +132,6 @@ html, body {
     top: 45%;
   
   }
-
-
 
   /* ---------------Logo Heading---------------------- */
   .loading-screen{
@@ -194,7 +194,9 @@ html, body {
     flex-direction: column;
     align-items: center; 
     justify-content: center; 
-    height: 100vh; 
+    overflow-y: hidden;
+    height: 100%; 
+    transform: translateY(50%); 
   }
   
   .category {
