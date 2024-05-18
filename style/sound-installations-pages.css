@@ -516,7 +516,7 @@ audio::-ms-media-controls-panel {
     /* -----------------------------------------------------------------*/
     /* --MOVIbE---------------------------------------------------------------*/
     
-@media only screen and (max-width: 679px) {
+@media only screen and (max-width: 879px) {
         /* Styling for audio container */
     .audio-container {
         position: relative;
