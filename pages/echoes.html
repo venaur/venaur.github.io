@@ -111,29 +111,29 @@
 
     <script>
 
-            //CLICK GALLERY=======================
-            document.addEventListener("DOMContentLoaded", function() {
-            const clickableItems = document.querySelectorAll(".clickable-item");
+    //CLICK GALLERY=======================
+    document.addEventListener("DOMContentLoaded", function() {
+    const clickableItems = document.querySelectorAll(".clickable-item");
 
-            clickableItems.forEach(item => {
-                item.addEventListener("click", function() {
-                    // Toggle flex value on click
-                    if (item.parentElement.classList.contains("active")) {
-                        item.parentElement.classList.remove("active");
-                    } else {
-                        item.parentElement.classList.add("active");
-                    }
+    clickableItems.forEach(item => {
+        item.addEventListener("click", function() {
+            // Toggle flex value on click
+            if (item.parentElement.classList.contains("active")) {
+                item.parentElement.classList.remove("active");
+            } else {
+                item.parentElement.classList.add("active");
+            }
 
-                    // Toggle opacity of overlay on click
-                    const overlay = item.querySelector(".overlay");
-                    if (overlay.style.opacity === "0") {
-                        overlay.style.opacity = "1";
-                    } else {
-                        overlay.style.opacity = "0";
-                    }
-                });
-            });
+            // Toggle opacity of overlay on click
+            const overlay = item.querySelector(".overlay");
+            if (overlay.style.opacity === "0") {
+                overlay.style.opacity = "1";
+            } else {
+                overlay.style.opacity = "0";
+            }
         });
+    });
+});
     </script>
 
 
