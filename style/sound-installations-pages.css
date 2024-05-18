@@ -606,7 +606,7 @@ audio::-ms-media-controls-panel {
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
-        font-size: 24px;
+        font-size: 28px;
     }
 
     .indent{
@@ -615,7 +615,7 @@ audio::-ms-media-controls-panel {
 
     }
     .block-titles{
-        font-size: 32px;
+        font-size: 38px;
     }
     .block-titles-smaller{
         font-size: 28px;
@@ -630,7 +630,7 @@ audio::-ms-media-controls-panel {
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
-        font-size: 24px;
+        font-size: 28px;
     }
     
 
