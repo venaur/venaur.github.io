@@ -1,0 +1,41 @@
+*{
+    text-decoration: none;
+    font-family: 'HelveticaNeue-Light';
+    letter-spacing: 0.1rem;
+    color: black;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.centered img {
+  width: 15rem;
+  height: auto;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: column; /* This ensures the content stacks vertically */
+  text-align: center;
+}
