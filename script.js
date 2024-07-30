@@ -1,78 +1,80 @@
-
-//Landing Page
-// document.getElementById('landing').addEventListener('click', function() {
-//   document.getElementById('landing').style.display = 'none';
-//   document.getElementById('home').style.display = 'flex';
-//   document.getElementById('top-logo').style.display = 'block';
-// });
-
 document.getElementById('landing').addEventListener('click', function() {
-  const landing = document.getElementById('landing');
-  const home = document.getElementById('home');
-  const topLogo = document.getElementById('top-logo');
-
-  // Fade out landing page
-  landing.style.opacity = 0;
-
-  // Wait for the transition to end before hiding the landing and showing the home page
-  setTimeout(() => {
-    landing.style.display = 'none';
-    home.style.opacity = 1;
-    home.style.visibility = 'visible';
-    topLogo.style.display = 'block';
-  }, 500); // Duration of the transition
+  window.location.href = 'home.html'; // Replace 'home.html' with your home page URL
 });
 
 
-// document.addEventListener("DOMContentLoaded", function() {
-//   const logoVideo = document.getElementById("logo-video");
-//   const portfolioContent = document.getElementById("portfolio");
-//   const topLogo = document.getElementById("top-logo");
 
-//   const animationPlayed = sessionStorage.getItem("animationPlayed");
 
-//   function startAnimation() {
-//     topLogo.style.opacity = "0";
 
-//     // Play the animation
-//     logoVideo.play().then(() => {
-//       // Video successfully started playing
-//       logoVideo.classList.add("logo-fade-out");
-//       setTimeout(() => {
-//         logoVideo.style.display = "none";
-//         portfolioContent.style.opacity = "1"; // Fade in portfolio content
-//         topLogo.style.opacity = "1"; // Show top logo
-//         document.body.style.pointerEvents = "auto"; // Enable pointer events
-//         sessionStorage.setItem("animationPlayed", true); // Store flag
-//       }, 1000); // Adjust the duration as needed
-//     }).catch(error => {
-//       // Autoplay was prevented, handle error
-//       console.error("Autoplay was prevented:", error);
-//       // You may want to display a message or provide alternative instructions
-//     });
 
-//     document.body.style.pointerEvents = "none"; // Disable pointer events during animation
-//   }
+// document.getElementById('landing').addEventListener('click', function() {
+//   const landing = document.getElementById('landing');
+//   const home = document.getElementById('home');
+//   const topLogo = document.getElementById('top-logo');
 
-//   if (!animationPlayed) {
-//     // Animation has not played yet
-//     startAnimation();
-//   } else {
-//     // Animation already played
-//     logoVideo.style.display = "none"; // Hide the logo video
-//     portfolioContent.style.opacity = "1"; // Show portfolio content
-//     topLogo.style.opacity = "1"; // Show top logo
-//   }
+//   // Fade out landing page
+//   landing.style.opacity = 0;
 
-//   const categories = document.querySelectorAll(".category");
-//   categories.forEach(category => {
-//     category.style.opacity = "1"; // Trigger opacity transition for categories
-//   });
-
-//   // Check if the browser is Safari (user-agent detection)
-//   const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-//   if (isSafari) {
-//     // For Safari, 
-//     startAnimation();
-//   }
+//   // Wait for the transition to end before hiding the landing and showing the home page
+//   setTimeout(() => {
+//     landing.style.display = 'none';
+//     home.style.opacity = 1;
+//     home.style.visibility = 'visible';
+//     topLogo.style.display = 'block';
+//   }, 500); // Duration of the transition
 // });
+
+const artists = [
+  {name: "Where are you Really From?",        
+    // image: "assets/claudia.png", 
+    title: "Where are you Really From?",        
+    description: "description.",
+    instagram: "1313.es"
+  },
+  {name: "Echoes of the Past, Present & Future",        
+    // image: "assets/amias.png", 
+    title: "Echoes of the Past, Present & Future", 
+    description: "Content",
+    instagram: "amias_hanley"
+  },
+];
+
+const content = document.getElementById("content");
+
+//------ display artist names-----
+function displayArtistNames() {
+  const artistList = document.getElementById("artist-list");
+  artistList.innerHTML = ""; 
+
+  artists.forEach((artist, index) => {
+    const listItem = document.createElement("li");
+    listItem.textContent = artist.name;
+    listItem.onclick = () => showArtist(index);
+    artistList.appendChild(listItem);
+  });
+}
+
+// ---display artist details----
+function showArtist(index) {
+  const artist = artists[index];
+
+  const instagramLink = artist.instagram
+    ? `<a href="https://www.instagram.com/${artist.instagram}" target="_blank" class="instagram-link">
+         <img src="instagram.png" alt="Instagram" class="instagram-icon">
+         <span class="instagram-username">${artist.instagram}</span>
+       </a>`
+    : '';
+  
+  content.innerHTML = `
+    ${artist.image ? `<img src="${artist.image}" alt="${artist.name}">` : ''}
+    <h2>${artist.title}</h2>
+    <h3>${artist.name}</h3>
+    <p>${artist.description}</p>
+    <div>${instagramLink}</div>
+  `;
+
+  // Display artist details
+  content.style.display = "block";
+}
+
+displayArtistNames();
