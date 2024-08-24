@@ -1,3 +1,7 @@
+
+/* --------------DESKTOP----------------------- */
+@media (min-width: 868px) {
+
 * {
   text-decoration: none;
   font-family: "Hind Siliguri";
@@ -43,7 +47,7 @@ html, body {
 
 .home-page {
   display: flex; /* Ensure that flex is being used */
-  justify-content: center; 
+  justify-content: left; 
   align-items: center; 
   width: 100%;
   height: 100%;
@@ -54,20 +58,21 @@ html, body {
 
 
 /* ------Left aligned----- */
-/* .portfolio-content {
-  position:relative;
+.portfolio-content {
+  position:fixed;
   display: flex;
   flex-direction: column; 
   align-items: flex-start;
   justify-content: center; 
   width: 100%;
   top: 5em;
-  left: 5em;
-} */
+  left: 1em;
+  z-index: 999;
+
+}
 
 /* -------centered menu-------- */
-
-.portfolio-content {
+/* .portfolio-content {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -76,7 +81,8 @@ html, body {
   width: fit-content;
   margin: 0 auto; 
   top: 5em;
-}
+} */
+
 
 
 .category {
@@ -192,7 +198,7 @@ html, body {
 
 /* ---Hover effect for artist names--- */
 #artist-list li:hover {
-  background-color:rgba(231, 229, 229, 0.646);
+  background-color:rgba(216, 213, 213, 0.681);
   width: fit-content;
   transition: all 0.3s ease-in;
 }
@@ -219,17 +225,18 @@ html, body {
 #content {
   display: none; 
   flex-direction: column;
-  align-items: center; /* Center content horizontally */
+  align-items: right; /* Center content horizontally */
   justify-content: center; /* Center content vertically */
   position: absolute; /* Fixed positioning relative to the viewport */
   top: 0; /* Position it vertically in the middle */
-  left: 50%; /* Position it horizontally in the middle */
-  width: 75%; /* Fixed width */
+  right: 2em; /* Position it horizontally in the middle */
+  width: 70%; /* Fixed width */
+  max-width: 70%;
   min-height: 100%;
   height: fit-content; /* Fit content height */
   padding-bottom: 5rem;
   background-color: rgb(255, 255, 255);
-  transform: translate(-50%, 0); /* Center the element */
+  /* transform: translate(-50%, 0);  */
 
 }
 
@@ -262,4 +269,14 @@ html, body {
 #content a {
   text-decoration: none;
   color: inherit;
+}
+
+/* Highlighted state for selected artist */
+#artist-list li.active {
+  background-color: rgba(222, 201, 185, 0.9); 
+  width: fit-content;
+}
+
+
+
 }
