@@ -67,7 +67,6 @@
     top: 5em;
     left: 1em;
     z-index: 999;
-    
     }
 
     
@@ -101,12 +100,12 @@
     }
     
     
-    #artist-list {
+    /* #artist-list {
     margin-top: 0vh;
     list-style: none;
     padding: 0; 
     width: fit-content;
-    }
+    } */
     /* Style for each artist name */
     #artist-list li {
     font-family: "Hind Siliguri";
@@ -130,6 +129,7 @@
     width: 100%; /* Take full width of its container */
     padding-left: 5px; /* Optional padding */
     padding-right: 5px; /* Optional padding */
+    
     }
     
     #artist-list {
