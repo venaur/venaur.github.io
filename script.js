@@ -162,10 +162,10 @@ function showArtist(index) {
         <source src="assets/temperTrauma/ttlooped.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
-      <img src="assets/temperTrauma/tt-1.png" alt="Gallery Image 1">
-      <img src="assets/temperTrauma/tt-2.png" alt="Gallery Image 2">
-      <img src="assets/temperTrauma/tt-3.png" alt="Gallery Image 3">
-      <img src="assets/temperTrauma/tt-4.png" alt="Gallery Image 4">
+      <img src="assets/tempertrauma/tt-1.png" alt="Gallery Image 1">
+      <img src="assets/tempertrauma/tt-2.png" alt="Gallery Image 2">
+      <img src="assets/tempertrauma/tt-3.png" alt="Gallery Image 3">
+      <img src="assets/tempertrauma/tt-4.png" alt="Gallery Image 4">
     </div>
     ` : ''}
 
