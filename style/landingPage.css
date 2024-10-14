@@ -1,21 +1,18 @@
 
 /* --------------DESKTOP----------------------- */
 @media (min-width: 868px) {
-
 * {
   text-decoration: none;
   font-family: "Hind Siliguri";
   letter-spacing: 0.0rem;
   color: black;
 }
-
 html, body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
 }
-
 .centered {
   display: flex;
   justify-content: center;
@@ -23,60 +20,48 @@ html, body {
   width: 100%;
   height: 100%;
 }
-
 .centered img {
   width: 15rem;
   height: auto;
   cursor: pointer;
 }
-
 #top-logo {
   position: fixed;
-  top: 2rem;  /* Adjust as needed to position the logo from the top */
-  left: 0.5rem; /* Adjust as needed to position the logo from the right edge */
+  top: 2rem;  
+  left: 0.5rem; 
   cursor: pointer;
   width: 10rem;
-  display: none; /* Change to `block` or other display property as needed */
-  z-index: 999; /* Ensure it's above other content */
-  transform-origin: center; /* Ensure the rotation is around the center */
+  display: none; 
+  z-index: 999;
+  transform-origin: center; 
 }
-
-/* Ensure the image inside the logo maintains aspect ratio */
 #top-logo img {
   width: 90%;
   height: auto;
 }
-
-
-
 .home-page {
-  display: flex; /* Ensure that flex is being used */
+  display: flex; 
   justify-content: left; 
   align-items: center; 
   width: 100%;
   height: 100%;
   flex-direction: column;
   text-align: left;
-
 }
-
 .category {
   display: flex;
   flex-direction: column;
-  width: 100%; /* Full width within the parent container */
+  width: 100%; 
   margin-bottom: 8%;
 }
-
 .category:hover::before {
   width: 100%; 
 }
-
-/* menu items */
+/*------ menu items------ */
 .menu-item {
-  width: fit-content; /* Width adjusts to content */
+  width: fit-content; 
 }
-
-/* --- for artist content--- */
+/* ----- for artist content--- */
 .overlay {
   position: fixed;
   top: 0;
@@ -85,18 +70,14 @@ html, body {
   height: 100%;
   z-index: 50;
   display: block;
-  /* transition: opacity 0.8s ease;  */
 }
-
-
-/* Container for the artist list to allow absolute positioning */
+/*------ Container for the artist list----- */
 .portfolio-content {
-  position: fixed; /* Fixed positioning for the container */
+  position: fixed;
   width: 100%;
   height: 100%;
 }
-
-/* Styles for artist list items */
+/* --------Styles for artist list items ------*/
 #artist-list {
   position: absolute; 
   list-style: none;
@@ -105,14 +86,12 @@ html, body {
   left: 14%;
   width: 72%; 
   height: 100%;
-  /* Add black borders to the left and right */
-  border-left: 1px solid black; /* Adjust thickness as needed */
-  border-right: 1px solid black; /* Adjust thickness as needed */
+  border-left: 1px solid black; 
+  border-right: 1px solid black; 
 }
-
-
+/* ----Scattered list------------- */
 #artist-list li {
-  position: absolute; /* Absolute positioning to scatter */
+  position: absolute; 
   font-family: "Hind Siliguri";
   font-weight: 450;
   font-style: normal;
@@ -122,26 +101,23 @@ html, body {
   text-align: left;
   border-radius: 10px;
   white-space: nowrap;
-  background-color: rgba(255, 255, 255, 0.8); /* Optional: semi-transparent background */
-  border: 1px solid #ddd; /* Optional: border to distinguish items */
+  background-color: rgba(255, 255, 255, 0.8); 
+  border: 1px solid #ddd; 
 }
 
-/* Example positions for each list item */
+/* ------ positions for each list item------- */
 #artist-list li:nth-child(1) {
   top: 10%;
   left: 15%;
 }
-
 #artist-list li:nth-child(2) {
   top: 25%;
   left: 25%;
 }
-
 #artist-list li:nth-child(3) {
   top: 45%;
   left: 50%;
 }
-
 #artist-list li:nth-child(4) {
   top: 55%;
   left: 15%;
@@ -158,56 +134,30 @@ html, body {
   top: 80%;
   left: 40%;
 }
-
-/* Add more positions as needed */
-
 #collab-list {
   margin-top: 0vh;
   list-style: none;
   padding: 0; 
   width: fit-content;
 }
-
 .navbar-titles {
   font-family: "Hind Siliguri";
   font-weight: 400;
   font-size: 20px;
   color: rgb(87, 87, 87);
   white-space: nowrap;
-  text-align: left; /* Align text to the left */
-  width: 100%; /* Take full width of its container */
-  padding-left: 5px; /* Optional padding */
-  padding-right: 5px; /* Optional padding */
+  text-align: left; 
+  width: 100%; 
+  padding-left: 5px; 
+  padding-right: 5px;
 }
-
-/* ---Hover effect for artist names--- */
+/* ------Hover effect for artist names--- */
 #artist-list li:hover {
   background-color:rgba(216, 213, 213, 0.681);
   width: fit-content;
   transition: all 0.3s ease-in;
 }
-
-
-
-
 /* -----------Pages-------- */
-
-/* #content {
-  display: none; 
-  flex-direction: column;
-  align-items: center; 
-  justify-content: flex-start; 
-  position: absolute; 
-  top: 0;
-  left: 15%; 
-  width: 70%; 
-  max-width: 70%; 
-  height: 120%;
-  overflow-y: auto; 
-  overflow-x: hidden; 
-  margin-bottom: 10rem;
-  background-color: rgb(255, 255, 255);
-} */
 #content {
   display: flex;
   flex-direction: column;
@@ -224,58 +174,171 @@ html, body {
   margin-bottom: 10rem;
   background-color: rgb(255, 255, 255);
 }
-
-
-
-  /* WebKit-based browsers */
-  #content::-webkit-scrollbar {
-    width: 10px; /* Width of the scrollbar */
-  }
-  
-  #content::-webkit-scrollbar-track {
-    background: #ffffff; /* Color of the scrollbar track */
-  }
-  
-  #content::-webkit-scrollbar-thumb {
-    background-color: #ffffff; /* Color of the scrollbar handle */
-    border-radius: 10px; /* Rounded corners of the scrollbar handle */
-    border: 1px solid #444444; /* Space around the scrollbar handle */
-  }
-  
-  #content::-webkit-scrollbar-thumb:hover {
-    background-color: #ffffff; /* Color when hovering over the scrollbar handle */
-  }
-  
-  
- 
-
-
-
-/* Exit button */
+/* -----Scrollbar--------*/
+#content::-webkit-scrollbar {
+  width: 10px; 
+}
+#content::-webkit-scrollbar-track {
+  background: #ffffff; 
+}
+#content::-webkit-scrollbar-thumb {
+  background-color: #ffffff; 
+  border-radius: 10px; 
+  border: 1px solid #444444; /
+}
+#content::-webkit-scrollbar-thumb:hover {
+  background-color: #ffffff; 
+}
+/* ----Exit button------ */
 #exit-icon {
   position: fixed; 
   top: -3rem; 
   cursor: cell; 
   z-index: 1000; 
-
 }
-
-/* Styling for the exit icon image */
 .exit-icon {
-  width: 1rem; /* Adjust size as needed */
+  width: 1rem; 
   height: auto;
 }
-
-  
-
-
-/* Optional: Style for the artist content, adjust as needed */
+/* ----Head image------ */
 #content img {
   max-width: 100%;
   height: auto;
   margin-top: 5rem;
 }
+/* --------About Photo and desc----- */
+.about-content {
+  display: flex; 
+  align-items: flex-start; 
+  gap: 3rem; 
+  margin-top: 1rem; 
+}
+.about-image {
+  width: 45%;
+  min-width: 45%;
+  height: auto;
+}
+.about-description {
+  flex: 1; 
+  max-width: 50%;
+}
+/* ------Toad image gallery----- */
+.gallery {
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 1rem; 
+  margin-top: 1rem; 
+  justify-content: center; 
+  margin-bottom: 5rem;
+}
+.gallery img {
+  width: 48%; 
+  height: auto; 
+}
+/* ------Nowhere image gallery----- */
+.nowhere-gallery {
+  margin-top: -4rem;
+}
+.nowhere-gallery img{
+  width: 100%; 
+  height: auto; 
+}
+.nowhere-gallery video{
+  width: 100%;
+  height: auto; 
+}
+/* ------Temper Trauma image gallery----- */
+.tt-gallery {
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 0.5rem; 
+  justify-content: center; 
+}
+.tt-gallery img{
+  width: 48%; 
+  height: auto; 
+  margin-bottom: 1rem;
+}
+.tt-gallery video{
+  margin-top: 3rem;
+  width: 100%;
+  height: auto; 
+}
+/* ----------BG img Echoes------- */
+.bgImg-echoes {
+  position: fixed;
+  bottom: 0rem;
+  right: 2rem;
+  width: 15%;
+  height: auto;
+  z-index: 10;
+  opacity: 0;
+  overflow: hidden; /* Hide overflow to prevent image from showing outside its container */
+  transition: opacity 1s ease-in;
+}
 
+.bgImg-echoes.show {
+  opacity: 1;
+  animation: scroll-up 10s linear infinite; /* Trigger the scrolling animation */
+}
+.bgImg-echoes img {
+  width: 100%; 
+  height: auto;
+  display: block;
+}
+
+.bgImg-nowhere {
+  position: fixed;
+  bottom: 0rem;
+  right: 2rem;
+  width: 15%;
+  height: auto;
+  z-index: 10;
+  opacity: 0;
+  overflow: hidden; /* Hide overflow to prevent image from showing outside its container */
+  transition: opacity 1s ease-in;
+}
+
+.bgImg-nowhere.show {
+  opacity: 1;
+  animation: scroll-up 10s linear infinite; /* Trigger the scrolling animation */
+}
+.bgImg-nowhere img {
+  width: 100%; 
+  height: auto;
+  display: block;
+}
+
+@keyframes scroll-up {
+  0% {
+    transform: translateY(0);
+  }
+  25%{
+    transform: translateX(50%);
+  }
+  50% {
+    transform: translateY(-150%);
+
+  }
+  75%{
+    transform: translateX(-100%);
+  }
+  90% {
+    transform: translateY(-50%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
+
+/* -----Heading Styles------ */
 #content h2 {
   font-weight: 300;
   font-size: 30px;
@@ -285,29 +348,30 @@ html, body {
 }
 #content h3, #content p {
   font-weight: 100;
-  /* font-size: 18px; */
   font-size: clamp(15px ,18px, 20px);
-
   line-height: 1.5em;
   margin: 0.5rem 0;
-  text-align: left; /* Center text */
+  text-align: left; 
 }
-
+/* -----image description -----*/
+#content h4 {
+  align-self: flex-start;
+  font-weight: 100;
+  color: #7e7e7e;
+  font-size: clamp(15px, 15px, 20px);
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  text-align: left; 
+}
 #content a {
   text-decoration: none;
   color: inherit;
 }
-
-/* Highlighted state for selected artist */
+/*----- Highlight selected artist------ */
 #artist-list li.active {
   background-color: rgba(222, 201, 185, 0.9); 
   width: fit-content;
 }
-
-
-
-
-
 /*--------------- Add keyframes animation ----------*/
 @keyframes slideUp {
   0% {
@@ -319,20 +383,13 @@ html, body {
       opacity: 1;
   }
 }
-
-
 .minimize {
   animation: minimizeFromTop 0.5s ease-out forwards;
 }
-
-
-
-
-
-/* Apply the animation to the content */
+/*--------- Apply animation------- */
 #content.show {
-  display: flex; /* Flex to ensure content arrangement */
-  animation: slideUp 1s ease-out; /* Name and duration */
+  display: flex; 
+  animation: slideUp 1s ease-out; 
 }
 
 }
