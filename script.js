@@ -91,14 +91,14 @@
 //       logoVideo.classList.add("logo-fade-out");
 //       setTimeout(() => {
 //         logoVideo.style.display = "none";
-//         portfolioContent.style.opacity = "1"; // Fade in portfolio content
+//         portfolioContent.style.opacity = "1"; 
 //         topLogo.style.opacity = "1"; // Show top logo
-//         document.body.style.pointerEvents = "auto"; // Enable pointer events
-//         sessionStorage.setItem("animationPlayed", true); // Store flag
+//         document.body.style.pointerEvents = "auto"; 
+//         sessionStorage.setItem("animationPlayed", true); 
 //       }, 1000); // Adjust the duration as needed
 //     });
 
-//     document.body.style.pointerEvents = "none"; // Disable pointer events during animation
+//     document.body.style.pointerEvents = "none";
 //   }
 
 //   if (!animationPlayed) {
@@ -113,10 +113,9 @@
 
 //   const categories = document.querySelectorAll(".category");
 //   categories.forEach(category => {
-//     category.style.opacity = "1"; // Trigger opacity transition for categories
+//     category.style.opacity = "1"; 
 //   });
 
-//   // Add click event listener to initiate animation (for Safari)
 //   document.body.addEventListener("click", startAnimation);
 // });
 
@@ -133,45 +132,41 @@ document.addEventListener("DOMContentLoaded", function() {
   function startAnimation() {
     topLogo.style.opacity = "0";
 
-    // Play the animation
+    //animation Play???--------------------------------
     logoVideo.play().then(() => {
-      // Video successfully started playing
       logoVideo.classList.add("logo-fade-out");
       setTimeout(() => {
         logoVideo.style.display = "none";
-        portfolioContent.style.opacity = "1"; // Fade in portfolio content
-        topLogo.style.opacity = "1"; // Show top logo
-        document.body.style.pointerEvents = "auto"; // Enable pointer events
-        sessionStorage.setItem("animationPlayed", true); // Store flag
-      }, 1000); // Adjust the duration as needed
-    }).catch(error => {
-      // Autoplay was prevented, handle error
-      console.error("Autoplay was prevented:", error);
-      // You may want to display a message or provide alternative instructions
+        portfolioContent.style.opacity = "1";
+        topLogo.style.opacity = "1"; 
+        document.body.style.pointerEvents = "auto"; 
+        sessionStorage.setItem("animationPlayed", true); 
+      }, 1000); 
+    }).catch(error => 
+      {
+
+      console.error("Autoplay prevented:", error);
     });
 
-    document.body.style.pointerEvents = "none"; // Disable pointer events during animation
+    document.body.style.pointerEvents = "none"; 
   }
 
   if (!animationPlayed) {
-    // Animation has not played yet
     startAnimation();
   } else {
-    // Animation already played
-    logoVideo.style.display = "none"; // Hide the logo video
-    portfolioContent.style.opacity = "1"; // Show portfolio content
-    topLogo.style.opacity = "1"; // Show top logo
+    logoVideo.style.display = "none"; 
+    portfolioContent.style.opacity = "1"; 
+    topLogo.style.opacity = "1"; 
   }
 
   const categories = document.querySelectorAll(".category");
   categories.forEach(category => {
-    category.style.opacity = "1"; // Trigger opacity transition for categories
+    category.style.opacity = "1";
   });
 
-  // Check if the browser is Safari (user-agent detection)
   const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
   if (isSafari) {
-    // For Safari, 
+    // For Safari???
     startAnimation();
   }
 });
