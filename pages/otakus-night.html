@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style/pages.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelementplayer.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelement-and-player.min.js"></script>
+    
+  <title>Otakus natt, Otakus Nacht, 阿宅之夜, Otakus Night</title>
+</head>
+
+<body>
+  <div class="background-img">
+    <img src="/assets/bg-img.png">
+  </div>
+
+  <div class="title">Otakus Natt | Otakus Nacht | 阿宅之夜 | Otakus Night</div>
+
+  <div class="container">
+    <!-- First Text Section -->
+    <div class="text-section">
+      <div class="text">
+        Exploring alternate modes of recollection, review and repetition as forms of collaborative and generative non-sense-making, this work may afford a listening that is both restless and tethered, displaced and situated. These modes function as an experiment in the de-construction of space and sound shapes through multiple languages—Norwegian, German, Mandarin and English. With this, the project challenges conventional structures of communication and listening.
+        <br><br>
+        Gesturing towards Anarchitecture and Dadaism, this score explores attention, absurdity, legibility, (mis)recognition and the spatiality of languages. Here, listeners are invited to observe their own listening biases and approaches toward legitimising sounds, syllables and sentences as a form a space-making.
+        <br><br>
+        Artists: Amias Hanley, Jiali Yang, Linlin Zhang, and Vendela Håkonsen
+     
+        <br><br>
+        <audio id="player" controls>
+            <source src="/assets/radio-edit.mp3" type="audio/mpeg">
+        </audio>
+        
+
+    </div>
+
+    </div>
+  
+    <div class="full-image">
+        <img src="/assets/otakusnight.png">
+    </div>
+</div>
+
+  <script>
+    const container = document.querySelector(".container");
+    const text = document.querySelector(".with-text .text");
+
+    container.addEventListener("scroll", () => {
+      const scrollPosition = container.scrollTop; 
+      const viewportHeight = window.innerHeight; 
+
+      if (scrollPosition > viewportHeight / 2) {
+        text.style.opacity = "0";
+        text.style.transform = "translateY(-20px)";
+      } else {
+        text.style.opacity = "1";
+        text.style.transform = "translateY(0)";
+      }
+    });
+
+
+    //audio
+    const player = new MediaElementPlayer('player', {
+    features: ['playpause', 'progress', 'volume'],
+    defaultAudioWidth: '100%',
+    success: function(mediaElement, originalNode) {
+    }
+});
+
+
+  </script>
+  
+
+</body>
+
+
+
+</html>
