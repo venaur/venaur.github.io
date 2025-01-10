@@ -180,13 +180,13 @@ a{
     .text-section {
         flex: none;
         scroll-snap-align: start;
-        height: 50vh;
+        height: 30vh;
     }
 
     .text-section .text {
         position: relative;
         color: white;
-        font-size: 1.8em; /* Fixed font-size */
+        font-size: 1.8em; /* was 1.5 */
         top: 10vh;
         left: 3vw;
         padding: 10px;
