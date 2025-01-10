@@ -167,11 +167,11 @@ body {
     .text-section .text {
         position: relative;
         color: white;
-        font-size: 0.8em; /* Fixed font-size */
+        font-size: 1.5em; /* Fixed font-size */
         top: 10%;
         left: 3vw;
         padding: 10px;
-        width: 25%;
+        width: 90%;
         line-height: 1.5em;
         background-color: rgba(36, 36, 36, 0.597);
         transition: opacity 1s ease-in-out, transform 1s ease-in-out;
@@ -181,6 +181,7 @@ body {
     .full-image {
         flex: none;
         position: relative;
+        top: 100vh;
         width: 100vw;
         height: 100vh;
         scroll-snap-align: start;
