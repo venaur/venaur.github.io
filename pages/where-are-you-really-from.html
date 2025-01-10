@@ -3,94 +3,67 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../style/sound-installations-pages.css">
-  <link rel="stylesheet" href="../style/main-style.css">
+  <link rel="stylesheet" href="/style/pages.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>     
   <title>Where are you Really From?</title>
 </head>
 
 <body>
-    <div id="top-logo">
-        <a href="../index.html"> 
-          <img src="../assets/full-logo.png" alt="Logo">
-        </a>
-    </div>
-    <div id="back-button">
-        <a href="../sound-installations.html">
-            <img src="../assets/arrow.png" alt="back">
-        </a>
-    </div>
+  <div class="background-img">
+    <img src="/assets/bg-img.png">
+  </div>
 
-    <div class="content">
-        <div class="content-img">
-            <img src="../assets/where-are-you/her-noise.png" alt="Where are you really from" class="overlay-image">
-        </div>
+  <div class="title">Where are you <em>Really</em> From?</div>
 
-        <div class="audio-container">
-            <audio controls class="audio-controls">
-                <source src="https://github.com/venaur/venaur.github.io/releases/download/v1.0/whereareyoureallyfrom.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
-
+  <div class="container">
+    <!-- First Text Section -->
+    <div class="text-section">
+      <div class="text">
+        The unnerving question, "Where are you <em>really</em> from?" does not have a simple answer. I conducted eight interviews with individuals from diverse backgrounds to uncover what the question truly seeks to understand. Their personal experiences are connected through themes of belonging, racism and the emotional impact of being "othered."
+        <br><br>
+        I connected these narratives with bespoke piano compositions. In this way, I presents myself as the ninth voice, reflecting on my experiences growing up in Norway as a Korean adoptee. I invited audiences to fully immerse themsevles into the eight-channel sound installation and listen carefully to the complexities of these stories, finding solace in familiarity or introspective reflection.
+      <br><br>
+        <a href="https://issuu.com/aesthetica_magazine/docs/aesthetica-short-film-festival-2024/250" target="_blank">Exhibition info</a>
      
-        
+      </div>
+    </div>
+  
+    <!-- First Image Section -->
+    <div class="full-image">
+      <img src="/assets/wrurf-1.jpg" alt="First Image">
+    </div>
+  
+    <!-- Second Image Section -->
+    <div class="full-image">
+      <img src="/assets/wrurf-2.jpg" alt="Second Image">
+    </div>
 
-        <div class="description">
-            The exploration of the common question, “Where are you <i>really</i>  from?” was inspired by the
-            conceptual structure of the Her Noise Archive. Irene Revell (2023) emphasized that the
-            archive isn't just associated with “feminism”, but encompasses a broader theme of “power.”
-            It’s designed to provoke power imbalances and explore the ways individuals can
-            interrogate power relations and dynamics. The question itself, “where are you really
-            from?,” holds a higher significance within this context, exploring how power dynamics not
-            only dictate who poses the question but also influences who becomes the subject of these
-            inquiries.
-            <br> <br>
-            For this project, I conducted four interviews, myself included. Each individual was either a
-            transracial adoptee or someone with a diverse background. Some of the questions I posed
-            included:
-            <div class="indent"> 
-                - How have you dealt with or responded to stereotypes and racism?
-                <br>- Have you struggled with belonging?
-                <br> - How would you imagine a future where questions like, “where are you <i>really</i> from?” may
-                no longer be asked?
-            </div>
-
-            <br>
-            Towards the end of the interviews, participants shared suggestions for more considerate
-            ways to ask questions:
-            <div class="indent"> 
-            - What is your ethnicity?
-            <br>- What is your background/heritage?
-            <br>- What languages do you speak?
-            </div>
-        </div>
-
-        <div class="block-titles">Installation Setup</div>
-        <div class="side-by-side"> 
-            <div class="setup-description">
-                “Where are you <i>really</i> from?”  was presented using a quadraphonic sound system, where each speaker was designated to play the voice of one of the interviewees. Surrounding a circular seating arrangement positioned at the center of the speakers encouraged active engagement from the audience. The seating layout was designed to entice listeners to linger longer with the piece, with speaker height slightly lowered to prompt individuals to take a seat. The duration of the piece precisely mirrors the time it took for the interviewees to feel at ease speaking. This temporal framework was intended to afford the audience the same opportunity, allowing them to observe the gradual unfolding of personal narratives over time.
-            </div>
-            <div class="supporting-img">
-                <img src="../assets/where-are-you/diagram.png">
-            </div>
-        </div>     
-
-
-        <div class="block-titles">Documentation</div>
-
-        <div class="click-gallery">
-            <img src="../assets/where-are-you/1.jpg">
-            <img src="../assets/where-are-you/4.jpg">
-            <img src="../assets/where-are-you/2.png">
-            <img src="../assets/where-are-you/3.png">
-        </div>
+    <div class="full-image">
+        <img src="/assets/wrurf-3.JPG" alt="Third Image">
+      </div>
 </div>
 
-    <script>
+  <script>
+    const container = document.querySelector(".container");
+    const text = document.querySelector(".with-text .text");
 
-    </script>
+    container.addEventListener("scroll", () => {
+      const scrollPosition = container.scrollTop; 
+      const viewportHeight = window.innerHeight; 
 
+      if (scrollPosition > viewportHeight / 2) {
+        text.style.opacity = "0";
+        text.style.transform = "translateY(-20px)";
+      } else {
+        text.style.opacity = "1";
+        text.style.transform = "translateY(0)";
+      }
+    });
+  </script>
+  
 
 </body>
+
+
+
 </html>
