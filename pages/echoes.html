@@ -3,140 +3,78 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../style/sound-installations-pages.css">
-  <link rel="stylesheet" href="../style/main-style.css">
+  <link rel="stylesheet" href="/style/pages.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>     
-  <title>Echoes of the Past, present & Future</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelementplayer.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelement-and-player.min.js"></script>
+    
+  <title>Echoes of the Past, Present & Future</title>
 </head>
 
 <body>
-    <div id="top-logo">
-        <a href="../index.html"> 
-          <img src="../assets/full-logo.png" alt="Logo">
-        </a>
+  <div class="background-img">
+    <img src="/assets/bg-img.png">
+  </div>
+
+  <div class="title"> Echoes of the Past, Present, Future
+  </div>
+
+  <div class="container">
+    <!-- First Text Section -->
+    <div class="text-section">
+      <div class="text">
+        Through the use of Pure Data, two speakers, and accompanying acoustic structures, I created an immersive soundscape centered on psychoacoustics and the illusion of echoing. The audience is invited to feel the vibrations of the sound as it’s being confined between the parabolas.
+        <br><br>
+        In this work, echoes symbolize the persistence of my past and the internal chaos it entails. These reverberations—present yet increasingly distant over time—invite contemplation of how this evolving distance might shape future decisions. The soundscape evokes a sense of ambiguity and uncertainty, mirroring my personal journey. At its core, the piece represents a willingness to confront the unknown, to embrace the potential for change, and to seek forgiveness, as I seek to transcend the boundaries of my personal experience.
+        <br><br>
+        <a href="https://damnedsoggyoatpatch.com/" target="_blank"><b>Exhibition info</b></a>
+        <br><br>
+        <audio id="player" controls>
+            <source src="/assets/e.mp3" type="audio/mpeg">
+        </audio>
+      </div>
     </div>
-    <div id="back-button">
-        <a href="../sound-installations.html">
-            <img src="../assets/arrow.png" alt="back">
-        </a>
+  
+    <!-- First Image Section -->
+    <div class="full-image">
+      <img src="/assets/echoes-2.jpg" alt="First Image">
     </div>
-
-    <div class="content">
-        <div class="content-img">
-            <img src="../assets/echoes/echoes-img.jpg" alt="Echoes">
-        </div>
-
-        <div class="audio-container">
-            <audio controls class="audio-controls">
-                <source src="https://github.com/venaur/venaur.github.io/releases/download/v1.0/echoes.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
-    
-        <div class="description">
-            As someone who has experienced a difficult past, I turned to art initially as a means of therapy and self-expression. However, as I continue to grow and evolve, I question my motives and the role that creating art plays in my life. Is it merely a way to revisit and reconcile my past, or does it hold an alternative significance for my future? This piece is an exploration of that internal conflict.
-            Using Pure Data and two speakers accompanied by acoustic structures, I create an immersive sound experience that gives the illusion of echoing. In this piece, the echoes serve as a metaphor for my past and internal chaos. They continue to reverberate in the present, becoming increasingly distant as time passes. I question how this distance will shape and influence my future decisions.
-            The sound in this piece embodies a sense of ambiguity and uncertainty, much like my own personal journey. It also represents a willingness to embrace the unknown, the possibility of change, and forgiveness as I seek to transcend the limits of my personal experience.
-        </div>
-        
-        <div class="block-titles">Documentation</div>
-        <div class="block-titles-smaller">Sketches</div>
-
-        <div class="gallery-wrap">
-            <div class="item item-1">
-                <div class="clickable-item">
-                    <div class="title" style="color: white; font-size:18px; ">Sketch 1</div>
-                    <img src="../assets/echoes/sketch1.png" alt="Sketch 1">
-                    <div class="overlay"></div>
-                </div>
-            </div>
-            <div class="item item-1">
-                <div class="clickable-item"> 
-                    <img src="../assets/echoes/sketch2.png" alt="Sketch 2">
-                    <div class="overlay"></div>
-                    <div class="title" style="color: white;font-size:18px; ">Sketch 2</div>
-                </div>
-                </div>
-            <div class="item item-1">
-                <div class="clickable-item">
-                    <img src="../assets/echoes/sketch3.png" alt="Sketch 3">
-                    <div class="overlay"></div>
-                    <div class="title" style="color: white; font-size:18px;">Sketch 3</div>
-                 </div>
-            </div>
-            <div class="item item-1">
-                <div class="clickable-item">
-                <img src="../assets/echoes/sketch4.png" alt="Sketch 4">
-                <div class="overlay"></div>
-                <div class="title" style="color: white;font-size:18px; ">Sketch 4</div>
-            </div>
-            </div>
-        </div>
-
-        <div class="block-titles-smaller">Models</div>
-        <div class="gallery-wrap">
-            <div class="item item-1">
-                <div class="clickable-item">
-                <div class="title" style="color: white; font-size:18px; ">MDF</div>
-                <img src="../assets/echoes/fusion1.png" alt="MDF Model 1">
-                <div class="overlay"></div>
-                </div>
-            </div>
-            <div class="item item-1">
-                <div class="clickable-item">
-                <img src="../assets/echoes/fusion2.png" alt="MDF Model 1">
-                <div class="overlay"></div>
-                <div class="title" style="color: white;font-size:18px; ">MDF </div>
-            </div>
-            </div>
-            <div class="item item-1">
-                <div class="clickable-item">
-                <img src="../assets/echoes/fusion3.png" alt="Final Model">
-                <div class="overlay"></div>
-                <div class="title" style="color: white; font-size:18px;">Final </div>
-            </div>
-            </div>
-        </div>
-
-        <div class="block-titles-smaller">Construction</div>
-        <video class="echoes-video" autoplay loop muted>
-            <source src="../assets/echoes/echoesVideo.mp4" type="video/mp4">
-        </video>
-        <div class="description-link">
-            <a href=" https://vimeo.com/825175528?share=copy"><b>Click for full link to documentation video</b></a>
-        </div>
+  
+    <!-- Second Image Section -->
+    <div class="full-image">
+      <img src="/assets/echoes-1.png" alt="Second Image">
     </div>
+</div>
 
+  <script>
+    const container = document.querySelector(".container");
+    const text = document.querySelector(".with-text .text");
 
+    container.addEventListener("scroll", () => {
+      const scrollPosition = container.scrollTop; 
+      const viewportHeight = window.innerHeight; 
 
-    <script>
-
-    //CLICK GALLERY=======================
-    document.addEventListener("DOMContentLoaded", function() {
-    const clickableItems = document.querySelectorAll(".clickable-item");
-
-    clickableItems.forEach(item => {
-        item.addEventListener("click", function() {
-            // Toggle flex value on click
-            if (item.parentElement.classList.contains("active")) {
-                item.parentElement.classList.remove("active");
-            } else {
-                item.parentElement.classList.add("active");
-            }
-
-            // Toggle opacity of overlay on click
-            const overlay = item.querySelector(".overlay");
-            if (overlay.style.opacity === "0") {
-                overlay.style.opacity = "1";
-            } else {
-                overlay.style.opacity = "0";
-            }
-        });
+      if (scrollPosition > viewportHeight / 2) {
+        text.style.opacity = "0";
+        text.style.transform = "translateY(-20px)";
+      } else {
+        text.style.opacity = "1";
+        text.style.transform = "translateY(0)";
+      }
     });
-});
-    </script>
 
-
+        //audio
+    const player = new MediaElementPlayer('player', {
+      features: ['playpause', 'progress', 'volume'],
+      defaultAudioWidth: '100%',
+      success: function(mediaElement, originalNode) {
+      }
+    });
+  </script>
+  
 
 </body>
+
+
+
 </html>
