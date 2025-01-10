@@ -29,6 +29,7 @@ body {
         left: 3vw;
         color: white;
         font-size: 1.2em;
+        z-index: 4;
     }
 
     .container {
@@ -43,7 +44,7 @@ body {
     .text-section {
         flex: none;
         scroll-snap-align: start;
-        height: 90vh;
+        height: 95vh;
     }
 
     .text-section .text {
@@ -165,14 +166,14 @@ body {
     .text-section {
         flex: none;
         scroll-snap-align: start;
-        height: 90vh;
+        height: 50vh;
     }
 
     .text-section .text {
         position: relative;
         color: white;
         font-size: 1.5em; /* Fixed font-size */
-        top: 10%;
+        top: 10vh;
         left: 3vw;
         padding: 10px;
         width: 90%;
@@ -195,13 +196,13 @@ body {
 
     .full-image img {
         position: absolute;
-        width: 100%;
+        width: 120%;
         height: auto;
         object-fit: cover;
         z-index: -1;
     }
 
-    /* Padlet Embed Section */
+    /* ------Padlet Embed Section */
     .padlet-container {
         flex: none;
         width: 100vw;
@@ -211,7 +212,6 @@ body {
         scroll-snap-align: start;
         background-color: none;
     }
-
     .padlet-embed {
         overflow: hidden;
         position: relative;
