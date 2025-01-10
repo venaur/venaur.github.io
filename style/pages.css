@@ -180,7 +180,7 @@ a{
     .text-section {
         flex: none;
         scroll-snap-align: start;
-        height: 30vh;
+        height: 100vh;
     }
 
     .text-section .text {
