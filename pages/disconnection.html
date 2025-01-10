@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style/pages.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>     
+  <title>(Dis)connection</title>
+</head>
+
+<body>
+  <div class="background-img">
+    <img src="/assets/bg-img.png">
+  </div>
+
+  <div class="title">(Dis&nbsp;&nbsp;&nbsp;)&nbsp;  connection</div>
+
+  <div class="container">
+    <!-- First Text Section -->
+    <div class="text-section">
+      <div class="text">
+        (Dis)connection (2024) is a quadraphonic sound installation, accompanied by four, large sound sculptures. It explores trauma through technology, utilizing destructive interference. Trauma disrupts not only the psychological and physical connection but also the perception of time, creating a delayed recognition of threat that can repeat uncontrollably and destructively (Caruth, 1996). The installation embodies this uncontrollable quality by using technology not just to resemble trauma, but to extend and amplify its effects.
+        <br><br>
+        The sonic structure illustrates trauma's inability to be fully contained. In certain pockets of the installation, destructive interference creates an uncanny quiet, a silence that contrasts with the chaotic and overwhelming sound beyond the borders. This contrast symbolizes the boundaries of trauma that can never be fully controlled, highlighting that trauma's impact resonates even when it appears subdued.
+      </div>
+    </div>
+  
+    <!-- First Image Section -->
+    <div class="full-image">
+      <img src="/assets/disconnection-1.JPG" alt="First Image">
+    </div>
+  
+    <!-- Second Image Section -->
+    <div class="full-image">
+      <img src="/assets/disconnection-2.jpg" alt="Second Image">
+    </div>
+
+  
+
+<!-- Padlet Embed -->
+<div class="padlet-container">
+  <div class="padlet-embed">
+    <div class="padlet-text">Research Poster</div>
+      <iframe 
+        src="https://artslondon.padlet.org/embed/dpteoy69cnfxrmyo" 
+        frameborder="0" 
+        allow="camera;microphone;geolocation">
+      </iframe>
+  </div>
+</div>
+</div>
+
+  <script>
+    const container = document.querySelector(".container");
+    const text = document.querySelector(".with-text .text");
+
+    container.addEventListener("scroll", () => {
+      const scrollPosition = container.scrollTop; 
+      const viewportHeight = window.innerHeight; 
+
+      if (scrollPosition > viewportHeight / 2) {
+        text.style.opacity = "0";
+        text.style.transform = "translateY(-20px)";
+      } else {
+        text.style.opacity = "1";
+        text.style.transform = "translateY(0)";
+      }
+    });
+  </script>
+  
+
+</body>
+
+
+
+</html>
