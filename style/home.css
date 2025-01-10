@@ -2,7 +2,7 @@
     text-decoration: none;
     font-family: 'HelveticaNeue-Light';
     letter-spacing: 0.1rem;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 body {
   margin: 0;
@@ -98,9 +98,22 @@ body {
   em{
     color: rgb(255, 255, 255);
   }
-  ul {
+  li{
+    color: rgb(255, 255, 255);
+    font-size: 2.5em;
     list-style-type: none; 
-    margin: 0; 
+    margin-bottom: 1.5vh;
+    padding: 1vw;
+    width: fit-content;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    &:hover{
+      cursor: crosshair;
+      background-color: rgba(82, 115, 137, 0.502);
+    }
+  }
+
+  ul {
     padding: 0; 
   }
   
