@@ -186,7 +186,7 @@ a{
     .text-section .text {
         position: relative;
         color: white;
-        font-size: 1.5em; /* Fixed font-size */
+        font-size: 1.8em; /* Fixed font-size */
         top: 10vh;
         left: 3vw;
         padding: 10px;
