@@ -57,7 +57,7 @@ body {
 
       &:hover{
         cursor: crosshair;
-        background-color: rgba(82, 115, 137, 0.502);
+        background-color: rgba(94, 107, 114, 0.502);
       }
 
     }
