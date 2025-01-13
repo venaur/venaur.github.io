@@ -199,22 +199,28 @@ a{
 
     /* Text Section */
     .text-section {
+        position: relative;
+        left: 0;
         flex: none;
         scroll-snap-align: start;
         height: 100vh;
+        overflow-y: scroll; 
+        overscroll-behavior: contain;
     }
-
+    
     .text-section .text {
-        position: relative;
+        position: sticky; 
         color: white;
-        font-size: 1.8em; /* was 1.5 */
-        top: 10vh;
+        font-size: 1.8em;
+        top: 10%; 
         left: 3vw;
         padding: 10px;
         width: 90%;
+        max-height: 80%; 
         line-height: 1.5em;
         background-color: rgba(36, 36, 36, 0.597);
-        transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+        overflow-y: scroll; 
+        /* transition: opacity 1s ease-in-out, transform 1s ease-in-out; */
     }
 
     /* Image Section */
@@ -280,5 +286,20 @@ a{
         font-size: 1.5em;
         top: 0;
         padding-bottom: 1vh;
+    }
+    .toad-iframe {
+        top:0;
+        position: relative;
+        width: 100%;
+        padding-top: 45%; 
+        overflow: hidden;
+    }
+    .toad-iframe iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
     }
 }
