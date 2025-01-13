@@ -3,50 +3,72 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../style/collaboration-pages.css">
-  <link rel="stylesheet" href="../style/main-style.css">
+  <link rel="stylesheet" href="/style/pages.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>     
-  <title>Actually Nowhere Existing & Echoes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelementplayer.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.16/mediaelement-and-player.min.js"></script>
+  <title>Actually Nowhere Existing</title>
 </head>
 
 <body>
-    <div id="top-logo">
-        <a href="../index.html"> 
-          <img src="../assets/full-logo.png" alt="Logo">
-        </a>
+  <div class="background-img">
+    <img src="/assets/bg-img.png">
+  </div>
+  <div class="title"> Actually Nowhere Existing</div>
+
+  <div class="container">
+    <div class="text-section">
+      <div class="text">
+        This is Nowhere Actually Existing, and at it's core, it is exactly that. It a digital worldbuilding piece illustrating a place that doesn't exist, and won't ever exist. It is a world that solely comes from my head and my imagination, embodying ideas of simulation being a presentation of a person's perception of reality, originally coming from game designer Doris C. Rusch. Furthermore, it depicts a idyllic, sustainable community, with animals running around freely and wildly, which come piece together to demonstrate a Utopia, and in particular, my utopia, as it is my perception of reality. The name in particular comes from the book The Village Against The World which discusses the village and enhabitants of Marinaleda in Spain who created a 'Utopia' and a foundation for a cooperative way of life. However, this world is only a simulation. However perfect it may present as, it has its may flaws and it calls on you to find them. This utopia isn't real, and will assure you you're aware of it.
+        <br><br>
+        In parallel with the digital worldbuilding piece, I crafted an accompanying audio landscape that harmoniously complemented the visual elements. The audio was created using Pure Data and consisted of layers of ambience. This was created using techniques such as the manipulation of noise and phasors. Drawing inspiration from the nature portrayed in the visuals, I crafted a composition that intertwines tranquility, excitement, and subtle elements wind. By integrating the auditory and visual elements, our collaborative aimed to transport the audience to a realm that blurs the boundaries between reality and imagination, inviting them to explore the simulated utopia.
+        <br><br>
+        <a href="https://youtu.be/CwK44Iyrxb8?feature=shared"target="_blank">Watch</a>
     </div>
-    <div id="back-button">
-        <a href="../collaborations.html">
-            <img src="../assets/arrow.png" alt="back">
-        </a>
     </div>
-
-    <div class="content">
-        <div class="content-img">
-            <img src="../assets/nowhere/beams-cover.jpg" alt="Beams Cover Image">
-        </div>
-
-        <div class="img-description">
-            "Nowhere Actually Existing & Echoes" was presented in the Digital Arts Computing exhibition, Damned Soggy Oat Patch (2023) and The Beams, London.
-        </div>
-
-        <div class="art-titles">Actually Nowhere Existing - Mary Tallontire</div>
-        <div class="description-nowhere">
-            This is Nowhere Actually Existing, and at it's core, it is exactly that. It a digital worldbuilding piece illustrating a place that doesn't exist, and won't ever exist. It is a world that solely comes from my head and my imagination, embodying ideas of simulation being a presentation of a person's perception of reality, originally coming from game designer Doris C. Rusch. Furthermore, it depicts a idyllic, sustainable community, with animals running around freely and wildly, which come piece together to demonstrate a Utopia, and in particular, my utopia, as it is my perception of reality. The name in particular comes from the book The Village Against The World which discusses the village and enhabitants of Marinaleda in Spain who created a 'Utopia' and a foundation for a cooperative way of life. However, this world is only a simulation. However perfect it may present as, it has its may flaws and it calls on you to find them. This utopia isn't real, and will assure you you're aware of it.
-        </div>
-        <div class="block-titles">Echoes - V e n A u r</div>
-        <div class="description-nowhere venaur">
-            In parallel with the visuals of the digital worldbuilding piece, "This is Nowhere Actually Existing," I crafted an accompanying audio landscape that harmoniously complemented the visual elements. The audio was created using Pure Data and consisted of layers of ambience. This was created using techniques such as the manipulation of noise and phasors. Drawing inspiration from the nature portrayed in the visuals, I crafted a composition that intertwines tranquility, excitement, and subtle elements wind. By integrating the auditory and visual elements, our collaborative aimed to transport the audience to a realm that blurs the boundaries between reality and imagination, inviting them to explore the simulated utopia.
-        </div>
-
-
-        <video class="nowhere-video" controls> 
-            <source src="../assets/nowhere/beams.mp4" type="video/mp4">
-        </video>
-
+  
+    <div class="full-image">
+      <img src="/assets/nowhere/nowhere.jpg">
     </div>
+    <div class="full-image">
+      <img src="/assets/nowhere/beams-cover.jpg">
+    </div>
+  </div>
+
+  <script>
+    const container = document.querySelector(".container");
+    const text = document.querySelector(".with-text .text");
+
+    container.addEventListener("scroll", () => {
+      const scrollPosition = container.scrollTop; 
+      const viewportHeight = window.innerHeight; 
+
+      if (scrollPosition > viewportHeight / 2) {
+        text.style.opacity = "0";
+        text.style.transform = "translateY(-20px)";
+      } else {
+        text.style.opacity = "1";
+        text.style.transform = "translateY(0)";
+      }
+    });
+
+        //audio
+    const player = new MediaElementPlayer('player', {
+      features: ['playpause', 'progress', 'volume'],
+      defaultAudioWidth: '100%',
+      success: function(mediaElement, originalNode) {
+      }
+    });
+  </script>
+  
 
 </body>
+
+
+
 </html>
+
+
+
 
 
