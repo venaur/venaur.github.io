@@ -3,10 +3,13 @@
     font-family: 'HelveticaNeue-Light';
     letter-spacing: 0.1rem;
     color: rgb(255, 255, 255);
+
 }
 body {
   margin: 0;
   padding: 0;
+  background-color: rgb(27, 22, 22);
+
 }
   /* ----------DESKTOP---------------------------- */
   @media only screen and (min-width: 1080px) {
