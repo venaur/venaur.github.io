@@ -10,10 +10,10 @@ body {
   background-color: rgb(27, 22, 22);
 }
 a{
-    color: rgb(75, 106, 174);
+    color: rgb(134, 173, 255);
     transition: all 0.3s;
     &:hover{
-        color: rgb(143, 162, 204);
+        color: #296189;
     }
 
     
