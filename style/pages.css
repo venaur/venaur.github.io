@@ -97,6 +97,26 @@ a{
         height: auto;
         align-self: flex-start; 
     }
+    /* ---About img------ */
+    .about-img {
+        flex: none;
+        position: relative;
+        left: 30%;
+        width: 68%;
+        height: 90vh; 
+        scroll-snap-align: start;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        padding-top: 10vh; 
+        overflow: hidden; 
+    }
+    .about-img img {
+        position: relative;
+        width: auto;
+        height: 80%;
+        align-self: flex-start; 
+    }
 
 
     /* Padlet Embed Section */
