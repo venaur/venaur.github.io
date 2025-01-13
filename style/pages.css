@@ -141,7 +141,11 @@ a{
         padding-bottom: 1vh;
     }
 
+<<<<<<< HEAD
     /* Toad Iframe */
+=======
+        /* Toad Iframe */
+>>>>>>> 5ecad9e06b23b9d00f1d8c03efc0b2f597c39d49
     .toad-iframe {
         top:-13vh;
         position: relative;
@@ -157,9 +161,12 @@ a{
         height: 100%;
         border: none;
     }
+<<<<<<< HEAD
 
     
 
+=======
+>>>>>>> 5ecad9e06b23b9d00f1d8c03efc0b2f597c39d49
 }
 
 /* ----------MOBILE---------------------------- */
