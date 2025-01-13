@@ -7,6 +7,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: rgb(27, 22, 22);
 }
 a{
     color: rgb(75, 106, 174);
@@ -19,7 +20,7 @@ a{
 }
 
 /* ----------DESKTOP---------------------------- */
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 880px) {
     .background-img img {
         position: fixed;
         top: 50%;
@@ -173,7 +174,7 @@ a{
 /* ----------MOBILE---------------------------- */
 /* ----------MOBILE---------------------------- */
 
-@media only screen and (max-width: 1079px) {
+@media only screen and (max-width: 879px) {
     .background-img img {
         position: fixed;
         top: 50%;
