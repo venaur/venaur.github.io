@@ -209,7 +209,7 @@ audio#player {
     top: 0;
     background: white;
     padding: 0.5em 0em;
-    font-size: 1.5em;
+    font-size: 2em;
     z-index: 1;
 
     display: flex;
@@ -218,7 +218,7 @@ audio#player {
     background-color: rgb(255, 255, 255);
   }
   .title-left {
-    font-weight: 100;
+    font-weight: 400;
   }
   .title-right {
     font-size: 0.2em;
