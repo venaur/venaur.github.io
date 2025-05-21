@@ -10,6 +10,7 @@
 
 
 <body>
+    <div class="head"> </div>
     <div class="logo">
         <img src="assets/logo.png">
     </div>
@@ -22,6 +23,53 @@
     </h1> -->
 
 
+<!-- Background Image Layer -->
+  <div class="bg-image-container">
+    <img src="assets/disconnection/disconnection-1.jpeg" id="bg1" class="active" alt="">
+    <img src="assets/wrurf/wrurf-1.jpeg" id="bg2" alt="">
+  </div>
+
+  <!-- Project Sections -->
+  <section class="project" data-bg="bg1">
+    <h1 class="project-title">(Dis)connection</h1>
+    <div class="project-description">
+    <p>
+       <em>(Dis)connection</em> is a quadraphonic sound installation, along with by four, large sound sculptures.
+       <br>It explores trauma through technology and destructive interference. 
+       <br>Trauma disrupts not only the psychological and physical connection but also the perception of time, creating a delayed recognition of threat that can repeat uncontrollably and destructively (Caruth, 1996).
+       <br> The installation embodies this uncontrollable quality by using technology not just to resemble trauma, but to extend and amplify its behaviors.
+    </p>
+    </div>
+  </section>
+
+  <section class="project" data-bg="bg2">
+    <h1 class="project-title">Where are you <em>Really</em> From?</h1>
+    <div class="project-description">
+      <p>
+        The perpetual question, "Where are you really from?" does not have a simple answer. I conducted eight interviews with individuals from diverse backgrounds to expose what the question really means. Despite participants growing up in different environments, they shared common phrases and experiences. I arranged the audio to create the illusion of an ongoing conversation among them, connecting their personal stories through eight central themes. These included, belonging, racism, the emotional impact of being “othered,” and uncovering alternative approaches to this question. I further connect these narratives with bespoke piano compositions. In this way, I present myself as the ninth voice, reflecting on my experiences growing up in Norway as a Korean adoptee.
+        <br><br>
+        The installation consists of eight speakers on stands. Each speaker represents one of the voices. They are arranged in a five-diameter circle and invite the audience to enter in the center of the space. During live performances, I play the piano softly across all speakers, surrounding listeners with a blend of voices and music.
+      </p>
+    </div>
+  </section>
+
+
+  <script>
+    const sections = document.querySelectorAll('.project');
+    const bgImages = document.querySelectorAll('.bg-image-container img');
+
+    window.addEventListener('scroll', () => {
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+          const bgId = section.getAttribute('data-bg');
+          bgImages.forEach(img => {
+            img.classList.toggle('active', img.id === bgId);
+          });
+        }
+      });
+    });
+  </script>
 
 </body>
 
