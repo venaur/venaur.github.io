@@ -22,6 +22,7 @@
   <div class="bg-image-container">
     <img src="assets/disconnection/disconnection-1.jpeg" id="bg1" class="active" alt="">
     <img src="assets/wrurf/wrurf-1.jpeg" id="bg2" alt="">
+    <img src="assets/otaku/otakusnight.png" id="bg3" alt="">
   </div>
 
   <!-- Project Sections -->
@@ -43,14 +44,39 @@
     </div>
   </section>
 
+<!-- ---------wrurf------- -->
   <section class="project" data-bg="bg2">
     <h1 class="project-title">Where are you <em>Really</em> From?</h1>
+        <div class="details">
+        <p><mark>Sound installation, 2024</mark></p>
+    </div>
     <div class="project-description">
-      <p>
-        The perpetual question, "Where are you really from?" does not have a simple answer. I conducted eight interviews with individuals from diverse backgrounds to expose what the question really means. Despite participants growing up in different environments, they shared common phrases and experiences. I arranged the audio to create the illusion of an ongoing conversation among them, connecting their personal stories through eight central themes. These included, belonging, racism, the emotional impact of being “othered,” and uncovering alternative approaches to this question. I further connect these narratives with bespoke piano compositions. In this way, I present myself as the ninth voice, reflecting on my experiences growing up in Norway as a Korean adoptee.
+      <p><mark>
+        The perpetual question, "Where are you <em>really</em> from?" does not have a simple answer. 
+        <br><br>I conducted eight interviews with individuals from diverse backgrounds to expose what the question really means. 
+        <br><br>Despite participants growing up in different environments, they shared common phrases and experiences. I arranged the audio to create the illusion of an ongoing conversation among them, connecting their personal stories through eight central themes. 
+        <br><br>These included, belonging, racism, the emotional impact of being “othered,” and uncovering alternative approaches to this question. I further connect these narratives with bespoke piano compositions. In this way, I present myself as the ninth voice, reflecting on my experiences growing up in Norway as a Korean adoptee.
         <br><br>
         The installation consists of eight speakers on stands. Each speaker represents one of the voices. They are arranged in a five-diameter circle and invite the audience to enter in the center of the space. During live performances, I play the piano softly across all speakers, surrounding listeners with a blend of voices and music.
-      </p>
+     </mark> </p>
+    </div>
+  </section>
+  
+<!-- ---------OTAKUS------- -->
+    <section class="project" data-bg="bg3">
+    <h2 class="project-title">Otakus Natt Otakus Nacht 阿宅之夜 Otakus Night</h2>
+        <div class="details">
+        <p><mark>2024</mark></p>
+    </div>
+    <div class="project-description">
+      <p><mark>
+        The perpetual question, "Where are you <em>really</em> from?" does not have a simple answer. 
+        <br><br>I conducted eight interviews with individuals from diverse backgrounds to expose what the question really means. 
+        <br><br>Despite participants growing up in different environments, they shared common phrases and experiences. I arranged the audio to create the illusion of an ongoing conversation among them, connecting their personal stories through eight central themes. 
+        <br><br>These included, belonging, racism, the emotional impact of being “othered,” and uncovering alternative approaches to this question. I further connect these narratives with bespoke piano compositions. In this way, I present myself as the ninth voice, reflecting on my experiences growing up in Norway as a Korean adoptee.
+        <br><br>
+        The installation consists of eight speakers on stands. Each speaker represents one of the voices. They are arranged in a five-diameter circle and invite the audience to enter in the center of the space. During live performances, I play the piano softly across all speakers, surrounding listeners with a blend of voices and music.
+     </mark> </p>
     </div>
   </section>
 
@@ -62,7 +88,7 @@
     window.addEventListener('scroll', () => {
       sections.forEach(section => {
         const rect = section.getBoundingClientRect();
-        if (rect.top <= window.innerHeight / 6 && rect.bottom >= window.innerHeight / 6) {
+        if (rect.top <= window.innerHeight / 3 && rect.bottom >= window.innerHeight / 3) {
           const bgId = section.getAttribute('data-bg');
           bgImages.forEach(img => {
             img.classList.toggle('active', img.id === bgId);
