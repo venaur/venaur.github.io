@@ -14,7 +14,7 @@ body {
 }
   /* ----------DESKTOP---------------------------- */
   /* @media only screen and (min-width:880px) { */
-    @media only screen and (min-width: 901px) {
+    @media only screen and (min-width: 1000px) {
 
 
   .logo img {
@@ -146,7 +146,7 @@ audio#player {
 /* -----------------------------------------------------------------*/
 /* -----------------------------------------------------------------*/
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 999px) {
 
   .logo {
     position: fixed;
