@@ -1,0 +1,14 @@
+html{
+    background-color: rgb(196, 196, 196);
+}
+
+@font-face {
+  font-family: pretendar;
+  src: url(font/variable/PretendardVariable.ttf);
+}
+
+h1 {
+  font-family: pretendar;
+  font-weight: 100;
+  font-size: clamp(2rem, 1.957rem + 0.213vw, 4rem);
+}
