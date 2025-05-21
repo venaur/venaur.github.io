@@ -1,14 +1,44 @@
+*{
+    margin: 0;
+}
 html{
     background-color: rgb(196, 196, 196);
 }
-
 @font-face {
-  font-family: pretendar;
-  src: url(font/variable/PretendardVariable.ttf);
+    font-family: pretendar;
+    src: url(font/variable/PretendardVariable.ttf);
+}
+/* -----------------Background img, logo, heading 1------------------- */
+.bg-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; 
+    pointer-events: none; 
+}
+
+.bg-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.15;
+}
+
+.logo{
+    position: fixed;
+    top: 1em;
+    left: 1em;
+    width: 10em;
+}
+.logo img{
+    width: 100%;
 }
 
 h1 {
-  font-family: pretendar;
-  font-weight: 100;
-  font-size: clamp(2rem, 1.957rem + 0.213vw, 4rem);
+    font-family: pretendar;
+    font-weight: 100;
+    font-size: 3rem;
+    font-size: clamp(3rem, 2.978723404255319rem + 0.10638297872340426vw, 4rem);
 }
