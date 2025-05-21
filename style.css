@@ -1,5 +1,7 @@
 *{
     margin: 0;
+    line-height: 1.2em;
+    /* overflow-x: hidden; */
 }
 html{
     background-color: rgb(196, 196, 196);
@@ -60,29 +62,38 @@ h1 {
     background-color: rgb(196, 196, 196);
     position: fixed;
     top:0;
+    left: 9%;
     width: 100%;
-    height: 7em;
+    height: 5em;
     z-index: 1;
 }
 
 /* -------------LOGO------------ */
 .logo{
     position: fixed;
-    top: 1em;
-    left: 1em;
-    width: 15em;
+    /* top: 1em; */
+    left: -12vw;
+    width: 35vw;
+    bottom: 15vh;
     z-index: 999;
+    transform: rotate(270deg);
 }
 .logo img{
     width: 100%;
+    height:auto;
 }
 
 /* ------------FONT-headings-P------------ */
 /* -------------H1------------ */
 h1 {
     font-family: pretendar;
-    font-weight: 500;
-    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 5px;
+    font-size: 2rem;  
+    font-size: clamp(1rem, 0.8888rem + 1.7798vw, 2rem);
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    z-index: 10;
 }
 /* -------------P------------ */
 p {
@@ -95,9 +106,7 @@ p {
 /* Fixed background image container */
 .bg-image-container {
     position: fixed;
-    top: 5em;
-    /* left: 2%;
-    width: 96%; */
+    top: 3em;
     width: 100%;
     height: 100vh;
     z-index: -1;
@@ -110,38 +119,74 @@ p {
     transition: opacity 0.6s ease;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 10%;
     opacity: 0;
 }
 
 .bg-image-container img.active {
     opacity: 1;
 }
-
-
+/* -------------box------------ */
 .project {
     position: relative;
-    min-height: 200vh; /* Enough scroll space for sticky effects */
+    /* Scroling spaceeee*/
+    min-height: 200vh; 
 }
-
 .project-title {
     position: sticky;
-    top: 1.3em;
-    background:rgba(196, 196, 196);
-    /* backdrop-filter: blur(5px); */
+    top: 0.5em;
+    background:rgba(196, 196, 196, 0.302);
+    backdrop-filter: blur(5px);
     z-index: 2;
-    padding-left: 2em;    
+    width: 80%;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    overflow-x: hidden;
+    left: 10%;
+}
+/* -------------details------------ */
+.details{
+    position: sticky;
+    overflow-x: hidden;
+    top: 5em;
+    max-width: 85%;
+    padding-right: 2em;
+    left: 10%;
+}
+.details mark{
+  background-color: rgba(173, 106, 106, 0.25);
+  text-decoration: none;
+  color: rgb(254, 254, 254);
 }
 
 .project-description {
     position: absolute;
-    bottom: 70em;
-    background:rgba(196, 196, 196, 0.488);
-    backdrop-filter: blur(10px);
-    padding-left: 2em;    
-    padding-right: 2em;
+    overflow-x: hidden;
+    /* top: 50em; */
+        top: 10em;
 
+    max-width: 85%;
+    padding-right: 2em;
+    left: 10%;
 }
 
+mark {
+  background-color: rgba(196, 196, 196, 0.654);
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.more-img{
+    position: absolute;
+    top:100vh;
+    width: 90%;
+    left:10%;
+    background-color: antiquewhite;
+    overflow-x: hidden;
+}
+.more-img img{
+
+
+}
     
 }

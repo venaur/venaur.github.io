@@ -10,7 +10,7 @@
 
 
 <body>
-    <div class="head"> </div>
+    <div class="head"></div>
     <div class="logo">
         <img src="assets/logo.png">
     </div>
@@ -18,12 +18,7 @@
     <div class="bg-img">
         <img src="assets/grain.png">
     </div>
-    <!-- <h1>
-        VenAur
-    </h1> -->
 
-
-<!-- Background Image Layer -->
   <div class="bg-image-container">
     <img src="assets/disconnection/disconnection-1.jpeg" id="bg1" class="active" alt="">
     <img src="assets/wrurf/wrurf-1.jpeg" id="bg2" alt="">
@@ -32,13 +27,19 @@
   <!-- Project Sections -->
   <section class="project" data-bg="bg1">
     <h1 class="project-title">(Dis)connection</h1>
+    <div class="details">
+        <p><mark>Sound Sculpture, 2024</mark></p>
+    </div>
     <div class="project-description">
-    <p>
+    <p><mark>
        <em>(Dis)connection</em> is a quadraphonic sound installation, along with by four, large sound sculptures.
-       <br>It explores trauma through technology and destructive interference. 
-       <br>Trauma disrupts not only the psychological and physical connection but also the perception of time, creating a delayed recognition of threat that can repeat uncontrollably and destructively (Caruth, 1996).
-       <br> The installation embodies this uncontrollable quality by using technology not just to resemble trauma, but to extend and amplify its behaviors.
-    </p>
+       <br><br>It explores trauma through technology and destructive interference. 
+          <br><br>Trauma disrupts not only the psychological and physical connection but also the perception of time, creating a delayed recognition of threat that can repeat uncontrollably and destructively (Caruth, 1996).
+          <br><br> The installation embodies this uncontrollable quality by using technology not just to resemble trauma, but to extend and amplify its behaviors.
+    </mark></p>
+    </div>
+    <div class="more-img">
+        <img src="assets/disconnection/disconnection-2.jpeg">
     </div>
   </section>
 
@@ -61,7 +62,7 @@
     window.addEventListener('scroll', () => {
       sections.forEach(section => {
         const rect = section.getBoundingClientRect();
-        if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+        if (rect.top <= window.innerHeight / 6 && rect.bottom >= window.innerHeight / 6) {
           const bgId = section.getAttribute('data-bg');
           bgImages.forEach(img => {
             img.classList.toggle('active', img.id === bgId);
