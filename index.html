@@ -15,18 +15,20 @@
         <img src="assets/logo.png">
     </div>
 
-    <div class="bg-img">
+    <!-- <div class="bg-img">
         <img src="assets/grain.png">
-    </div>
+    </div> -->
 
   <div class="bg-image-container">
     <img src="assets/disconnection/disconnection-1.jpeg" id="bg1" class="active" alt="">
+      <img src="assets/disconnection/disconnection-3.jpeg" id="bg1-alt" alt="">
     <img src="assets/wrurf/wrurf-1.jpeg" id="bg2" alt="">
+    <img src="assets/wrurf/wrurf-2.png" id="bg2-alt" alt="">
     <img src="assets/otaku/otakusnight.png" id="bg3" alt="">
   </div>
 
   <!-- Project Sections -->
-  <section class="project" data-bg="bg1">
+  <section class="project" data-bg="bg1" data-bg-alt="bg1-alt">
     <h1 class="project-title">(Dis)connection</h1>
     <div class="details">
         <p><mark>Sound Sculpture, 2024</mark></p>
@@ -39,13 +41,13 @@
           <br><br> The installation embodies this uncontrollable quality by using technology not just to resemble trauma, but to extend and amplify its behaviors.
     </mark></p>
     </div>
-    <div class="more-img">
-        <img src="assets/disconnection/disconnection-2.jpeg">
-    </div>
+<!-- <div class="more-img" id="moreImg1">
+  <img src="assets/disconnection/disconnection-2.jpeg" alt="">
+</div> -->
   </section>
 
 <!-- ---------wrurf------- -->
-  <section class="project" data-bg="bg2">
+  <section class="project" data-bg="bg2" data-bg-alt="bg2-alt">
     <h1 class="project-title">Where are you <em>Really</em> From?</h1>
         <div class="details">
         <p><mark>Sound installation, 2024</mark></p>
@@ -81,21 +83,40 @@
   </section>
 
 
-  <script>
-    const sections = document.querySelectorAll('.project');
-    const bgImages = document.querySelectorAll('.bg-image-container img');
+<script>
+  const sections = document.querySelectorAll('.project');
+  const bgImages = document.querySelectorAll('.bg-image-container img');
 
-    window.addEventListener('scroll', () => {
-      sections.forEach(section => {
-        const rect = section.getBoundingClientRect();
-        if (rect.top <= window.innerHeight / 3 && rect.bottom >= window.innerHeight / 3) {
-          const bgId = section.getAttribute('data-bg');
+  window.addEventListener('scroll', () => {
+    sections.forEach(section => {
+      const rect = section.getBoundingClientRect();
+      const bgId = section.dataset.bg;
+      const altBgId = section.dataset.bgAlt;
+
+      const sectionHeight = section.offsetHeight;
+      const scrollProgress = (window.innerHeight - rect.top) / sectionHeight;
+
+      const inSection = rect.top <= window.innerHeight && rect.bottom >= 0;
+
+      if (inSection) {
+        // Show alt image after 60% scroll progress
+        if (altBgId && scrollProgress > 0.6) {
+          bgImages.forEach(img => {
+            img.classList.toggle('active', img.id === altBgId);
+          });
+        } else {
+          // Otherwise, show original image
           bgImages.forEach(img => {
             img.classList.toggle('active', img.id === bgId);
           });
         }
-      });
+      }
     });
+  });
+
+</script>
+
+
   </script>
 
 </body>
