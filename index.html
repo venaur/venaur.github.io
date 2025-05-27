@@ -1,127 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>VENAUR</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>     
-</head>
-
-<body>
-    <div class="head"></div>
-    <div class="logo">
-        <img src="assets/logo.png">
-    </div>
-  <div class="bg-image-container">
-    <img src="assets/disconnection/disconnection-1.jpeg" id="bg1" class="active" alt="">
-      <img src="assets/disconnection/disconnection-3.jpeg" id="bg1-alt" alt="">
-    <img src="assets/wrurf/wrurf-1.jpeg" id="bg2" alt="">
-    <img src="assets/otaku/otakusnight.png" id="bg3" alt="">
-    <img src="assets/echoes/echoes-1.jpg" id="bg4" alt="">
-  </div>
-
-  <section class="project" data-bg="bg1" data-bg-alt="bg1-alt">
-    <h1 class="project-title">(Dis)connection</h1>
-    <div class="details">
-        <p><mark>Sound Sculpture, 2024</mark></p>
-    </div>
-    <div class="project-description">
-    <p><mark>
-       <em>(Dis)connection</em> is a quadraphonic sound installation, along with by four, large sound sculptures.
-       <br><br>It explores trauma through technology and destructive interference. 
-          <br><br>Trauma disrupts not only the psychological and physical connection but also the perception of time, creating a delayed recognition of threat that can repeat uncontrollably and destructively (Caruth, 1996).
-          <br><br> The installation embodies this uncontrollable quality by using technology not just to resemble trauma, but to extend and amplify its behaviors.
-    </mark></p>
-    </div>
-  </section>
-
-  <section class="project" data-bg="bg2">
-    <h1 class="project-title">Where are you <em>Really</em> From?</h1>
-        <div class="details">
-        <p><mark>Sound installation, 2024</mark></p>
-    </div>
-    <div class="project-description">
-      <p><mark>
-        The perpetual question, "Where are you <em>really</em> from?" does not have a simple answer. 
-        <br><br>I conducted eight interviews with individuals from diverse backgrounds to expose what the question really means. 
-        <br><br>Despite participants growing up in different environments, they shared common phrases and experiences. I arranged the audio to create the illusion of an ongoing conversation among them, connecting their personal stories through eight central themes. 
-        <br><br>These included, belonging, racism, the emotional impact of being “othered,” and uncovering alternative approaches to this question. I further connect these narratives with bespoke piano compositions. In this way, I present myself as the ninth voice, reflecting on my experiences growing up in Norway as a Korean adoptee.
-        <br><br>
-        The installation consists of eight speakers on stands. Each speaker represents one of the voices. They are arranged in a five-diameter circle and invite the audience to enter in the center of the space. During live performances, I play the piano softly across all speakers, surrounding listeners with a blend of voices and music.
-     </mark> </p>
-    </div>
-  </section>
-  
-    <section class="project" data-bg="bg3">
-    <h2 class="project-title">Otakus Natt Otakus Nacht 阿宅之夜 Otakus Night</h2>
-        <div class="details">
-        <p><mark>2024</mark></p>
-    </div>
-    <div class="project-description"> <div class="dark"> 
-      <p><mark>
-        Exploring alternate modes of recollection, review and repetition as forms of collaborative and generative non-sense-making, this work may afford a listening that is both restless and tethered, displaced and situated. 
-                <br><br>These modes function as an experiment in the de-construction of space and sound shapes through multiple languages—Norwegian, German, Mandarin and English. With this, the project challenges conventional structures of communication and listening.
-        <br><br>Gesturing towards Anarchitecture and Dadaism, this score explores attention, absurdity, legibility, (mis)recognition and the spatiality of languages. Here, listeners are invited to observe their own listening biases and approaches toward legitimising sounds, syllables and sentences as a form a space-making.
-        <br><br>Artists: Amias Hanley, Jiali Yang, Linlin Zhang, and Vendela Håkonsen
-      </mark> </p>
-    </div></div>
-  </section>
-
-    <section class="project" data-bg="bg4">
-    <h2 class="project-title">Echoes of the Past</h2>
-        <div class="details">
-        <p><mark>Sound Sculpture, 2023</mark></p>
-    </div>
-    <div class="project-description"> <div class="dark"> 
-      <p><mark>
-        Exploring alternate modes of recollection, review and repetition as forms of collaborative and generative non-sense-making, this work may afford a listening that is both restless and tethered, displaced and situated. 
-                <br><br>These modes function as an experiment in the de-construction of space and sound shapes through multiple languages—Norwegian, German, Mandarin and English. With this, the project challenges conventional structures of communication and listening.
-        <br><br>Gesturing towards Anarchitecture and Dadaism, this score explores attention, absurdity, legibility, (mis)recognition and the spatiality of languages. Here, listeners are invited to observe their own listening biases and approaches toward legitimising sounds, syllables and sentences as a form a space-making.
-        <br><br>Artists: Amias Hanley, Jiali Yang, Linlin Zhang, and Vendela Håkonsen
-      </mark> </p>
-    </div></div>
-  </section>
-
-
-<script>
-  const sections = document.querySelectorAll('.project');
-  const bgImages = document.querySelectorAll('.bg-image-container img');
-
-  window.addEventListener('scroll', () => {
-    sections.forEach(section => {
-      const rect = section.getBoundingClientRect();
-      const bgId = section.dataset.bg;
-      const altBgId = section.dataset.bgAlt;
-
-      const sectionHeight = section.offsetHeight;
-      const scrollProgress = (window.innerHeight - rect.top) / sectionHeight;
-
-      const inSection = rect.top <= window.innerHeight && rect.bottom >= 0;
-
-      if (inSection) {
-        // Show alt image after 60% scroll progress
-        if (altBgId && scrollProgress > 0.6) {
-          bgImages.forEach(img => {
-            img.classList.toggle('active', img.id === altBgId);
-          });
-        } else {
-          // Otherwise, show original image
-          bgImages.forEach(img => {
-            img.classList.toggle('active', img.id === bgId);
-          });
-        }
-      }
-    });
-  });
-</script>
-</body>
-</html> -->
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -160,8 +36,13 @@
       <h1 class="project-title">Otakus Natt<br>Otakus Nacht<br>阿宅之夜<br>Otakus Night</h1>
         <img src="assets/otaku/otakusnight.png" alt="Otakus Night">
       </div>
+
+    <div class="project" data-project="project4">
+      <h1 class="project-title">Echoes of the Past</h1>
+        <img src="assets/echoes/echoes-1.png" alt="Echoes">
+      </div>
     </div>
-  </div>
+
   <!-- Project Detail: Disconnection -->
   <div id="project1" class="project-page">
   <button type="button" class="back-btn">←</button>
@@ -227,6 +108,27 @@
     </div>
   </div>
 
+      <!-- Project Detail:Echoes -->
+  <div id="project4" class="project-page">
+  <button type="button" class="back-btn">←</button>
+    <div class="project-info">
+      <h1>Echoes of the Past, Present & Future</h1>
+      <h2>Sound Sculpture, 2023</h2>
+    </div>
+    <div class="description"><p> 
+      <em>Echoes of the Past, Present & Future</em>, is a psychoacoustic composition created for a parabolic sound sculpture. The echoes are a metaphor for the internal chaos and the reverberations grow distant over time. I question how this distance will shape my artistic practice. 
+      <br><br>The space between a traumatic past and the present self is uncertain, but it also offers room for self exploration. I explored this by creating various psychoacoustic effects in Pure Data. I created sounds that physically interact with the body which include sensations of movement, dizziness, and pressure through sound alone.
+    </p>
+    </div>
+    <div class="images">
+       <audio id="player" controls>
+          <source src="assets/echoes/echoes.mp3" type="audio/mp3">
+      </audio>
+      <img src="assets/echoes/echoes-1.png" alt="">
+      <img src="assets/echoes/echoes-2.jpeg" alt="">
+
+    </div>
+  </div>
 
   <script>
 
