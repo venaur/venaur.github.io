@@ -140,7 +140,8 @@
 
   <!-- Logo -->
   <div class="logo">
-    <img src="assets/logo.png" alt="Logo">
+    <a href="index.html">    <img src="assets/logo.png" alt="Logo">
+</a>
   </div>
 
   <!-- Home -->
@@ -158,12 +159,19 @@
 
   <!-- Project Detail: Disconnection -->
   <div id="project1" class="project-page">
-    <button class="back-btn">← Back</button>
+  <button type="button" class="back-btn">←</button>
+
     <div class="project-info">
       <h1>(Dis)connection</h1>
       <h2>Sound Sculpture, 2024</h2>
     </div>
-    <div class="description">This is the description for (Dis)connection.</div>
+    <div class="description"><p> 
+       <em>(Dis)connection</em> is a quadraphonic sound installation, along with by four, large sound sculptures.
+       It explores trauma through technology and destructive interference. 
+          <br><br>Trauma disrupts not only the psychological and physical connection but also the perception of time, creating a delayed recognition of threat that can repeat uncontrollably and destructively (Caruth, 1996).
+          <br><br> The installation embodies this uncontrollable quality by using technology not just to resemble trauma, but to extend and amplify its behaviors.
+  
+    </p></div>
     <div class="images">
       <img src="assets/disconnection/disconnection-1.jpeg" alt="">
       <img src="assets/disconnection/disconnection-2.jpeg" alt="">
@@ -172,12 +180,20 @@
 
   <!-- Project Detail: WRURF -->
   <div id="project2" class="project-page">
-    <button class="back-btn">← Back</button>
+  <button type="button" class="back-btn">←</button>
     <div class="project-info">
       <h1>Where Are You <em>Really</em> From?</h1>
       <h2>Sound Installation, 2024</h2>
     </div>
-    <div class="description">This is the description for WRURF.</div>
+    <div class="description"><p> 
+              The perpetual question, "Where are you <em>really</em> from?" does not have a simple answer. 
+        <br><br>I conducted eight interviews with individuals from diverse backgrounds to expose what the question really means. 
+        <br><br>Despite participants growing up in different environments, they shared common phrases and experiences. I arranged the audio to create the illusion of an ongoing conversation among them, connecting their personal stories through eight central themes. 
+        <br><br>These included, belonging, racism, the emotional impact of being “othered,” and uncovering alternative approaches to this question. I further connect these narratives with bespoke piano compositions. In this way, I present myself as the ninth voice, reflecting on my experiences growing up in Norway as a Korean adoptee.
+        <br><br>
+        The installation consists of eight speakers on stands. Each speaker represents one of the voices. They are arranged in a five-diameter circle and invite the audience to enter in the center of the space. During live performances, I play the piano softly across all speakers, surrounding listeners with a blend of voices and music.
+    </p>
+    </div>
     <div class="images">
       <img src="assets/wrurf/wrurf-1.jpeg" alt="">
       <img src="assets/wrurf/wrurf-2.jpeg" alt="">
@@ -185,39 +201,55 @@
   </div>
 
 
-  <script> 
- // Open project detail
-document.querySelectorAll('.project').forEach(item => {
-  item.addEventListener('click', () => {
-    const projectId = item.dataset.project;
-    document.getElementById('home').style.display = 'none';
-    const page = document.getElementById(projectId);
-    page.classList.add('visible');
-    page.scrollTop = 0;
-  });
-});
+  <script>
 
-// Back button
-document.querySelectorAll('.back-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.getElementById('home').style.display = 'flex';
+    document.querySelectorAll('.back-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+    console.log("Back button clicked");
+
+    document.getElementById('home').style.display = 'flex'; // adjust this if needed
+
     document.querySelectorAll('.project-page').forEach(page => {
       page.classList.remove('visible');
+      page.querySelector('.project-info')?.classList.remove('revealed');
       page.querySelector('.description')?.classList.remove('revealed');
+      page.querySelector('.images')?.classList.remove('revealed');
     });
   });
 });
 
-// Reveal description on slight scroll
-document.querySelectorAll('.project-page').forEach(page => {
-  let triggered = false;
-  page.addEventListener('scroll', () => {
-    if (!triggered && page.scrollTop > 50) {
-      page.querySelector('.description')?.classList.add('revealed');
-      triggered = true;
-    }
+
+
+    // When a project opens (slide-in), reveal info and description
+document.querySelectorAll('.project').forEach(item => {
+  item.addEventListener('click', () => {
+    const projectId = item.dataset.project;
+    const projectPage = document.getElementById(projectId);
+
+    // Hide home, show detail
+    document.getElementById('home').style.display = 'none';
+    projectPage.classList.add('visible');
+    window.scrollTo(0, 0);
+
+    // Initial content reveal
+    setTimeout(() => {
+      projectPage.querySelector('.project-info')?.classList.add('revealed');
+      projectPage.querySelector('.description')?.classList.add('revealed');
+    }, 400);
+
+    // Scroll event for image reveal
+    projectPage.addEventListener('scroll', () => {
+      const images = projectPage.querySelector('.images');
+      if (projectPage.scrollTop > 50 && !images.classList.contains('revealed')) {
+        images.classList.add('revealed');
+      }
+    });
   });
 });
+
+
+
+
 </script>
 
 

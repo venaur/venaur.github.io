@@ -60,7 +60,7 @@ html, body {
   display: flex;
   align-items: center;
   gap: 4em;
-  cursor: pointer;
+  cursor:cell;
   flex-wrap: wrap;
   width: 50%;
 }
@@ -69,6 +69,16 @@ html, body {
   flex: 1;
   font-size: 1.5em;
   max-width: 25%;
+  transition: all 0.3s ease;
+  font-weight: 100;
+  color: rgb(73, 73, 73);
+
+
+  &:hover{
+    color: rgb(0, 0, 0);
+      font-weight: 400;
+
+  }
 }
 
 .project img {
@@ -77,13 +87,13 @@ html, body {
   transition: transform 0.6s;
   filter: grayscale(80%);
 
-  /* gray */
 }
 
 .project img:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
   filter: none;
 }
+
 
 /* Detail View Slide-in */
 .project-page {
@@ -93,46 +103,99 @@ html, body {
   width: 100vw;
   height: 100vh;
   background-color: rgb(196, 196, 196);
-  overflow-y: auto;
-  transition: left 0.5s ease;
-  padding: 2em;
+  transition: left 1s ease;
   z-index: 999;
+
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .project-page.visible {
   left: 0;
 }
 
-.back-btn {
-  background: none;
+ .back-btn {
+  position: sticky; 
+  top: 1em;
+  left: 1em;
+  z-index: 1001;
   border: none;
-  font-size: 1em;
-  text-decoration: underline;
+  font-size: 2.5em;
+  background: none;
   cursor: pointer;
-  margin-bottom: 1.5em;
+  font-weight: 300;
+  transition: all 0.3s ease;
+}
+
+.project-page .back-btn:hover {
+  font-weight: 700;
+}
+
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin-top: 0em;    
 }
 
 .project-info h1 {
   font-size: 2em;
+  font-weight: 600;
+  margin: 0;
+  width: fit-content;
 }
 
-.description {
+.project-info h2 {
+  font-size: 1.2em;
+  font-weight: 300;
+  margin-top: 0.5em;
+}
+
+
+.project-info,
+.description,
+.images {
   opacity: 0;
   transform: translateY(30px);
-  transition: all 0.5s ease-out;
-  margin: 2em 0;
-}
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  text-align: center;
 
-.description.revealed {
+}
+.project-info.revealed,
+.description.revealed,
+.images.revealed {
   opacity: 1;
-  transform: none;
+  transform: translateY(0);
+}
+.images{
+  width: 100%;
+  margin-bottom: 2em;
+}
+.images img{
+  width: 90%;
+  margin-bottom: 2em;
 }
 
-.images img {
-  width: 100%;
-  margin-bottom: 1em;
-  border-radius: 8px;
+
+.description {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+
+  width: 50%;            
+  text-align: left;       
 }
+
+.description p {
+  width: 100%;     
+  font-weight: 200;  
+  font-size: 1.1em;    
+  margin: 0 auto;        
+}
+
+
 }
 
 
