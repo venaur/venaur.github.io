@@ -122,94 +122,107 @@
 
 
 
-
-
-
-
-
-
-
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>VENAUR</title>
-    <link rel="stylesheet" href="style2.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>     
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VENAUR</title>
+  <link rel="stylesheet" href="style2.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
+  <!-- Background -->
   <div class="bg-img">
-    <img src="assets/grain.png">
+    <img src="assets/grain.png" alt="Background texture">
   </div>
-    <div class="logo">
-        <img src="assets/logo.png">
-    </div>
-  <!-- Home View -->
+
+  <!-- Logo -->
+  <div class="logo">
+    <img src="assets/logo.png" alt="Logo">
+  </div>
+
+  <!-- Home -->
   <div id="home" class="project-list">
     <div class="project" data-project="project1">
       <h1 class="project-title">(Dis)connection</h1>
-      <img src="assets/disconnection/disconnection-1.jpeg" alt="(Dis)connection">
+      <img src="assets/disconnection/disconnection-1.jpeg" alt="Disconnection">
     </div>
+
     <div class="project" data-project="project2">
       <h1 class="project-title">Where Are You <em>Really</em> From?</h1>
-      <img src="assets/wrurf/wrurf-1.jpeg" alt="WRURF">
+      <img src="assets/wrurf/wrurf-1.jpeg" alt="Where Are You Really From?">
     </div>
   </div>
 
-  <!-- Project 1 View -->
+  <!-- Project Detail: Disconnection -->
   <div id="project1" class="project-page">
     <button class="back-btn">← Back</button>
-    <h1>(Dis)connection</h1>
-    <h2>Sound Sculpture, 2024</h2>
-    <p class="description">This is the description for project 1.</p>
+    <div class="project-info">
+      <h1>(Dis)connection</h1>
+      <h2>Sound Sculpture, 2024</h2>
+    </div>
+    <div class="description">This is the description for (Dis)connection.</div>
     <div class="images">
       <img src="assets/disconnection/disconnection-1.jpeg" alt="">
+      <img src="assets/disconnection/disconnection-2.jpeg" alt="">
     </div>
   </div>
 
-  <!-- Project 2 View -->
+  <!-- Project Detail: WRURF -->
   <div id="project2" class="project-page">
     <button class="back-btn">← Back</button>
-    <h1>Where Are You <em>Really</em> From?</h1>
-    <h2>Sound Installation, 2024</h2>
-    <p class="description">This is the description for project 2.</p>
+    <div class="project-info">
+      <h1>Where Are You <em>Really</em> From?</h1>
+      <h2>Sound Installation, 2024</h2>
+    </div>
+    <div class="description">This is the description for WRURF.</div>
     <div class="images">
       <img src="assets/wrurf/wrurf-1.jpeg" alt="">
+      <img src="assets/wrurf/wrurf-2.jpeg" alt="">
     </div>
   </div>
 
+
+  <script> 
+ // Open project detail
+document.querySelectorAll('.project').forEach(item => {
+  item.addEventListener('click', () => {
+    const projectId = item.dataset.project;
+    document.getElementById('home').style.display = 'none';
+    const page = document.getElementById(projectId);
+    page.classList.add('visible');
+    page.scrollTop = 0;
+  });
+});
+
+// Back button
+document.querySelectorAll('.back-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.getElementById('home').style.display = 'flex';
+    document.querySelectorAll('.project-page').forEach(page => {
+      page.classList.remove('visible');
+      page.querySelector('.description')?.classList.remove('revealed');
+    });
+  });
+});
+
+// Reveal description on slight scroll
+document.querySelectorAll('.project-page').forEach(page => {
+  let triggered = false;
+  page.addEventListener('scroll', () => {
+    if (!triggered && page.scrollTop > 50) {
+      page.querySelector('.description')?.classList.add('revealed');
+      triggered = true;
+    }
+  });
+});
+</script>
+
+
 </body>
-
-  <script>
-    // Open project view
-    document.querySelectorAll('.project').forEach(item => {
-      item.addEventListener('click', () => {
-        const projectId = item.dataset.project;
-        document.getElementById('home').style.display = 'none';
-        const projectPage = document.getElementById(projectId);
-        projectPage.classList.add('visible');
-        window.scrollTo(0, 0);
-
-        // Optional delay for scroll animations
-        setTimeout(() => {
-          projectPage.querySelector('.description')?.classList.add('revealed');
-          projectPage.querySelector('.images')?.classList.add('revealed');
-        }, 400);
-      });
-    });
-
-    // Back to home
-    document.querySelectorAll('.back-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.getElementById('home').style.display = 'grid';
-        document.querySelectorAll('.project-page').forEach(page => {
-          page.classList.remove('visible');
-        });
-      });
-    });
-  </script>
-
-
 </html>
+
+
+
