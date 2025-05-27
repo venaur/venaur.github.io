@@ -195,6 +195,12 @@ html, body {
   margin: 0 auto;        
 }
 
+audio#player {
+  width: 50%;           
+  margin: 1em auto;     
+  display: block;
+}
+
 
 }
 
