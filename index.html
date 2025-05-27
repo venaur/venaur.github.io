@@ -9,15 +9,11 @@
 </head>
 
 <body>
-  <!-- Background -->
-  <div class="bg-img">
-    <img src="assets/grain.png" alt="Background texture">
-  </div>
-
   <!-- Logo -->
   <div class="logo">
-    <a href="index.html">    <img src="assets/logo.png" alt="Logo">
-</a>
+    <a href="index.html"> 
+      <img src="assets/logo.png" alt="Logo">  
+    </a>
   </div>
 
   <!-- Home -->
@@ -35,13 +31,29 @@
     <div class="project" data-project="project3">
       <h1 class="project-title">Otakus Natt<br>Otakus Nacht<br>阿宅之夜<br>Otakus Night</h1>
         <img src="assets/otaku/otakusnight.png" alt="Otakus Night">
-      </div>
+    </div>
 
     <div class="project" data-project="project4">
       <h1 class="project-title">Echoes of the Past</h1>
         <img src="assets/echoes/echoes-1.png" alt="Echoes">
-      </div>
     </div>
+
+    <div class="project" data-project="project5">
+      <h1 class="project-title">Nowhere Actually Existing</h1>
+        <img src="assets/nowhere/nowhere-2.jpg" alt="Nowhere Actually Existing">
+    </div>
+
+    <div class="project" data-project="project6">
+      <h1 class="project-title">Toad & the Golden Baguette</h1>
+        <img src="assets/toad/toad-1.png" alt="Toad & the Golden Baguette">
+    </div>
+
+    <div class="project" data-project="project7">
+      <h1 class="project-title">About</h1>
+        <img src="assets/about.png" alt="about">
+    </div>
+
+  </div>
 
   <!-- Project Detail: Disconnection -->
   <div id="project1" class="project-page">
@@ -130,6 +142,62 @@
     </div>
   </div>
 
+
+        <!-- Project Detail:Nowhere actually existing -->
+  <div id="project5" class="project-page">
+  <button type="button" class="back-btn">←</button>
+    <div class="project-info">
+      <h1>Nowhere Actually Existing</h1>
+      <h2>Worldbuilding Piece, 2023</h2>
+    </div>
+    <div class="description"><p> 
+      This is Nowhere Actually Existing, and at it's core, it is exactly that. It a digital worldbuilding piece illustrating a place that doesn't exist, and won't ever exist. It is a world that solely comes from my head and my imagination, embodying ideas of simulation being a presentation of a person's perception of reality, originally coming from game designer Doris C. Rusch. 
+      <br><br>Furthermore, it depicts a idyllic, sustainable community, with animals running around freely and wildly, which come piece together to demonstrate a Utopia, and in particular, my utopia, as it is my perception of reality. 
+      <br><br>The name in particular comes from the book The Village Against The World which discusses the village and enhabitants of Marinaleda in Spain who created a 'Utopia' and a foundation for a cooperative way of life. However, this world is only a simulation. However perfect it may present as, it has its may flaws and it calls on you to find them. This utopia isn't real, and will assure you you're aware of it.
+      <br><br>Artists: Mary Tallontire, VenAur
+   </div>
+    <div class="images">
+      <img src="assets/nowhere/nowhere-1.png" alt="">
+      <img src="assets/nowhere/nowhere-2.jpg" alt="">
+      <video controls><source src="assets/nowhere/nowhere-3.mp4" type="video/mp4">
+    </div>
+  </div>
+
+    <!-- Project Detail:TOAD -->
+  <div id="project6" class="project-page">
+  <button type="button" class="back-btn">←</button>
+    <div class="project-info">
+      <h1>Toad & the Golden Baguette</h1>
+      <h2>iOS game, 2023</h2>
+    </div>
+    <div class="description"><p> 
+     Toad Bakery is an independently owned bakery is Camberwell, South London. Zac Slater worked closely with the staff to develop an explorative open world 2D game that told the story of a students trip from Camberwell College of Arts across Peckham Road and into Toad to collect a brand new “Golden Baguette”.
+     <br><br>Artists: Zac Slater, VenAur
+     </p>
+   </div>
+    <div class="images">
+      <img src="assets/toad/toad-3.PNG" alt="">
+      <img src="assets/toad/toad-2.PNG" alt="">
+    </div>
+  </div>
+
+            <!-- ABOUT -->
+  <div id="project7" class="project-page">
+  <button type="button" class="back-btn">←</button>
+    <div class="project-info">
+      <h1>About</h1>
+      <h2></h2>
+    </div>
+    <div class="description"><p> 
+    My creative practice explores the phenomenon of trauma through the lens of sound (psychoacoustics, sculptural form, and installation) I focus on certain trauma structures and embed this onto the technology to understand how these behaviors can accelerate through inhuman systems.
+    <br><br> @venaurt
+  
+  </p>
+   </div>
+    <div class="images">
+      <img src="assets/about.png">
+    </div>
+  </div>
   <script>
 
     document.querySelectorAll('.back-btn').forEach(btn => {
@@ -174,9 +242,6 @@ document.querySelectorAll('.project').forEach(item => {
     });
   });
 });
-
-
-
 
 </script>
 
