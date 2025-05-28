@@ -63,7 +63,6 @@
 
   }
 }
-
 .project img {
   flex: 2;
   width: 20%;
@@ -235,8 +234,8 @@ html, body {
   .logo {
   position: fixed;
   top: 1em;
-  left: 0.5em;
-  width: 8em;
+  left: 2em;
+  width: 12em;
   z-index: 1000;
 }
 .logo img {
@@ -245,7 +244,7 @@ html, body {
 
 /* Home Projects */
 .project-list {
-  padding: 8em 2em 2em 2em;
+  padding: 10em 2em 20em 2em;
   display: flex;
   flex-direction: column;
   gap: 4em;
@@ -255,7 +254,9 @@ html, body {
     position: relative;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 3em;
   }
+
 
   .project img {
     width: 100%;
@@ -266,11 +267,11 @@ html, body {
 
   .project-title {
     position: absolute;
-    top: -3em; /* Adjust as needed */
+    top: -2.5em; /* Adjust as needed */
     left: 0em;
     right: 1em;
-    font-weight: 300;
-    font-size: 0.8em;
+    font-weight: 500;
+    font-size: 1.8em;
     padding: 0.5em;
     z-index: 2;
   }
@@ -295,8 +296,9 @@ html, body {
   left: 0;
 }
 audio#player {
-  width: 60%;           
-  margin: 1em auto;     
+  width: 90%;           
+  margin: 1em auto; 
+  margin-bottom: 5em;    
   display: block;
 }
 
@@ -327,10 +329,10 @@ audio::-webkit-media-controls-timeline {
  .back-btn {
   position: sticky; 
   top: 1em;
-  left: 0.5em;
+  left: 1em;
   z-index: 1001;
   border: none;
-  font-size: 2em;
+  font-size: 4em;
   background: none;
   cursor: pointer;
   font-weight: 300;
@@ -351,18 +353,19 @@ audio::-webkit-media-controls-timeline {
   margin-top: 0em; 
   margin-left: auto;
   margin-right: auto;
-  width: fit-content;        
+  width: fit-content;    
+      
 }
 
 .project-info h1 {
-  font-size: 1.2em;
+  font-size: 2em;
   font-weight: 600;
   margin: 0;
-  width: 80%;;
+  width: 100%;;
 }
 
 .project-info h2 {
-  font-size: 1em;
+  font-size: 1.8em;
   font-weight: 300;
   margin-top: 0.5em;
 }
@@ -385,7 +388,7 @@ audio::-webkit-media-controls-timeline {
 }
 .images{
   width: 100%;
-  margin-bottom: 8em;
+  margin-bottom: 25em;
 }
 .images img{
   width: 90%;
@@ -405,7 +408,7 @@ audio::-webkit-media-controls-timeline {
 .description p {
   width: 100%;     
   font-weight: 200;  
-  font-size: 0.9em;    
+  font-size: 1.6em;    
   margin: 0 auto;        
 }
 
