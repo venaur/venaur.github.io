@@ -1,0 +1,396 @@
+@font-face {
+  font-family: dejaVuDefault;
+  src: url(assets/font/DejaVuSansMono.ttf);
+}
+
+@font-face {
+  font-family: dejaVuBold;
+  src: url(assets/font/DejaVuSansMono-Bold.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: crosshair;
+}
+b{
+  font-family:dejaVuBold;
+  src: url(assets/font/DejaVuSansMono-Bold.ttf);
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: white;
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  padding: 1em;
+}
+#about-block {
+  position: fixed;
+  background: white;
+  border: 1.5px solid black;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 500;
+  cursor: pointer;
+}
+
+#about-block h1 {
+  font-family: dejaVuBold;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#filter-bar {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  width: 15em;
+  padding: 1em;
+  border: 1.5px solid black;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+  z-index: 500;
+}
+
+.filter-title {
+  font-family: dejaVuBold;
+  font-size: 1em;
+  margin-bottom: 0.3em;
+}
+
+.filter-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-item img {
+  width: 1.2em;
+  height: 1.2em;
+  display: block;
+  cursor: pointer;
+}
+
+.filter-item span {
+  font-family: dejaVuDefault;
+  font-size: 0.95em;
+  cursor: pointer;
+}
+
+#works-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.work-box {
+  position: absolute;
+  width: max-content;
+  min-height: 1em;
+  border: 2px solid black;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s ease;
+  background: white;
+}
+
+.work-box h1 {
+  font-family: dejaVuBold;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#window-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.work-window {
+  position: absolute;
+  width: min(50em, calc(100vw - 4em));
+  height: 36em;
+  background: white;
+  border-radius: 1em;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.407);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  pointer-events: auto;
+}
+
+.work-window.expanded {
+  width: min(75em, calc(100vw - 4em));
+  height: 85vh;
+}
+
+.window-topbar {
+  position: relative;
+  background: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6em 0.8em;
+  border-radius: 1em 1em 0 0;
+  min-height: 3em;
+  flex-shrink: 0;
+  cursor: move;
+}
+
+.topbar-left {
+  position: absolute;
+  left: 0.8em;
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+}
+
+.window-title {
+  text-align: center;
+  font-family: dejaVuBold;
+  font-size: 1em;
+  color: #7a7a7a;
+}
+
+.window-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1em;
+}
+
+.window-images {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.window-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0.6em;
+  display: block;
+}
+
+.window-details,
+.window-description {
+  font-family: dejaVuDefault;
+  font-size: 1em;
+  margin-bottom: 1em;
+  line-height: 1.4;
+}
+.window-description {
+  white-space: pre-line;
+}
+
+.window-links {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.window-links a,
+.window-description a {
+  font-family: dejaVuBold;
+  font-size: 1em;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.window-links a {
+  border: 1.5px solid black;
+  padding: 0.8em 1.2em;
+  background: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.window-links a:hover,
+.window-description a:hover {
+  color: #ff0000a4;
+}
+.icon-btn {
+  border: none;
+  background: transparent;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icon-btn img {
+  width: 1.4em;
+  height: 1.4em;
+  display: block;
+}
+
+.icon-btn img,
+.close-btn,
+.minimize-btn,
+.expand-btn {
+  cursor: pointer;
+}
+
+#minimized-container {
+  position: fixed;
+  right: 1em;
+  bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  z-index: 1200;
+}
+
+.minimized-item {
+  background: white;
+  border: 1.5px solid black;
+  border-radius: 0.6em;
+  padding: 0.6em 1em;
+  font-family: dejaVuDefault;
+  font-size: 0.9em;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+/* -------------MOBILE--------- */
+@media (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+body {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    height: auto;
+    min-height: 100dvh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    }
+  #works-container {
+     position: relative;
+    inset: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    overflow: visible;
+    padding-bottom: 6em;
+  }
+
+  #filter-bar {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1em;
+  }
+
+  #about-block {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    margin-bottom: 1em;
+  }
+
+  .work-box {
+    position: relative;
+    left: auto !important;
+    top: auto !important;
+    width: 100%;
+    max-width: 100%;
+    min-height: auto;
+    padding: 1em;
+  }
+
+  .work-box h1 {
+    font-size: 1rem;
+    line-height: 1.3;
+    word-break: break-word;
+  }
+
+  #window-layer {
+    position: fixed;
+    inset: 0;
+  }
+
+.work-window,
+  .work-window.expanded {
+    width: calc(100vw - 2em);
+    height: auto;
+    max-height: 85vh;
+    left: 1em !important;
+    top: 1em !important;
+    border-radius: 1em;
+  }
+
+  .window-content {
+    overflow-y: auto;
+  }
+#minimized-container {
+    right: 0.75em;
+    bottom: 0.75em;
+    max-width: calc(100vw - 1.5em);
+  }
+.minimized-item {
+    word-break: break-word;
+  }
+
+
+.icon-btn img {
+  width: 2em;
+  height: 2em;
+  display: block;
+}
+.expand-btn{
+display: none;
+}
+.icon-btn img,
+.close-btn,
+.minimize-btn{
+  cursor: pointer;
+}
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  #works-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
