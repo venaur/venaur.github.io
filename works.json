@@ -1,0 +1,162 @@
+{
+"about": {
+    "id": "about",
+    "label": "About",
+    "title": "VenAur",
+    "year": "•ᴗ•",
+    "details": "Sound Artist |",
+    "description": "<b>Education</b> <br>MA Electroacoustic Composition, Zurich University of the Arts, 09/2025 - present <br>MA Sound Arts, University of the Arts, London, 09/2023 - 12/2024 <br>BSc Digital Arts Computing, Goldsmiths, University of London, 09/2020 - 06/2023 <br><br> My main focus is trauma phenomena, psychoacoustics, and technology. I’m currently on a diversion exploring feminist practices, the body, and non-hierarchical collaboration in the context of academic, electroacoustic performance. ",
+    "image": ["assets/about_1.png"],
+    "links": [
+      {
+        "label": "TikTok",
+        "url": "https://www.tiktok.com/@venaurt"
+      },
+            {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/venaurt"
+      }
+    ]
+  },
+   "works":[
+        {
+        "id": "trains",
+        "title": "TRAINS  𖠰𓂃 ོ𓂃",
+        "year": "2026",
+        "details": "performance |",
+        "description": "Improv performance with Ueli Kempter. <br><br> The project began when Ueli and I shared 1 hour train journeys from Zurich to Bern. Oftentimes it would be late evening or night. We were strangers at first, but during the journeys, we’d get to know each other little by little through showing our works.<br><br>After a few weeks, we decided to plug in and jam together. We began recording samples and sending them to each other, even when we weren’t traveling together. This turned into a playful improv performance, <b>TRAINS</b>, where we both shared the same pool of samples.",
+       "links"
+        :[
+          {
+            "label": "watch",
+            "url": "https://youtu.be/8LCyZA3mioE"
+          }
+        ],
+        "image": ["assets/work_img/trains.png", "assets/work_img/trains_2.jpg"],
+        "tags": ["performances"]
+    },
+    {
+        "id": "flikker-i",
+        "title": "Flikker I",
+        "year": "2026",
+        "details": "fixed media |",
+        "description": "A piece exploring different spectromorphologies and gesture ",
+        "links": [
+        {
+          "label": "listen",
+          "url": "https://youtu.be/OBPmtgdNV5o?si=F1AHV7nYBtcrCf6a"
+        }
+      ],
+        "image": ["assets/work_img/flikker_I.png"],
+         "tags": ["fixed media"]
+    },
+    {
+        "id": "flikker-ii",
+        "title": "Flikker II.",
+        "year": "2026",
+        "details": "live performance |",
+        "description": "<b>Flikker II</b> is an improvisational performance exploring gestures, noise and spatial sound. The sounds are all synthesized in Pure Data.",
+        "links": [
+        {
+          "label": "Watch video",
+          "url": "https://youtu.be/CSFJDZOsCT0?si=y-CrhPBmdhwVKcEY"
+        }],
+        "image": ["assets/work_img/flikker_II.png"],
+         "tags": ["performances"]
+    },
+    {
+        "id": "period-data",
+        "title": "[Period_data~]",
+        "year": "2026",
+        "details": "audio-visual |",
+        "description": "<b>[Period_data~]</b>, is an audio-visual piece. It is currently a work in progress and will be exhibited in the Basel Sound Arts FOG festival, Autumn 2026. For the sound, I use Pure Data and Javascript for the visuals. \n\n Taking Makis Solomos’ interpretation of Horacio Vaggione’s theory of time-scale, I bring this perspective into my piece. I explore from macro- to the micro-time through multiple rhythmic layers. This is a representation on how I have perceived time passing during data collection. From this, I have discovered a new understanding about my body. \n\n There are different layers to the piece; years, months, weeks, days, hours, and minutes. I scale down one lived day to one second in the piece. Using this structure, the micro-time focuses sonically on granular and glitch textures. For the lengthened time, I synthesize drones that change over a longer period of time.",
+       "links": [
+        {
+          "label": "watch",
+          "url": "https://www.youtube.com/watch?v=aPHH4ZoVR9Y&feature=youtu.be"
+        }
+      ],
+        "image": ["assets/work_img/period_data.png"],
+        "tags": ["audio-visual"]
+    },
+    {
+        "id": "again",
+        "title": "again&again&again& ⊹",
+        "year": "2026",
+        "details": "performance | installation |",
+        "description": " <b>Again & Again & Again &</b>, is a multimedia installation and performance. We explore how moving image, sound, installation and movement, can synchronize without a central control. \n\n The performance showcases the kind of structures that emerge from listening rather than directing. \n\n This can be observed as the moving bodies alter the rhythm of the melting ice, the accumulation of water manipulating the moving image, and the sound shaping each movement.",
+        "links": [
+        {
+          "label": "watch",
+          "url": "https://youtu.be/mDB9aown0AQ"
+        }
+      ],
+        "image": ["assets/work_img/again_2.png","assets/work_img/again.png"],
+        "tags": ["installations", "performances"]
+    },
+    {
+        "id": "dotolim",
+        "title": "Dotolim Concert Series",
+        "year": "2025",
+        "details": "performance |",
+        "description": "2 day residency at Dotolim with Tobias Rüetschi. Improv sessions with Dayoon Lee and Louis Lopez ",
+        "links": [
+        {
+          "label": "Performance 1",
+          "url": "https://www.youtube.com/watch?si=y7QDn5q8-LRsfL6S&v=eCt3HUtBNrY&feature=youtu.be"
+        },
+        {
+            "label": "Performance 2",
+            "url": "https://www.youtube.com/watch?si=wWidCir18gLHfiWs&v=HGYlA8fy4cc&feature=youtu.be"
+        },        
+        {
+            "label": "Performance 3",
+            "url": "https://www.youtube.com/watch?si=3OVpmjQisiEP3DnN&v=_zmJOUr_VBI&feature=youtu.be"
+        }
+      ],
+        "image": ["assets/work_img/dotolim_1.png","assets/work_img/dotolim_2.png","assets/work_img/dotolim_3.png"],
+        "tags": ["performances"]
+    },
+    {
+        "id": "disconnection",
+        "title": "(Dis)connection",
+        "year": "2024",
+        "details": "installation |",
+        "description": "(Dis)connection explores trauma through technology and destructive interference. Trauma ruptures our perception of time, and the connection between the psychological and physical. This creates a delayed recognition of threat that can repeat uncontrollably and destructively. The installation embodies this uncontrollable quality by using technology to extend and amplify the delayed phenomena. ",
+        "links":[
+        {
+          "label": "more info",
+          "url": "https://southwarkparkgalleries.org/echoes-that-ripple-outwards/"
+        }
+      ],
+        "image": ["assets/work_img/disconnection_1.jpg","assets/work_img/disconnection_2.png"],
+        "tags": ["installations"]
+    },
+        {
+        "id": "wrurf",
+        "title": "Where are you <i>Really</i> From?",
+        "year": "2024",
+        "details": "performance | installation |",
+        "description": "The perpetual question, ‘Where are you <I>Really</I> From?’ Does not have a simple answer. I conducted eight interviews with individuals of diverse backgrounds to uncover what the question truly seeks to understand. Their personal experiences are connected through themes of belonging, racism, and the emotional impacts of being ‘othered’. I connected these narratives with piano compositions. In this way, I present myself as the ninth voice, reflecting on my experience growing up in Norway as a Korean adoptee. ",
+        "image": ["assets/work_img/wrurf_1.jpg","assets/work_img/wrurf_2.png"],
+        "tags": ["installations", "performances"]
+    },
+    {
+        "id": "echoes",
+        "title": "Echoes of the Past, Present, Future",
+        "year": "2023",
+        "details": "installation |",
+        "description": "The space between a traumatic past and the present self is uncertain, but it also offers room for self exploration. I explored this uncertanty with various psychoacoustic effects as a metaphor. The sounds (synthesized in Pd) physically interact with the body which include sensations of movement and pressure through sound and sculpture.",
+       "links"
+        :[
+          {
+            "label": "listen",
+            "url": "https://on.soundcloud.com/NDO36XetoX2a8CFF4o"
+          }
+        ],
+        "image": ["assets/work_img/echoes.png"],
+        "tags": ["installations", "performances"]
+    }
+    ]
+}
+
